@@ -24,6 +24,9 @@ body {
 
 .blog {
   padding: 4% 0% 7% 0%; }
+  .blog .container .news .card-body p.titles {
+    font-size: 22px;
+    padding-top: 3.5%; }
   .blog .container .card {
     margin-top: 30px; }
   .blog .container .card-body {
@@ -37,6 +40,16 @@ body {
       font-size: 13px; }
     .blog .container .card-body .row img {
       margin: 20px; }
+  .blog .container .trending-title {
+    margin-top: 5%; }
+  .blog .container hr {
+    border: 2px solid #707070;
+    width: 92%;
+    margin-right: 0; }
+  .blog .container h4 {
+    margin: 0; }
+  .blog .container .col-7 {
+    padding: 0px 15px; }
 
 .footer {
   padding: 4% 0% 2% 0%;

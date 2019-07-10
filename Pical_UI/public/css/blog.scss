@@ -67,6 +67,14 @@ body{
 .blog{
 	padding: 4% 0% 7% 0%;
 	.container{
+		.news{
+			.card-body{
+				p.titles{
+					font-size: 22px;
+					padding-top: 3.5%;
+				}
+			}
+		}
 		.card{
 			margin-top: 30px;
 		}
@@ -87,6 +95,20 @@ body{
 					margin: 20px;
 				}
 			}
+		}
+		.trending-title{
+			margin-top: 5%;
+		}
+		hr{
+			border: 2px solid $borderColor;
+			width: 92%;
+			margin-right: 0;
+		}
+		h4{
+			margin: 0;
+		}
+		.col-7{
+			padding: 0px 15px;
 		}
 	}
 }
