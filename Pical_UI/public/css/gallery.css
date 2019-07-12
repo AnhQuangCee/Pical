@@ -30,9 +30,28 @@ hr {
   .topic .container .row .image-block {
     position: absolute;
     top: -90px; }
-    .topic .container .row .image-block img {
+    .topic .container .row .image-block .circular--landscape {
+      display: inline-block;
+      position: relative;
       height: 140px;
-      width: 140px; }
+      width: 140px;
+      overflow: hidden;
+      border-radius: 50%; }
+    .topic .container .row .image-block .circular--landscape img {
+      width: auto;
+      height: 100%;
+      margin-left: -40px; }
+    .topic .container .row .image-block .circular--portrait {
+      border: 5px solid white;
+      box-shadow: 0px 2px 6px #a9a9a9;
+      position: relative;
+      height: 140px;
+      width: 140px;
+      overflow: hidden;
+      border-radius: 50%; }
+    .topic .container .row .image-block .circular--portrait img {
+      width: 100%;
+      height: auto; }
     .topic .container .row .image-block span {
       color: white;
       font-size: 20px;
@@ -60,61 +79,66 @@ hr {
     .gallery .container .row .card-body p.time {
       font-size: 13px;
       padding: 0px 15px 0px 15px; }
+    .gallery .container .row .card-body .col-10 .row .col-3 i {
+      font-size: 20px;
+      padding: 26px 15px 0px 15px; }
     .gallery .container .row .card-body .row img {
       margin: 20px; }
   .gallery .container .row .img-column1 .row .col-8 .center-cropped {
     width: 15rem;
     height: 18rem;
-    background-position: center center;
-    background-repeat: no-repeat; }
+    object-fit: cover;
+    object-position: center;
+    /* Center the image within the element */ }
   .gallery .container .row .img-column1 .row .col-4 .center-cropped {
     width: 6rem;
     height: 8.8rem;
-    background-position: center center;
-    background-repeat: no-repeat; }
+    object-fit: cover;
+    object-position: center; }
   .gallery .container .row .img-column1 .row .col-4 .img2 {
     margin-top: 0.4rem;
     width: 6rem;
     height: 8.8rem;
-    background-position: center center;
-    background-repeat: no-repeat; }
+    object-fit: cover;
+    object-position: center; }
   .gallery .container .row .img-column2 .row .col-12 .center-cropped {
     width: 21rem;
     height: 8.8rem;
-    background-position: center center;
-    background-repeat: no-repeat; }
+    object-fit: cover;
+    object-position: center; }
   .gallery .container .row .img-column2 .row-img2 .col-6 {
     padding-top: 0.4rem; }
     .gallery .container .row .img-column2 .row-img2 .col-6 .center-cropped {
       width: 10.2rem;
       height: 8.8rem;
-      background-position: center center;
-      background-repeat: no-repeat; }
+      object-fit: cover;
+      object-position: center; }
   .gallery .container .row .img-column2 .row-img2 .img2 {
     padding-top: 0.4rem;
     padding-left: 0.2rem; }
     .gallery .container .row .img-column2 .row-img2 .img2 .center-cropped {
       width: 10.3rem;
       height: 8.8rem;
-      background-position: center center;
-      background-repeat: no-repeat; }
+      object-fit: cover;
+      object-position: center; }
   .gallery .container .row .img-column3 .row .col-7 .center-cropped {
     width: 13rem;
     height: 8.8rem;
-    background-position: center center;
-    background-repeat: no-repeat; }
+    object-fit: cover;
+    object-position: center; }
   .gallery .container .row .img-column3 .row .col-7 .img2 {
     margin-top: 0.4rem;
     width: 13rem;
     height: 8.8rem;
-    background-position: center center;
-    background-position: center center;
-    background-repeat: no-repeat; }
+    object-fit: cover;
+    object-position: center; }
   .gallery .container .row .img-column3 .row .col-5 .center-cropped {
     width: 7.8rem;
     height: 18rem;
-    background-position: center center;
-    background-repeat: no-repeat; }
+    object-fit: cover;
+    object-position: center; }
+  .gallery .container .row2 {
+    margin-top: 3%; }
 
 .footer {
   padding: 4% 0% 2% 0%;

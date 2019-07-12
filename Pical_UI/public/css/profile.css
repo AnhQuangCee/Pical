@@ -30,6 +30,28 @@ hr {
   .topic .container .row .image-block {
     position: absolute;
     top: -90px; }
+    .topic .container .row .image-block .circular--landscape {
+      display: inline-block;
+      position: relative;
+      height: 140px;
+      width: 140px;
+      overflow: hidden;
+      border-radius: 50%; }
+    .topic .container .row .image-block .circular--landscape img {
+      width: auto;
+      height: 100%;
+      margin-left: -40px; }
+    .topic .container .row .image-block .circular--portrait {
+      border: 5px solid white;
+      box-shadow: 0px 2px 6px #a9a9a9;
+      position: relative;
+      height: 140px;
+      width: 140px;
+      overflow: hidden;
+      border-radius: 50%; }
+    .topic .container .row .image-block .circular--portrait img {
+      width: 100%;
+      height: auto; }
     .topic .container .row .image-block img {
       height: 140px;
       width: 140px; }

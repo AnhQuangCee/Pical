@@ -6,6 +6,8 @@ $textColorGraySubTitle: #4E4E4E;
 $borderColor: #707070;
 $backgroundColor: #F6F6F6; 
 $backgroundDigits: #4E4E4E;
+$borderShadown: #a9a9a9;
+
 //FONT FAMILY
 $textFont: 'Montserrat', sans-serif;
 // FONSIZE
@@ -74,12 +76,37 @@ hr{
 		.row{
 			position: relative;
 			.image-block{
-				position: absolute;
-				top: -90px;
-				img{
+				.circular--landscape {
+					display: inline-block;
+					position: relative;
 					height: 140px;
 					width: 140px;
+					overflow: hidden;
+					border-radius: 50%;
 				}
+
+				.circular--landscape img {
+					width: auto;
+					height: 100%;
+					margin-left: -40px;
+				}
+				.circular--portrait {
+					border: 5px solid white;
+					box-shadow: 0px 2px 6px #a9a9a9;
+					position: relative;
+					height: 140px;
+					width: 140px;
+					overflow: hidden;
+					border-radius: 50%;
+				}
+
+				.circular--portrait img {
+					width: 100%;
+					height: auto;
+				}
+
+				position: absolute;
+				top: -90px;
 				span{
 					color: white;
 					font-size: $textName;
@@ -110,48 +137,58 @@ hr{
 	.container{
 		.row{
 			.card-body{
-			padding: 0;
-			p{
-				margin:0;
-				padding: 15px 15px 0px 15px;
-			}
-			p.title{
-				font-size: $textHeader;
-			}
-			p.time{
-				font-size: $textTime;
-				padding: 0px 15px 0px 15px;
-			}
-			.row{
-				img{
-					margin: 20px;
+				padding: 0;
+				p{
+					margin:0;
+					padding: 15px 15px 0px 15px;
+				}
+				p.title{
+					font-size: $textHeader;
+				}
+				p.time{
+					font-size: $textTime;
+					padding: 0px 15px 0px 15px;
+				}
+				.col-10{
+					.row{
+						.col-3{
+							i{
+								font-size: $texSubContact;
+								padding: 26px 15px 0px 15px;
+							}
+						}
+					}
+					
+				}
+				.row{
+					img{
+						margin: 20px;
+					}
 				}
 			}
-		}
 			.img-column1{
 				.row{
 					.col-8{
 						.center-cropped {
 							width: 15rem;
 							height: 18rem;
-							background-position: center center;
-							background-repeat: no-repeat;
-
+							object-fit: cover;
+							object-position: center; /* Center the image within the element */
 						}
 					}
 					.col-4{
 						.center-cropped {
 							width: 6rem;
 							height: 8.8rem;
-							background-position: center center;
-							background-repeat: no-repeat;
+							object-fit: cover;
+							object-position: center; 
 						}
 						.img2 {
 							margin-top: 0.4rem;
 							width: 6rem;
 							height: 8.8rem;
-							background-position: center center;
-							background-repeat: no-repeat;
+							object-fit: cover;
+							object-position: center;
 						}
 					}
 				}
@@ -162,8 +199,8 @@ hr{
 						.center-cropped {
 							width: 21rem;
 							height: 8.8rem;
-							background-position: center center;
-							background-repeat: no-repeat;
+							object-fit: cover;
+							object-position: center; 
 
 						}
 					}
@@ -174,8 +211,8 @@ hr{
 						.center-cropped {
 							width: 10.2rem;
 							height: 8.8rem;
-							background-position: center center;
-							background-repeat: no-repeat;
+							object-fit: cover;
+							object-position: center; 
 						}
 					}
 					.img2{
@@ -184,8 +221,8 @@ hr{
 						.center-cropped {
 							width: 10.3rem;
 							height: 8.8rem;
-							background-position: center center;
-							background-repeat: no-repeat;
+							object-fit: cover;
+							object-position: center;
 						}
 					}
 				}
@@ -196,30 +233,32 @@ hr{
 						.center-cropped {
 							width: 13rem;
 							height: 8.8rem;
-							background-position: center center;
-							background-repeat: no-repeat;
+							object-fit: cover;
+							object-position: center; 
 
 						}
 						.img2 {
 							margin-top: 0.4rem;
 							width: 13rem;
 							height: 8.8rem;
-							background-position: center center;
-							background-position: center center;
-							background-repeat: no-repeat;
+							object-fit: cover;
+							object-position: center; 
 						}
 					}
 					.col-5{
 						.center-cropped {
 							width: 7.8rem;
 							height: 18rem;
-							background-position: center center;
-							background-repeat: no-repeat;
+							object-fit: cover;
+							object-position: center; 
 						}
 					}
 				}	
 			}
 
+		}
+		.row2{
+			margin-top: 3%;
 		}
 	}
 }
