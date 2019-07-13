@@ -39,6 +39,16 @@ body{
 	background-image: url($backgroundIndex);
 	height: 500px;
 	width: 100%;
+	.svg{
+		width: 100%;
+	}
+	.svg path,line,rect,text,tspan{
+		stroke: white;
+		fill: none;
+	}
+	// .svg tspan{
+	// 	fill:white;
+	// }
 	.container{
 		a{
 			color: white;

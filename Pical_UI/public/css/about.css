@@ -6,6 +6,11 @@ body {
   background-image: url("../.././images/backgroundIndex.png");
   height: 500px;
   width: 100%; }
+  .menu .svg {
+    width: 100%; }
+  .menu .svg path, .menu line, .menu rect, .menu text, .menu tspan {
+    stroke: white;
+    fill: none; }
   .menu .container a {
     color: white; }
   .menu .container .nav-link {
