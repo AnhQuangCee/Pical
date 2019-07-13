@@ -2,6 +2,7 @@ var art1 = document.querySelector('rect.cls-1');
 var art2 = document.querySelector('line.cls-1');
 var art3 = document.querySelector('line.short');
 var text1 = document.querySelectorAll('path');
+var text2 = document.querySelectorAll('.g3 path');
 // var cdtimeline = anime.timeline();
 
 anime({
@@ -38,5 +39,16 @@ anime({
 	delay: function(el, i) { return i * 250 },
 	easing: 'easeOutSine',
 	// direction:'alternate',
-	
 });
+anime({
+	targets:text2,
+	opacity: 0,
+	duration: 3000,
+	delay: function(el, i) { return i * 250 },
+	opacity:1
+	// direction:'alternate',
+});
+
+$(function(){
+	new WOW().init();
+})
