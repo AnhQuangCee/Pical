@@ -4,8 +4,13 @@ body {
 .menu {
   font-family: "Montserrat", sans-serif;
   background-image: url("../.././images/backgroundIndex.png");
-  height: 500px;
-  width: 100%; }
+  height: 300px;
+  width: 100%;
+  background-position: center center;
+  background-repeat: repeat;
+  overflow: hidden; }
+  .menu .nav-color {
+    background-color: black; }
   .menu .container a {
     color: white; }
   .menu .container .nav-link {

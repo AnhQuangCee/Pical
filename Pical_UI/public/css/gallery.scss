@@ -42,8 +42,14 @@ body{
 .menu{
 	font-family: $textFont;
 	background-image: url($backgroundIndex);
-	height: 500px;
+	height: 300px;
 	width: 100%;
+	background-position: center center;
+	background-repeat: repeat;
+	overflow: hidden;
+	.nav-color{
+		background-color:black;
+	}
 	.container{
 		a{
 			color: white;

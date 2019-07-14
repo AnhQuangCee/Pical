@@ -17,6 +17,8 @@ body {
   .menu .svg .g3 path {
     fill: white;
     opacity: 0; }
+  .menu .nav-color {
+    background-color: black; }
   .menu .container a {
     color: white; }
   .menu .container .nav-link {

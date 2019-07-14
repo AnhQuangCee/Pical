@@ -15,10 +15,16 @@ body{
 }
 
 .menu{
+	background-position: center center;
+	background-repeat: repeat;
+	overflow: hidden;
+	width: 100%;
 	font-family: $textFont;
 	background-image: url($backgroundIndex);
 	height: 500px;
-	width: 100%;
+	.nav-color{
+		background-color:black;
+	}
 	.container{
 		a{
 			color: white;

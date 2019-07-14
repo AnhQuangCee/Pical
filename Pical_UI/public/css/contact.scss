@@ -1,5 +1,5 @@
 // PICTURE
-$backgroundIndex: '../.././images/backgroundIndex.png';
+$backgroundIndex: '../.././images/background (5).png';
 // COLOR
 $textColorGray: #868686;
 $textColorGraySubTitle: #4E4E4E;
@@ -36,11 +36,28 @@ body{
 }
 
 .menu{
+	background-position: center center;
+	background-repeat: repeat;
+	overflow: hidden;
+	width: 100%;
 	font-family: $textFont;
 	background-image: url($backgroundIndex);
 	height: 500px;
-	width: 100%;
-	.container{
+	.svg{
+		width: 100%;
+	}
+	.svg path,line,rect,text,tspan{
+		stroke: white;
+		fill: none;
+	}
+	.svg .g3 path{
+		fill:white;
+		opacity: 0;
+	}
+	.nav-color{
+		background-color:black;
+	}
+	.container-fluid{
 		a{
 			color: white;
 		}

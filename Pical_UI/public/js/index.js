@@ -1,4 +1,3 @@
-
 //Scroll navbar
 document.addEventListener("DOMContentLoaded", function(){
 	var navColor = document.querySelector('.fixed-top');

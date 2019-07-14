@@ -1,5 +1,5 @@
 // PICTURE
-$backgroundIndex: '../.././images/backgroundIndex.png';
+$backgroundIndex: '../.././images/background (17).png';
 // COLOR
 $textColorGray: #868686;
 $textColorGraySubTitle: #4E4E4E;
@@ -35,10 +35,28 @@ body{
 }
 
 .menu{
+	background-position: center center;
+	background-repeat: repeat;
+	overflow: hidden;
+	width: 100%;
 	font-family: $textFont;
 	background-image: url($backgroundIndex);
 	height: 500px;
-	width: 100%;
+
+	.svg{
+		width: 100%;
+	}
+	.svg path,line,rect,text,tspan{
+		stroke: white;
+		fill: none;
+	}
+	.svg .g3 path{
+		fill:white;
+		opacity: 0;
+	}
+	.nav-color{
+		background-color:black;
+	}
 	.container{
 		a{
 			color: white;
@@ -85,7 +103,7 @@ body{
 			}
 			p.title{
 				font-size: $textHeader;
-				padding: 30px 0px 5px 0px;
+				padding: 15px 0px 5px 0px;
 			}
 			p.time{
 				font-size: $textTime;

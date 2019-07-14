@@ -2,10 +2,23 @@ body {
   font-family: "Montserrat", sans-serif; }
 
 .menu {
+  background-position: center center;
+  background-repeat: repeat;
+  overflow: hidden;
+  width: 100%;
   font-family: "Montserrat", sans-serif;
-  background-image: url("../.././images/backgroundIndex.png");
-  height: 500px;
-  width: 100%; }
+  background-image: url("../.././images/background (17).png");
+  height: 500px; }
+  .menu .svg {
+    width: 100%; }
+  .menu .svg path, .menu line, .menu rect, .menu text, .menu tspan {
+    stroke: white;
+    fill: none; }
+  .menu .svg .g3 path {
+    fill: white;
+    opacity: 0; }
+  .menu .nav-color {
+    background-color: black; }
   .menu .container a {
     color: white; }
   .menu .container .nav-link {
