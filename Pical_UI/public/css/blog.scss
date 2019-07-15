@@ -43,8 +43,10 @@ body{
 	background-image: url($backgroundIndex);
 	height: 500px;
 
-	.svg{
-		width: 100%;
+	svg{
+		position: relative;
+		top: 90%;
+		left: 1%;
 	}
 	.svg path,line,rect,text,tspan{
 		stroke: white;
@@ -125,7 +127,7 @@ body{
 		h4{
 			margin: 0;
 		}
-		.col-7{
+		.col-md-7{
 			padding: 0px 15px;
 		}
 	}
@@ -142,3 +144,6 @@ body{
 		}
 	}
 }
+
+//Responsive
+@import "blog_mobile";

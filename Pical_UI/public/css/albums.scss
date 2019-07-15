@@ -113,13 +113,15 @@ hr{
 					height: 140px;
 					width: 140px;
 				}
-				span{
-					color: white;
+				.name{
+					position: relative;
+					color: black;
 					font-size: $textName;
-					padding-left: 10px;
+					top: -35px;
+					left: 150px;
 				}
 			}
-			.col-8{
+			.col-md-8{
 				padding:0;
 				.navbar-default{
 					// border-bottom: 1px solid $borderColor;
@@ -206,3 +208,5 @@ body {
 		max-width: 100%;
 	}
 }
+
+@import "albums_mobile.scss";

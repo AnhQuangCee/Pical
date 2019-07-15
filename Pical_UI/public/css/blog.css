@@ -9,8 +9,10 @@ body {
   font-family: "Montserrat", sans-serif;
   background-image: url("../.././images/background (17).png");
   height: 500px; }
-  .menu .svg {
-    width: 100%; }
+  .menu svg {
+    position: relative;
+    top: 90%;
+    left: 1%; }
   .menu .svg path, .menu line, .menu rect, .menu text, .menu tspan {
     stroke: white;
     fill: none; }
@@ -61,7 +63,7 @@ body {
     margin-right: 0; }
   .blog .container h4 {
     margin: 0; }
-  .blog .container .col-7 {
+  .blog .container .col-md-7 {
     padding: 0px 15px; }
 
 .footer {
@@ -69,5 +71,319 @@ body {
   background-color: #F6F6F6; }
   .footer .container .row h3 {
     font-weight: 800; }
+
+/* ----------- iPhone 6 ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  body, html {
+    overflow-x: hidden; }
+
+  .menu {
+    height: 200px;
+    width: 100%; }
+    .menu .svg {
+      top: 0;
+      left: 0;
+      display: none;
+      visibility: hidden;
+      opacity: 0; }
+    .menu .container-fluid {
+      background-color: black; }
+
+  .blog .container h2 {
+    font-size: 25px; }
+  .blog .container .row h4 {
+    font-size: 15px; }
+  .blog .container hr {
+    width: 100%;
+    border: 0.5px solid #707070; }
+  .blog .container .news .col-md-8 p.titles {
+    font-size: 15px; }
+
+  .footer h2 {
+    font-size: 22px;
+    text-align: center; }
+  .footer p {
+    font-size: 12px;
+    margin: 0;
+    text-align: center; }
+  .footer .social-icon {
+    text-align: center; }
+  .footer .input-group {
+    width: 300px;
+    margin: 5px auto;
+    text-align: center; } }
+/* Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  body, html {
+    overflow-x: hidden; }
+
+  .menu {
+    height: 200px;
+    width: 100%; }
+    .menu .svg {
+      top: 0;
+      left: 0;
+      display: none;
+      visibility: hidden;
+      opacity: 0; }
+    .menu .container-fluid {
+      background-color: black; }
+
+  .blog .container h2 {
+    font-size: 25px; }
+  .blog .container .row h4 {
+    font-size: 15px; }
+  .blog .container hr {
+    width: 100%;
+    border: 0.5px solid #707070; }
+  .blog .container .news .col-md-8 p.titles {
+    font-size: 15px; }
+  .blog .container .hidden-smart {
+    display: none; }
+
+  .footer h2 {
+    font-size: 22px; }
+  .footer p {
+    font-size: 12px;
+    margin: 5px 0px; }
+  .footer .input-group {
+    width: 250px; } }
+/* ----------- iPhone 6+ ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  body, html {
+    overflow-x: hidden; }
+
+  .menu {
+    height: 200px;
+    width: 100%; }
+    .menu .svg {
+      top: 0;
+      left: 0;
+      display: none;
+      visibility: hidden;
+      opacity: 0; }
+    .menu .container-fluid {
+      background-color: black; }
+
+  .blog .container h2 {
+    font-size: 25px; }
+  .blog .container .row h4 {
+    font-size: 15px; }
+  .blog .container hr {
+    width: 100%;
+    border: 0.5px solid #707070; }
+  .blog .container .news .col-md-8 p.titles {
+    font-size: 15px; }
+
+  .footer h2 {
+    font-size: 22px;
+    text-align: center; }
+  .footer p {
+    font-size: 12px;
+    margin: 0;
+    text-align: center; }
+  .footer .social-icon {
+    text-align: center; }
+  .footer .input-group {
+    width: 300px;
+    margin: 5px auto;
+    text-align: center; } }
+/* Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  body, html {
+    overflow-x: hidden; }
+
+  .menu {
+    height: 200px;
+    width: 100%; }
+    .menu .svg {
+      top: 0;
+      left: 0;
+      display: none;
+      visibility: hidden;
+      opacity: 0; }
+    .menu .container-fluid {
+      background-color: black; }
+
+  .blog .container h2 {
+    font-size: 25px; }
+  .blog .container .row h4 {
+    font-size: 15px; }
+  .blog .container hr {
+    width: 100%;
+    border: 0.5px solid #707070; }
+  .blog .container .news .col-md-8 p.titles {
+    font-size: 15px; }
+  .blog .container .hidden-smart {
+    display: none; }
+
+  .footer h2 {
+    font-size: 22px; }
+  .footer p {
+    font-size: 12px;
+    margin: 5px 0px; }
+  .footer .input-group {
+    width: 250px;
+    height: 30px; } }
+/* ----------- iPhone 4 and 4S ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  body, html {
+    overflow-x: hidden; }
+
+  .menu {
+    height: 200px;
+    width: 100%; }
+    .menu .svg {
+      top: 0;
+      left: 0;
+      display: none;
+      visibility: hidden;
+      opacity: 0; }
+    .menu .container-fluid {
+      background-color: black; }
+
+  .blog .container h2 {
+    font-size: 25px; }
+  .blog .container .row h4 {
+    font-size: 15px; }
+  .blog .container hr {
+    width: 100%;
+    border: 0.5px solid #707070; }
+  .blog .container .news .col-md-8 p.titles {
+    font-size: 15px; }
+
+  .footer h2 {
+    font-size: 22px;
+    text-align: center; }
+  .footer p {
+    font-size: 12px;
+    margin: 0;
+    text-align: center; }
+  .footer .social-icon {
+    text-align: center; }
+  .footer .input-group {
+    width: 300px;
+    margin: 5px auto;
+    text-align: center; } }
+/* Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  body, html {
+    overflow-x: hidden; }
+
+  .menu {
+    height: 200px;
+    width: 100%; }
+    .menu .svg {
+      top: 0;
+      left: 0;
+      display: none;
+      visibility: hidden;
+      opacity: 0; }
+    .menu .container-fluid {
+      background-color: black; }
+
+  .blog .container h2 {
+    font-size: 25px; }
+  .blog .container .row h4 {
+    font-size: 15px; }
+  .blog .container hr {
+    width: 100%;
+    border: 0.5px solid #707070; }
+  .blog .container .news .col-md-8 p.titles {
+    font-size: 15px; }
+  .blog .container .hidden-smart {
+    display: none; }
+
+  .footer h2 {
+    font-size: 22px; }
+  .footer p {
+    font-size: 12px;
+    margin: 5px 0px; }
+  .footer .input-group {
+    width: 250px; } }
+/* ----------- iPhone 5 and 5S ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  body, html {
+    overflow-x: hidden; }
+
+  .menu {
+    height: 200px;
+    width: 100%; }
+    .menu .svg {
+      top: 0;
+      left: 0;
+      display: none;
+      visibility: hidden;
+      opacity: 0; }
+    .menu .container-fluid {
+      background-color: black; }
+
+  .blog .container h2 {
+    font-size: 25px; }
+  .blog .container .row h4 {
+    font-size: 15px; }
+  .blog .container hr {
+    width: 100%;
+    border: 0.5px solid #707070; }
+  .blog .container .news .col-md-8 p.titles {
+    font-size: 15px; }
+
+  .footer h2 {
+    font-size: 22px;
+    text-align: center; }
+  .footer p {
+    font-size: 12px;
+    margin: 0;
+    text-align: center; }
+  .footer .social-icon {
+    text-align: center; }
+  .footer .input-group {
+    width: 300px;
+    margin: 5px auto;
+    text-align: center; } }
+/* Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  body, html {
+    overflow-x: hidden; }
+
+  .menu {
+    height: 200px;
+    width: 100%; }
+    .menu .svg {
+      top: 0;
+      left: 0;
+      display: none;
+      visibility: hidden;
+      opacity: 0; }
+    .menu .container-fluid {
+      background-color: black; }
+
+  .blog .container h2 {
+    font-size: 25px; }
+  .blog .container .row h4 {
+    font-size: 15px; }
+  .blog .container hr {
+    width: 100%;
+    border: 0.5px solid #707070; }
+  .blog .container .news .col-md-8 p.titles {
+    font-size: 15px; }
+  .blog .container .hidden-smart {
+    display: none; }
+
+  .footer h2 {
+    font-size: 22px; }
+  .footer p {
+    font-size: 12px;
+    margin: 5px 0px; }
+  .footer .input-group {
+    width: 200px; } }
 
 /*# sourceMappingURL=blog.css.map */

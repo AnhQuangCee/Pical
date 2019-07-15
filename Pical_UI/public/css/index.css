@@ -7,7 +7,7 @@ body {
   overflow: hidden;
   width: 100%;
   font-family: "Montserrat", sans-serif;
-  background-image: url("../.././images/backgroundIndex.png");
+  background-image: url("../.././images/background (4).png");
   height: 500px; }
   .menu .nav-color {
     background-color: black; }
@@ -84,5 +84,52 @@ body {
     -ms-flex: 100%;
     flex: 100%;
     max-width: 100%; } }
+/* ----------- iPhone 4 and 4S ----------- */
+/* ----------- iPhone 6 ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  body, html {
+    overflow-x: hidden; }
+
+  .menu {
+    height: 200px;
+    width: 100%; }
+    .menu .svg {
+      top: 0;
+      left: 0;
+      display: none;
+      visibility: hidden;
+      opacity: 0; }
+    .menu .container-fluid {
+      background-color: black; }
+    .menu .container .search-box .col-12 h3 {
+      font-size: 18px;
+      margin-top: 15px; }
+    .menu .container .search-box .col-12 .row .col-12 input {
+      height: 20px; }
+    .menu .container .search-box .col-12 .row .col-12 p {
+      font-size: 12px; }
+
+  .topic .container-fluid .row .col-12 ul {
+    border: none !important; }
+    .topic .container-fluid .row .col-12 ul li {
+      margin: 0; }
+      .topic .container-fluid .row .col-12 ul li a.nav-link {
+        display: inline !important; }
+      .topic .container-fluid .row .col-12 ul li:hover {
+        border: none !important; } }
+/* Portrait */
+/* Landscape */
+/* ----------- iPhone 6+ ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- iPhone 5 and 5S ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
 
 /*# sourceMappingURL=index.css.map */

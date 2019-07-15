@@ -106,4 +106,585 @@ body {
   .footer .container .row h3 {
     font-weight: 800; }
 
+/* ----------- iPhone 6 ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  body, html {
+    overflow-x: hidden; }
+
+  .menu {
+    height: 200px;
+    width: 100%; }
+    .menu .svg {
+      top: 0;
+      left: 0;
+      display: none;
+      visibility: hidden;
+      opacity: 0; }
+    .menu .container-fluid {
+      background-color: black; }
+
+  .founder h2 {
+    font-size: 25px; }
+  .founder h4 {
+    font-size: 15px; }
+  .founder .container .row .col-4 p.fadeIn {
+    font-size: 12px; }
+  .founder .container .row .col-4 hr {
+    border: 0.5px solid #707070; }
+  .founder .container .row .col-8 hr {
+    border: 0.5px solid #707070; }
+  .founder .container .row .col-8 h4 {
+    margin: 0px; }
+  .founder .container .row .col-8 p {
+    font-size: 12px; }
+  .founder .container .row .col-8 p.hidden-smart, .founder .container .row .col-8 p.hidden-smart2 {
+    display: none; }
+  .founder .container .row .col-8 .btn {
+    padding: 5px 10px;
+    font-size: 12px;
+    margin-top: 0px; }
+
+  .team-development .container .row h2 {
+    font-size: 25px; }
+  .team-development .container .row h4 {
+    font-size: 15px; }
+  .team-development .container .row .col-4 p.fadeIn {
+    font-size: 12px; }
+  .team-development .container .row .col-4 hr {
+    border: 0.5px solid #707070; }
+  .team-development .container .row .col-8 i {
+    font-size: 12px; }
+  .team-development .container .team-info .image-info img {
+    width: 100%; }
+  .team-development .container .team-info .info h4 {
+    font-size: 13px; }
+  .team-development .container .team-info .info span {
+    font-size: 11px; }
+
+  .digits .container .row .col-4 h1 {
+    font-size: 18px; }
+  .digits .container .row .col-4 p {
+    font-size: 11px;
+    margin: 0; }
+
+  .footer h2 {
+    font-size: 22px;
+    text-align: center; }
+  .footer p {
+    font-size: 12px;
+    margin: 0;
+    text-align: center; }
+  .footer .social-icon {
+    text-align: center; }
+  .footer .input-group {
+    width: 300px;
+    margin: 5px auto;
+    text-align: center; } }
+/* Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  body, html {
+    overflow-x: hidden; }
+
+  .menu {
+    height: 200px;
+    width: 100%; }
+    .menu .svg {
+      top: 0;
+      left: 0;
+      display: none;
+      visibility: hidden;
+      opacity: 0; }
+    .menu .container-fluid {
+      background-color: black; }
+
+  .founder h2 {
+    font-size: 25px; }
+  .founder h4 {
+    font-size: 15px; }
+  .founder .container .row .col-4 p.fadeIn {
+    font-size: 12px; }
+  .founder .container .row .col-4 hr {
+    border: 0.5px solid #707070; }
+  .founder .container .row .col-8 hr {
+    border: 0.5px solid #707070; }
+  .founder .container .row .col-8 h4 {
+    margin: 0px; }
+  .founder .container .row .col-8 p {
+    font-size: 12px; }
+  .founder .container .row .col-8 p.hidden-smart {
+    display: none; }
+  .founder .container .row .col-8 .btn {
+    padding: 5px 10px;
+    font-size: 12px;
+    margin-top: 0px; }
+
+  .team-development .container .row h2 {
+    font-size: 25px; }
+  .team-development .container .row h4 {
+    font-size: 15px; }
+  .team-development .container .row .col-4 p.fadeIn {
+    font-size: 12px; }
+  .team-development .container .row .col-4 hr {
+    border: 0.5px solid #707070; }
+  .team-development .container .row .col-8 i {
+    font-size: 12px; }
+  .team-development .container .team-info .image-info img {
+    width: 100%; }
+  .team-development .container .team-info .info h4 {
+    font-size: 13px; }
+  .team-development .container .team-info .info span {
+    font-size: 11px; }
+
+  .digits .container .row .col-4 h1 {
+    font-size: 18px; }
+  .digits .container .row .col-4 p {
+    font-size: 11px;
+    margin: 0; }
+
+  .footer h2 {
+    font-size: 22px; }
+  .footer p {
+    font-size: 12px;
+    margin: 5px 0px; }
+  .footer .input-group {
+    width: 250px;
+    height: 30px; } }
+/* ----------- iPhone 6+ ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  body, html {
+    overflow-x: hidden; }
+
+  .menu {
+    height: 200px;
+    width: 100%; }
+    .menu .svg {
+      top: 0;
+      left: 0;
+      display: none;
+      visibility: hidden;
+      opacity: 0; }
+    .menu .container-fluid {
+      background-color: black; }
+
+  .founder h2 {
+    font-size: 25px; }
+  .founder h4 {
+    font-size: 15px; }
+  .founder .container .row .col-4 p.fadeIn {
+    font-size: 12px; }
+  .founder .container .row .col-4 hr {
+    border: 0.5px solid #707070; }
+  .founder .container .row .col-8 hr {
+    border: 0.5px solid #707070; }
+  .founder .container .row .col-8 h4 {
+    margin: 0px; }
+  .founder .container .row .col-8 p {
+    font-size: 12px; }
+  .founder .container .row .col-8 p.hidden-smart, .founder .container .row .col-8 p.hidden-smart2 {
+    display: none; }
+  .founder .container .row .col-8 .btn {
+    padding: 5px 10px;
+    font-size: 12px;
+    margin-top: 0px; }
+
+  .team-development .container .row h2 {
+    font-size: 25px; }
+  .team-development .container .row h4 {
+    font-size: 15px; }
+  .team-development .container .row .col-4 p.fadeIn {
+    font-size: 12px; }
+  .team-development .container .row .col-4 hr {
+    border: 0.5px solid #707070; }
+  .team-development .container .row .col-8 i {
+    font-size: 12px; }
+  .team-development .container .team-info .image-info img {
+    width: 100%; }
+  .team-development .container .team-info .info h4 {
+    font-size: 13px; }
+  .team-development .container .team-info .info span {
+    font-size: 11px; }
+
+  .digits .container .row .col-4 h1 {
+    font-size: 18px; }
+  .digits .container .row .col-4 p {
+    font-size: 11px;
+    margin: 0; }
+
+  .footer h2 {
+    font-size: 22px;
+    text-align: center; }
+  .footer p {
+    font-size: 12px;
+    margin: 0;
+    text-align: center; }
+  .footer .social-icon {
+    text-align: center; }
+  .footer .input-group {
+    width: 300px;
+    margin: 5px auto;
+    text-align: center; } }
+/* Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  body, html {
+    overflow-x: hidden; }
+
+  .menu {
+    height: 200px;
+    width: 100%; }
+    .menu .svg {
+      top: 0;
+      left: 0;
+      display: none;
+      visibility: hidden;
+      opacity: 0; }
+    .menu .container-fluid {
+      background-color: black; }
+
+  .founder h2 {
+    font-size: 25px; }
+  .founder h4 {
+    font-size: 15px; }
+  .founder .container .row .col-4 p.fadeIn {
+    font-size: 12px; }
+  .founder .container .row .col-4 hr {
+    border: 0.5px solid #707070; }
+  .founder .container .row .col-8 hr {
+    border: 0.5px solid #707070; }
+  .founder .container .row .col-8 h4 {
+    margin: 0px; }
+  .founder .container .row .col-8 p {
+    font-size: 12px; }
+  .founder .container .row .col-8 p.hidden-smart {
+    display: none; }
+  .founder .container .row .col-8 .btn {
+    padding: 5px 10px;
+    font-size: 12px;
+    margin-top: 0px; }
+
+  .team-development .container .row h2 {
+    font-size: 25px; }
+  .team-development .container .row h4 {
+    font-size: 15px; }
+  .team-development .container .row .col-4 p.fadeIn {
+    font-size: 12px; }
+  .team-development .container .row .col-4 hr {
+    border: 0.5px solid #707070; }
+  .team-development .container .row .col-8 i {
+    font-size: 12px; }
+  .team-development .container .team-info .image-info img {
+    width: 100%; }
+  .team-development .container .team-info .info h4 {
+    font-size: 13px; }
+  .team-development .container .team-info .info span {
+    font-size: 11px; }
+
+  .digits .container .row .col-4 h1 {
+    font-size: 18px; }
+  .digits .container .row .col-4 p {
+    font-size: 11px;
+    margin: 0; }
+
+  .footer h2 {
+    font-size: 22px; }
+  .footer p {
+    font-size: 12px;
+    margin: 5px 0px; }
+  .footer .input-group {
+    width: 250px;
+    height: 30px; } }
+/* ----------- iPhone 4 and 4S ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  body, html {
+    overflow-x: hidden; }
+
+  .menu {
+    height: 200px;
+    width: 100%; }
+    .menu .svg {
+      top: 0;
+      left: 0;
+      display: none;
+      visibility: hidden;
+      opacity: 0; }
+    .menu .container-fluid {
+      background-color: black; }
+
+  .founder h2 {
+    font-size: 25px; }
+  .founder h4 {
+    font-size: 15px; }
+  .founder .container .row .col-4 p.fadeIn {
+    font-size: 12px; }
+  .founder .container .row .col-4 hr {
+    border: 0.5px solid #707070; }
+  .founder .container .row .col-8 hr {
+    border: 0.5px solid #707070; }
+  .founder .container .row .col-8 h4 {
+    margin: 0px; }
+  .founder .container .row .col-8 p {
+    font-size: 12px; }
+  .founder .container .row .col-8 p.hidden-smart, .founder .container .row .col-8 p.hidden-smart2 {
+    display: none; }
+  .founder .container .row .col-8 .btn {
+    padding: 5px 10px;
+    font-size: 12px;
+    margin-top: 0px; }
+
+  .team-development .container .row h2 {
+    font-size: 25px; }
+  .team-development .container .row h4 {
+    font-size: 15px; }
+  .team-development .container .row .col-4 p.fadeIn {
+    font-size: 12px; }
+  .team-development .container .row .col-4 hr {
+    border: 0.5px solid #707070; }
+  .team-development .container .row .col-8 i {
+    font-size: 12px; }
+  .team-development .container .team-info .image-info img {
+    width: 100%; }
+  .team-development .container .team-info .info h4 {
+    font-size: 13px; }
+  .team-development .container .team-info .info span {
+    font-size: 11px; }
+
+  .digits .container .row .col-4 h1 {
+    font-size: 18px; }
+  .digits .container .row .col-4 p {
+    font-size: 11px;
+    margin: 0; }
+
+  .footer h2 {
+    font-size: 22px;
+    text-align: center; }
+  .footer p {
+    font-size: 12px;
+    margin: 0;
+    text-align: center; }
+  .footer .social-icon {
+    text-align: center; }
+  .footer .input-group {
+    width: 300px;
+    margin: 5px auto;
+    text-align: center; } }
+/* Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  body, html {
+    overflow-x: hidden; }
+
+  .menu {
+    height: 200px;
+    width: 100%; }
+    .menu .svg {
+      top: 0;
+      left: 0;
+      display: none;
+      visibility: hidden;
+      opacity: 0; }
+    .menu .container-fluid {
+      background-color: black; }
+
+  .founder h2 {
+    font-size: 25px; }
+  .founder h4 {
+    font-size: 15px; }
+  .founder .container .row .col-4 p.fadeIn {
+    font-size: 12px; }
+  .founder .container .row .col-4 hr {
+    border: 0.5px solid #707070; }
+  .founder .container .row .col-8 hr {
+    border: 0.5px solid #707070; }
+  .founder .container .row .col-8 h4 {
+    margin: 0px; }
+  .founder .container .row .col-8 p {
+    font-size: 12px; }
+  .founder .container .row .col-8 p.hidden-smart {
+    display: none; }
+  .founder .container .row .col-8 .btn {
+    padding: 5px 10px;
+    font-size: 12px;
+    margin-top: 0px; }
+
+  .team-development .container .row h2 {
+    font-size: 25px; }
+  .team-development .container .row h4 {
+    font-size: 15px; }
+  .team-development .container .row .col-4 p.fadeIn {
+    font-size: 12px; }
+  .team-development .container .row .col-4 hr {
+    border: 0.5px solid #707070; }
+  .team-development .container .row .col-8 i {
+    font-size: 12px; }
+  .team-development .container .team-info .image-info img {
+    width: 100%; }
+  .team-development .container .team-info .info h4 {
+    font-size: 13px; }
+  .team-development .container .team-info .info span {
+    font-size: 11px; }
+
+  .digits .container .row .col-4 h1 {
+    font-size: 18px; }
+  .digits .container .row .col-4 p {
+    font-size: 11px;
+    margin: 0; }
+
+  .footer h2 {
+    font-size: 22px; }
+  .footer p {
+    font-size: 12px;
+    margin: 5px 0px; }
+  .footer .input-group {
+    width: 250px;
+    height: 30px; } }
+/* ----------- iPhone 5 and 5S ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  body, html {
+    overflow-x: hidden; }
+
+  .menu {
+    height: 200px;
+    width: 100%; }
+    .menu .svg {
+      top: 0;
+      left: 0;
+      display: none;
+      visibility: hidden;
+      opacity: 0; }
+    .menu .container-fluid {
+      background-color: black; }
+
+  .founder h2 {
+    font-size: 25px; }
+  .founder h4 {
+    font-size: 15px; }
+  .founder .container .row .col-4 p.fadeIn {
+    font-size: 12px; }
+  .founder .container .row .col-4 hr {
+    border: 0.5px solid #707070; }
+  .founder .container .row .col-8 hr {
+    border: 0.5px solid #707070; }
+  .founder .container .row .col-8 h4 {
+    margin: 0px; }
+  .founder .container .row .col-8 p {
+    font-size: 12px; }
+  .founder .container .row .col-8 p.hidden-smart, .founder .container .row .col-8 p.hidden-smart2 {
+    display: none; }
+  .founder .container .row .col-8 .btn {
+    padding: 5px 10px;
+    font-size: 12px;
+    margin-top: 0px; }
+
+  .team-development .container .row h2 {
+    font-size: 25px; }
+  .team-development .container .row h4 {
+    font-size: 15px; }
+  .team-development .container .row .col-4 p.fadeIn {
+    font-size: 12px; }
+  .team-development .container .row .col-4 hr {
+    border: 0.5px solid #707070; }
+  .team-development .container .row .col-8 i {
+    font-size: 12px; }
+  .team-development .container .team-info .image-info img {
+    width: 100%; }
+  .team-development .container .team-info .info h4 {
+    font-size: 13px; }
+  .team-development .container .team-info .info span {
+    font-size: 11px; }
+
+  .digits .container .row .col-4 h1 {
+    font-size: 18px; }
+  .digits .container .row .col-4 p {
+    font-size: 11px;
+    margin: 0; }
+
+  .footer h2 {
+    font-size: 22px;
+    text-align: center; }
+  .footer p {
+    font-size: 12px;
+    margin: 0;
+    text-align: center; }
+  .footer .social-icon {
+    text-align: center; }
+  .footer .input-group {
+    width: 300px;
+    margin: 5px auto;
+    text-align: center; } }
+/* Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  body, html {
+    overflow-x: hidden; }
+
+  .menu {
+    height: 200px;
+    width: 100%; }
+    .menu .svg {
+      top: 0;
+      left: 0;
+      display: none;
+      visibility: hidden;
+      opacity: 0; }
+    .menu .container-fluid {
+      background-color: black; }
+
+  .founder h2 {
+    font-size: 25px; }
+  .founder h4 {
+    font-size: 15px; }
+  .founder .container .row .col-4 p.fadeIn {
+    font-size: 12px; }
+  .founder .container .row .col-4 hr {
+    border: 0.5px solid #707070; }
+  .founder .container .row .col-8 hr {
+    border: 0.5px solid #707070; }
+  .founder .container .row .col-8 h4 {
+    margin: 0px; }
+  .founder .container .row .col-8 p {
+    font-size: 12px; }
+  .founder .container .row .col-8 p.hidden-smart {
+    display: none; }
+  .founder .container .row .col-8 .btn {
+    padding: 5px 10px;
+    font-size: 12px;
+    margin-top: 0px; }
+
+  .team-development .container .row h2 {
+    font-size: 25px; }
+  .team-development .container .row h4 {
+    font-size: 15px; }
+  .team-development .container .row .col-4 p.fadeIn {
+    font-size: 12px; }
+  .team-development .container .row .col-4 hr {
+    border: 0.5px solid #707070; }
+  .team-development .container .row .col-8 i {
+    font-size: 12px; }
+  .team-development .container .team-info .image-info img {
+    width: 100%; }
+  .team-development .container .team-info .info h4 {
+    font-size: 13px; }
+  .team-development .container .team-info .info span {
+    font-size: 11px; }
+
+  .digits .container .row .col-4 h1 {
+    font-size: 18px; }
+  .digits .container .row .col-4 p {
+    font-size: 11px;
+    margin: 0; }
+
+  .footer h2 {
+    font-size: 22px; }
+  .footer p {
+    font-size: 12px;
+    margin: 5px 0px; }
+  .footer .input-group {
+    width: 250px;
+    height: 30px; } }
+
 /*# sourceMappingURL=about.css.map */

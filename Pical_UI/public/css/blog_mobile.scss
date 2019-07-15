@@ -1,0 +1,574 @@
+// COLOR
+$textColorGray: #868686;
+$textColorGraySubTitle: #4E4E4E;
+$borderColor: #707070;
+$backgroundColor: #F6F6F6; 
+$backgroundDigits: #4E4E4E;
+//FONT FAMILY
+$textFont: 'Montserrat', sans-serif;
+// FONSIZE
+$textBlog: 25px;
+$textNews: 15px;
+$textTitle: 15px;
+$textPical: 22px;
+$textP: 12px;
+// HEIGHT - WIDTH
+
+/* ----------- iPhone 6 ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+and (min-device-width: 375px) 
+and (max-device-width: 667px) 
+and (-webkit-min-device-pixel-ratio: 2) { 
+}
+
+/* Portrait */
+@media only screen
+and (min-device-width: 375px) 
+and (max-device-width: 667px) 
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+body,html{
+    overflow-x: hidden;
+  }
+  .menu{
+    height: 200px;
+    width: 100%;
+    .svg{
+      top: 0;
+      left: 0;
+      display: none;
+      visibility: hidden;
+      opacity: 0;
+    }
+    .container-fluid{
+      background-color: black;
+    }
+  }
+  .blog{
+    .container{
+      h2{
+        font-size: $textBlog; 
+      }
+      .row{
+        h4{
+          font-size: $textNews;
+        }
+      }
+      hr{
+        width: 100%;
+        border: 0.5px solid $borderColor;
+      }
+      .news{
+        .col-md-8{
+          p.titles{
+            font-size: $textTitle;
+          }
+        }
+      }
+    }
+  }
+  .footer{
+    h2{
+      font-size: $textPical;
+      text-align: center;
+    }
+    p{
+      font-size: $textP;
+      margin:0;
+      text-align: center;
+    }
+    .social-icon{
+      text-align: center;
+    }
+    .input-group{
+      width: 300px;
+      margin:5px auto;
+      text-align: center;
+    }
+  }
+}
+
+/* Landscape */
+@media only screen
+and (min-device-width: 375px) 
+and (max-device-width: 667px) 
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: landscape) { 
+  body,html{
+    overflow-x: hidden;
+  }
+  .menu{
+    height: 200px;
+    width: 100%;
+    .svg{
+      top: 0;
+      left: 0;
+      display: none;
+      visibility: hidden;
+      opacity: 0;
+    }
+    .container-fluid{
+      background-color: black;
+    }
+  }
+  .blog{
+    .container{
+      h2{
+        font-size: $textBlog; 
+      }
+      .row{
+        h4{
+          font-size: $textNews;
+        }
+      }
+      hr{
+        width: 100%;
+        border: 0.5px solid $borderColor;
+      }
+      .news{
+        .col-md-8{
+          p.titles{
+            font-size: $textTitle;
+          }
+        }
+      }
+      .hidden-smart {
+        display: none;
+      }
+    }
+  }
+  .footer{
+    h2{
+      font-size: $textPical;
+    }
+    p{
+      font-size: $textP;
+      margin:5px 0px;
+    }
+    .input-group{
+      width: 250px;
+    }
+  }
+}
+
+/* ----------- iPhone 6+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+and (min-device-width: 414px) 
+and (max-device-width: 736px) 
+and (-webkit-min-device-pixel-ratio: 3) { 
+
+}
+
+/* Portrait */
+@media only screen
+and (min-device-width: 414px) 
+and (max-device-width: 736px) 
+and (-webkit-min-device-pixel-ratio: 3)
+and (orientation: portrait) { 
+body,html{
+    overflow-x: hidden;
+  }
+  .menu{
+    height: 200px;
+    width: 100%;
+    .svg{
+      top: 0;
+      left: 0;
+      display: none;
+      visibility: hidden;
+      opacity: 0;
+    }
+    .container-fluid{
+      background-color: black;
+    }
+  }
+  .blog{
+    .container{
+      h2{
+        font-size: $textBlog; 
+      }
+      .row{
+        h4{
+          font-size: $textNews;
+        }
+      }
+      hr{
+        width: 100%;
+        border: 0.5px solid $borderColor;
+      }
+      .news{
+        .col-md-8{
+          p.titles{
+            font-size: $textTitle;
+          }
+        }
+      }
+    }
+  }
+  .footer{
+    h2{
+      font-size: $textPical;
+      text-align: center;
+    }
+    p{
+      font-size: $textP;
+      margin:0;
+      text-align: center;
+    }
+    .social-icon{
+      text-align: center;
+    }
+    .input-group{
+      width: 300px;
+      margin:5px auto;
+      text-align: center;
+    }
+  }
+}
+
+/* Landscape */
+@media only screen
+and (min-device-width: 414px) 
+and (max-device-width: 736px) 
+and (-webkit-min-device-pixel-ratio: 3)
+and (orientation: landscape) { 
+  body,html{
+    overflow-x: hidden;
+  }
+  .menu{
+    height: 200px;
+    width: 100%;
+    .svg{
+      top: 0;
+      left: 0;
+      display: none;
+      visibility: hidden;
+      opacity: 0;
+    }
+    .container-fluid{
+      background-color: black;
+    }
+  }
+  .blog{
+    .container{
+      h2{
+        font-size: $textBlog; 
+      }
+      .row{
+        h4{
+          font-size: $textNews;
+        }
+      }
+      hr{
+        width: 100%;
+        border: 0.5px solid $borderColor;
+      }
+      .news{
+        .col-md-8{
+          p.titles{
+            font-size: $textTitle;
+          }
+        }
+      }
+      .hidden-smart {
+        display: none;
+      }
+    }
+  }
+  .footer{
+    h2{
+      font-size: $textPical;
+    }
+    p{
+      font-size: $textP;
+      margin:5px 0px;
+    }
+    .input-group{
+      width: 250px;
+      height: 30px;
+    }
+  }
+}
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+and (min-device-width: 320px) 
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen
+and (min-device-width: 320px) 
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+  body,html{
+    overflow-x: hidden;
+  }
+  .menu{
+    height: 200px;
+    width: 100%;
+    .svg{
+      top: 0;
+      left: 0;
+      display: none;
+      visibility: hidden;
+      opacity: 0;
+    }
+    .container-fluid{
+      background-color: black;
+    }
+  }
+  .blog{
+    .container{
+      h2{
+        font-size: $textBlog; 
+      }
+      .row{
+        h4{
+          font-size: $textNews;
+        }
+      }
+      hr{
+        width: 100%;
+        border: 0.5px solid $borderColor;
+      }
+      .news{
+        .col-md-8{
+          p.titles{
+            font-size: $textTitle;
+          }
+        }
+      }
+    }
+  }
+  .footer{
+    h2{
+      font-size: $textPical;
+      text-align: center;
+    }
+    p{
+      font-size: $textP;
+      margin:0;
+      text-align: center;
+    }
+    .social-icon{
+      text-align: center;
+    }
+    .input-group{
+      width: 300px;
+      margin:5px auto;
+      text-align: center;
+    }
+  }
+}
+
+/* Landscape */
+@media only screen
+and (min-device-width: 320px) 
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: landscape) {
+  body,html{
+    overflow-x: hidden;
+  }
+  .menu{
+    height: 200px;
+    width: 100%;
+    .svg{
+      top: 0;
+      left: 0;
+      display: none;
+      visibility: hidden;
+      opacity: 0;
+    }
+    .container-fluid{
+      background-color: black;
+    }
+  }
+  .blog{
+    .container{
+      h2{
+        font-size: $textBlog; 
+      }
+      .row{
+        h4{
+          font-size: $textNews;
+        }
+      }
+      hr{
+        width: 100%;
+        border: 0.5px solid $borderColor;
+      }
+      .news{
+        .col-md-8{
+          p.titles{
+            font-size: $textTitle;
+          }
+        }
+      }
+      .hidden-smart {
+        display: none;
+      }
+    }
+  }
+  .footer{
+    h2{
+      font-size: $textPical;
+    }
+    p{
+      font-size: $textP;
+      margin:5px 0px;
+    }
+    .input-group{
+      width: 250px;
+    }
+  }
+}
+
+/* ----------- iPhone 5 and 5S ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+and (min-device-width: 320px) 
+and (max-device-width: 568px)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen
+and (min-device-width: 320px) 
+and (max-device-width: 568px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+  body,html{
+    overflow-x: hidden;
+  }
+  .menu{
+    height: 200px;
+    width: 100%;
+    .svg{
+      top: 0;
+      left: 0;
+      display: none;
+      visibility: hidden;
+      opacity: 0;
+    }
+    .container-fluid{
+      background-color: black;
+    }
+  }
+  .blog{
+    .container{
+      h2{
+        font-size: $textBlog; 
+      }
+      .row{
+        h4{
+          font-size: $textNews;
+        }
+      }
+      hr{
+        width: 100%;
+        border: 0.5px solid $borderColor;
+      }
+      .news{
+        .col-md-8{
+          p.titles{
+            font-size: $textTitle;
+          }
+        }
+      }
+    }
+  }
+  .footer{
+    h2{
+      font-size: $textPical;
+      text-align: center;
+    }
+    p{
+      font-size: $textP;
+      margin:0;
+      text-align: center;
+    }
+    .social-icon{
+      text-align: center;
+    }
+    .input-group{
+      width: 300px;
+      margin:5px auto;
+      text-align: center;
+    }
+  }
+}
+
+/* Landscape */
+@media only screen
+and (min-device-width: 320px) 
+and (max-device-width: 568px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: landscape) {
+  body,html{
+    overflow-x: hidden;
+  }
+  .menu{
+    height: 200px;
+    width: 100%;
+    .svg{
+      top: 0;
+      left: 0;
+      display: none;
+      visibility: hidden;
+      opacity: 0;
+    }
+    .container-fluid{
+      background-color: black;
+    }
+  }
+  .blog{
+    .container{
+      h2{
+        font-size: $textBlog; 
+      }
+      .row{
+        h4{
+          font-size: $textNews;
+        }
+      }
+      hr{
+        width: 100%;
+        border: 0.5px solid $borderColor;
+      }
+      .news{
+        .col-md-8{
+          p.titles{
+            font-size: $textTitle;
+          }
+        }
+      }
+      .hidden-smart {
+        display: none;
+      }
+    }
+  }
+  .footer{
+    h2{
+      font-size: $textPical;
+    }
+    p{
+      font-size: $textP;
+      margin:5px 0px;
+    }
+    .input-group{
+      width: 200px;
+    }
+  }
+}

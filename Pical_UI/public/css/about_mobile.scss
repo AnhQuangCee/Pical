@@ -1,0 +1,1166 @@
+// COLOR
+$textColorGray: #868686;
+$textColorGraySubTitle: #4E4E4E;
+$borderColor: #707070;
+$backgroundColor: #F6F6F6; 
+$backgroundDigits: #4E4E4E;
+//FONT FAMILY
+$textFont: 'Montserrat', sans-serif;
+// FONSIZE
+$textAbout: 25px;
+$textSubTitle: 12px;
+$textTitle: 15px;
+$textContent: 12px;
+$textTeamInfo: 13px;
+$textSubTeamInfo: 11px;
+$textDigits: 18px;
+$textPical: 22px;
+$textP: 12px;
+// HEIGHT - WIDTH
+
+
+/* ----------- iPhone 6 ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+and (min-device-width: 375px) 
+and (max-device-width: 667px) 
+and (-webkit-min-device-pixel-ratio: 2) { 
+
+}
+
+/* Portrait */
+@media only screen
+and (min-device-width: 375px) 
+and (max-device-width: 667px) 
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) { 
+  body,html{
+    overflow-x: hidden;
+  }
+  .menu{
+    height: 200px;
+    width: 100%;
+    .svg{
+      top: 0;
+      left: 0;
+      display: none;
+      visibility: hidden;
+      opacity: 0;
+    }
+    .container-fluid{
+      background-color: black;
+    }
+  }
+  .founder{
+    h2{
+      font-size: $textAbout;
+    }
+    h4{
+      font-size: $textTitle;
+    }
+    .container{
+      .row{ 
+        .col-4{
+          p.fadeIn{
+            font-size: $textSubTitle;
+          }
+          hr{
+            border: 0.5px solid $borderColor;
+          }
+        }
+        .col-8{
+          hr{
+            border: 0.5px solid $borderColor;
+          }
+          h4{
+            margin: 0px;
+          }
+          p{
+            font-size: $textContent; 
+          }
+          p.hidden-smart, p.hidden-smart2{
+            display: none;
+          }
+          .btn{
+            padding: 5px 10px;
+            font-size: $textSubTitle;
+            margin-top: 0px;
+          }
+        }
+      }
+    }
+
+  }
+  .team-development{
+    .container{
+      .row{ 
+        h2{
+          font-size: $textAbout;
+        }
+        h4{
+          font-size: $textTitle;
+        }
+        .col-4{
+          p.fadeIn{
+            font-size: $textSubTitle;
+          }
+          hr{
+            border: 0.5px solid $borderColor;
+          }
+        }
+        .col-8{
+          i{
+            font-size: $textSubTitle;
+          }
+        }
+      }
+      .team-info{
+        .image-info{
+          img{
+            width: 100%;
+          }
+        }
+        .info{
+          h4{
+            font-size: $textTeamInfo;
+          }
+          span{
+            font-size: $textSubTeamInfo;
+          }
+        }
+      }
+    }
+  }
+  .digits{
+    .container{
+      .row{
+        .col-4{
+         h1{
+          font-size: $textDigits;
+        }
+        p{
+          font-size: $textSubTeamInfo;
+          margin:0;
+        }
+      }
+    }
+  }
+
+}
+
+.footer{
+  h2{
+    font-size: $textPical;
+    text-align: center;
+  }
+  p{
+    font-size: $textP;
+    margin:0;
+    text-align: center;
+  }
+  .social-icon{
+    text-align: center;
+  }
+  .input-group{
+    width: 300px;
+    margin:5px auto;
+    text-align: center;
+  }
+}
+
+}
+
+/* Landscape */
+@media only screen
+and (min-device-width: 375px) 
+and (max-device-width: 667px) 
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: landscape) { 
+    body,html{
+    overflow-x: hidden;
+  }
+  .menu{
+    height: 200px;
+    width: 100%;
+    .svg{
+      top: 0;
+      left: 0;
+      display: none;
+      visibility: hidden;
+      opacity: 0;
+    }
+    .container-fluid{
+      background-color: black;
+    }
+  }
+  .founder{
+    h2{
+      font-size: $textAbout;
+    }
+    h4{
+      font-size: $textTitle;
+    }
+    .container{
+      .row{ 
+        .col-4{
+          p.fadeIn{
+            font-size: $textSubTitle;
+          }
+          hr{
+            border: 0.5px solid $borderColor;
+          }
+        }
+        .col-8{
+          hr{
+            border: 0.5px solid $borderColor;
+          }
+          h4{
+            margin: 0px;
+          }
+          p{
+            font-size: $textContent; 
+          }
+          p.hidden-smart{
+            display: none;
+          }
+          .btn{
+            padding: 5px 10px;
+            font-size: $textSubTitle;
+            margin-top: 0px;
+          }
+        }
+      }
+    }
+
+  }
+  .team-development{
+    .container{
+      .row{ 
+        h2{
+          font-size: $textAbout;
+        }
+        h4{
+          font-size: $textTitle;
+        }
+        .col-4{
+          p.fadeIn{
+            font-size: $textSubTitle;
+          }
+          hr{
+            border: 0.5px solid $borderColor;
+          }
+        }
+        .col-8{
+          i{
+            font-size: $textSubTitle;
+          }
+        }
+      }
+      .team-info{
+        .image-info{
+          img{
+            width: 100%;
+          }
+        }
+        .info{
+          h4{
+            font-size: $textTeamInfo;
+          }
+          span{
+            font-size: $textSubTeamInfo;
+          }
+        }
+      }
+    }
+  }
+  .digits{
+    .container{
+      .row{
+        .col-4{
+         h1{
+          font-size: $textDigits;
+        }
+        p{
+          font-size: $textSubTeamInfo;
+          margin:0;
+        }
+      }
+    }
+  }
+
+}
+
+.footer{
+    h2{
+      font-size: $textPical;
+    }
+    p{
+      font-size: $textP;
+      margin:5px 0px;
+    }
+    .input-group{
+      width: 250px;
+      height: 30px;
+    }
+  }
+}
+
+/* ----------- iPhone 6+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+and (min-device-width: 414px) 
+and (max-device-width: 736px) 
+and (-webkit-min-device-pixel-ratio: 3) { 
+
+}
+
+/* Portrait */
+@media only screen
+and (min-device-width: 414px) 
+and (max-device-width: 736px) 
+and (-webkit-min-device-pixel-ratio: 3)
+and (orientation: portrait) { 
+    body,html{
+    overflow-x: hidden;
+  }
+  .menu{
+    height: 200px;
+    width: 100%;
+    .svg{
+      top: 0;
+      left: 0;
+      display: none;
+      visibility: hidden;
+      opacity: 0;
+    }
+    .container-fluid{
+      background-color: black;
+    }
+  }
+  .founder{
+    h2{
+      font-size: $textAbout;
+    }
+    h4{
+      font-size: $textTitle;
+    }
+    .container{
+      .row{ 
+        .col-4{
+          p.fadeIn{
+            font-size: $textSubTitle;
+          }
+          hr{
+            border: 0.5px solid $borderColor;
+          }
+        }
+        .col-8{
+          hr{
+            border: 0.5px solid $borderColor;
+          }
+          h4{
+            margin: 0px;
+          }
+          p{
+            font-size: $textContent; 
+          }
+          p.hidden-smart, p.hidden-smart2{
+            display: none;
+          }
+          .btn{
+            padding: 5px 10px;
+            font-size: $textSubTitle;
+            margin-top: 0px;
+          }
+        }
+      }
+    }
+
+  }
+  .team-development{
+    .container{
+      .row{ 
+        h2{
+          font-size: $textAbout;
+        }
+        h4{
+          font-size: $textTitle;
+        }
+        .col-4{
+          p.fadeIn{
+            font-size: $textSubTitle;
+          }
+          hr{
+            border: 0.5px solid $borderColor;
+          }
+        }
+        .col-8{
+          i{
+            font-size: $textSubTitle;
+          }
+        }
+      }
+      .team-info{
+        .image-info{
+          img{
+            width: 100%;
+          }
+        }
+        .info{
+          h4{
+            font-size: $textTeamInfo;
+          }
+          span{
+            font-size: $textSubTeamInfo;
+          }
+        }
+      }
+    }
+  }
+  .digits{
+    .container{
+      .row{
+        .col-4{
+         h1{
+          font-size: $textDigits;
+        }
+        p{
+          font-size: $textSubTeamInfo;
+          margin:0;
+        }
+      }
+    }
+  }
+
+}
+
+.footer{
+  h2{
+    font-size: $textPical;
+    text-align: center;
+  }
+  p{
+    font-size: $textP;
+    margin:0;
+    text-align: center;
+  }
+  .social-icon{
+    text-align: center;
+  }
+  .input-group{
+    width: 300px;
+    margin:5px auto;
+    text-align: center;
+  }
+}
+}
+
+/* Landscape */
+@media only screen
+and (min-device-width: 414px) 
+and (max-device-width: 736px) 
+and (-webkit-min-device-pixel-ratio: 3)
+and (orientation: landscape) { 
+      body,html{
+    overflow-x: hidden;
+  }
+  .menu{
+    height: 200px;
+    width: 100%;
+    .svg{
+      top: 0;
+      left: 0;
+      display: none;
+      visibility: hidden;
+      opacity: 0;
+    }
+    .container-fluid{
+      background-color: black;
+    }
+  }
+  .founder{
+    h2{
+      font-size: $textAbout;
+    }
+    h4{
+      font-size: $textTitle;
+    }
+    .container{
+      .row{ 
+        .col-4{
+          p.fadeIn{
+            font-size: $textSubTitle;
+          }
+          hr{
+            border: 0.5px solid $borderColor;
+          }
+        }
+        .col-8{
+          hr{
+            border: 0.5px solid $borderColor;
+          }
+          h4{
+            margin: 0px;
+          }
+          p{
+            font-size: $textContent; 
+          }
+          p.hidden-smart{
+            display: none;
+          }
+          .btn{
+            padding: 5px 10px;
+            font-size: $textSubTitle;
+            margin-top: 0px;
+          }
+        }
+      }
+    }
+
+  }
+  .team-development{
+    .container{
+      .row{ 
+        h2{
+          font-size: $textAbout;
+        }
+        h4{
+          font-size: $textTitle;
+        }
+        .col-4{
+          p.fadeIn{
+            font-size: $textSubTitle;
+          }
+          hr{
+            border: 0.5px solid $borderColor;
+          }
+        }
+        .col-8{
+          i{
+            font-size: $textSubTitle;
+          }
+        }
+      }
+      .team-info{
+        .image-info{
+          img{
+            width: 100%;
+          }
+        }
+        .info{
+          h4{
+            font-size: $textTeamInfo;
+          }
+          span{
+            font-size: $textSubTeamInfo;
+          }
+        }
+      }
+    }
+  }
+  .digits{
+    .container{
+      .row{
+        .col-4{
+         h1{
+          font-size: $textDigits;
+        }
+        p{
+          font-size: $textSubTeamInfo;
+          margin:0;
+        }
+      }
+    }
+  }
+
+}
+
+.footer{
+    h2{
+      font-size: $textPical;
+    }
+    p{
+      font-size: $textP;
+      margin:5px 0px;
+    }
+    .input-group{
+      width: 250px;
+      height: 30px;
+    }
+  }
+
+}
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+and (min-device-width: 320px) 
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen
+and (min-device-width: 320px) 
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+    body,html{
+    overflow-x: hidden;
+  }
+  .menu{
+    height: 200px;
+    width: 100%;
+    .svg{
+      top: 0;
+      left: 0;
+      display: none;
+      visibility: hidden;
+      opacity: 0;
+    }
+    .container-fluid{
+      background-color: black;
+    }
+  }
+  .founder{
+    h2{
+      font-size: $textAbout;
+    }
+    h4{
+      font-size: $textTitle;
+    }
+    .container{
+      .row{ 
+        .col-4{
+          p.fadeIn{
+            font-size: $textSubTitle;
+          }
+          hr{
+            border: 0.5px solid $borderColor;
+          }
+        }
+        .col-8{
+          hr{
+            border: 0.5px solid $borderColor;
+          }
+          h4{
+            margin: 0px;
+          }
+          p{
+            font-size: $textContent; 
+          }
+          p.hidden-smart, p.hidden-smart2{
+            display: none;
+          }
+          .btn{
+            padding: 5px 10px;
+            font-size: $textSubTitle;
+            margin-top: 0px;
+          }
+        }
+      }
+    }
+
+  }
+  .team-development{
+    .container{
+      .row{ 
+        h2{
+          font-size: $textAbout;
+        }
+        h4{
+          font-size: $textTitle;
+        }
+        .col-4{
+          p.fadeIn{
+            font-size: $textSubTitle;
+          }
+          hr{
+            border: 0.5px solid $borderColor;
+          }
+        }
+        .col-8{
+          i{
+            font-size: $textSubTitle;
+          }
+        }
+      }
+      .team-info{
+        .image-info{
+          img{
+            width: 100%;
+          }
+        }
+        .info{
+          h4{
+            font-size: $textTeamInfo;
+          }
+          span{
+            font-size: $textSubTeamInfo;
+          }
+        }
+      }
+    }
+  }
+  .digits{
+    .container{
+      .row{
+        .col-4{
+         h1{
+          font-size: $textDigits;
+        }
+        p{
+          font-size: $textSubTeamInfo;
+          margin:0;
+        }
+      }
+    }
+  }
+
+}
+
+.footer{
+  h2{
+    font-size: $textPical;
+    text-align: center;
+  }
+  p{
+    font-size: $textP;
+    margin:0;
+    text-align: center;
+  }
+  .social-icon{
+    text-align: center;
+  }
+  .input-group{
+    width: 300px;
+    margin:5px auto;
+    text-align: center;
+  }
+}
+}
+
+/* Landscape */
+@media only screen
+and (min-device-width: 320px) 
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: landscape) {
+      body,html{
+    overflow-x: hidden;
+  }
+  .menu{
+    height: 200px;
+    width: 100%;
+    .svg{
+      top: 0;
+      left: 0;
+      display: none;
+      visibility: hidden;
+      opacity: 0;
+    }
+    .container-fluid{
+      background-color: black;
+    }
+  }
+  .founder{
+    h2{
+      font-size: $textAbout;
+    }
+    h4{
+      font-size: $textTitle;
+    }
+    .container{
+      .row{ 
+        .col-4{
+          p.fadeIn{
+            font-size: $textSubTitle;
+          }
+          hr{
+            border: 0.5px solid $borderColor;
+          }
+        }
+        .col-8{
+          hr{
+            border: 0.5px solid $borderColor;
+          }
+          h4{
+            margin: 0px;
+          }
+          p{
+            font-size: $textContent; 
+          }
+          p.hidden-smart{
+            display: none;
+          }
+          .btn{
+            padding: 5px 10px;
+            font-size: $textSubTitle;
+            margin-top: 0px;
+          }
+        }
+      }
+    }
+
+  }
+  .team-development{
+    .container{
+      .row{ 
+        h2{
+          font-size: $textAbout;
+        }
+        h4{
+          font-size: $textTitle;
+        }
+        .col-4{
+          p.fadeIn{
+            font-size: $textSubTitle;
+          }
+          hr{
+            border: 0.5px solid $borderColor;
+          }
+        }
+        .col-8{
+          i{
+            font-size: $textSubTitle;
+          }
+        }
+      }
+      .team-info{
+        .image-info{
+          img{
+            width: 100%;
+          }
+        }
+        .info{
+          h4{
+            font-size: $textTeamInfo;
+          }
+          span{
+            font-size: $textSubTeamInfo;
+          }
+        }
+      }
+    }
+  }
+  .digits{
+    .container{
+      .row{
+        .col-4{
+         h1{
+          font-size: $textDigits;
+        }
+        p{
+          font-size: $textSubTeamInfo;
+          margin:0;
+        }
+      }
+    }
+  }
+
+}
+
+.footer{
+    h2{
+      font-size: $textPical;
+    }
+    p{
+      font-size: $textP;
+      margin:5px 0px;
+    }
+    .input-group{
+      width: 250px;
+      height: 30px;
+    }
+  }
+
+}
+
+/* ----------- iPhone 5 and 5S ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+and (min-device-width: 320px) 
+and (max-device-width: 568px)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen
+and (min-device-width: 320px) 
+and (max-device-width: 568px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+    body,html{
+    overflow-x: hidden;
+  }
+  .menu{
+    height: 200px;
+    width: 100%;
+    .svg{
+      top: 0;
+      left: 0;
+      display: none;
+      visibility: hidden;
+      opacity: 0;
+    }
+    .container-fluid{
+      background-color: black;
+    }
+  }
+  .founder{
+    h2{
+      font-size: $textAbout;
+    }
+    h4{
+      font-size: $textTitle;
+    }
+    .container{
+      .row{ 
+        .col-4{
+          p.fadeIn{
+            font-size: $textSubTitle;
+          }
+          hr{
+            border: 0.5px solid $borderColor;
+          }
+        }
+        .col-8{
+          hr{
+            border: 0.5px solid $borderColor;
+          }
+          h4{
+            margin: 0px;
+          }
+          p{
+            font-size: $textContent; 
+          }
+          p.hidden-smart, p.hidden-smart2{
+            display: none;
+          }
+          .btn{
+            padding: 5px 10px;
+            font-size: $textSubTitle;
+            margin-top: 0px;
+          }
+        }
+      }
+    }
+
+  }
+  .team-development{
+    .container{
+      .row{ 
+        h2{
+          font-size: $textAbout;
+        }
+        h4{
+          font-size: $textTitle;
+        }
+        .col-4{
+          p.fadeIn{
+            font-size: $textSubTitle;
+          }
+          hr{
+            border: 0.5px solid $borderColor;
+          }
+        }
+        .col-8{
+          i{
+            font-size: $textSubTitle;
+          }
+        }
+      }
+      .team-info{
+        .image-info{
+          img{
+            width: 100%;
+          }
+        }
+        .info{
+          h4{
+            font-size: $textTeamInfo;
+          }
+          span{
+            font-size: $textSubTeamInfo;
+          }
+        }
+      }
+    }
+  }
+  .digits{
+    .container{
+      .row{
+        .col-4{
+         h1{
+          font-size: $textDigits;
+        }
+        p{
+          font-size: $textSubTeamInfo;
+          margin:0;
+        }
+      }
+    }
+  }
+
+}
+
+.footer{
+  h2{
+    font-size: $textPical;
+    text-align: center;
+  }
+  p{
+    font-size: $textP;
+    margin:0;
+    text-align: center;
+  }
+  .social-icon{
+    text-align: center;
+  }
+  .input-group{
+    width: 300px;
+    margin:5px auto;
+    text-align: center;
+  }
+}
+}
+
+/* Landscape */
+@media only screen
+and (min-device-width: 320px) 
+and (max-device-width: 568px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: landscape) {
+    body,html{
+    overflow-x: hidden;
+  }
+  .menu{
+    height: 200px;
+    width: 100%;
+    .svg{
+      top: 0;
+      left: 0;
+      display: none;
+      visibility: hidden;
+      opacity: 0;
+    }
+    .container-fluid{
+      background-color: black;
+    }
+  }
+  .founder{
+    h2{
+      font-size: $textAbout;
+    }
+    h4{
+      font-size: $textTitle;
+    }
+    .container{
+      .row{ 
+        .col-4{
+          p.fadeIn{
+            font-size: $textSubTitle;
+          }
+          hr{
+            border: 0.5px solid $borderColor;
+          }
+        }
+        .col-8{
+          hr{
+            border: 0.5px solid $borderColor;
+          }
+          h4{
+            margin: 0px;
+          }
+          p{
+            font-size: $textContent; 
+          }
+          p.hidden-smart{
+            display: none;
+          }
+          .btn{
+            padding: 5px 10px;
+            font-size: $textSubTitle;
+            margin-top: 0px;
+          }
+        }
+      }
+    }
+
+  }
+  .team-development{
+    .container{
+      .row{ 
+        h2{
+          font-size: $textAbout;
+        }
+        h4{
+          font-size: $textTitle;
+        }
+        .col-4{
+          p.fadeIn{
+            font-size: $textSubTitle;
+          }
+          hr{
+            border: 0.5px solid $borderColor;
+          }
+        }
+        .col-8{
+          i{
+            font-size: $textSubTitle;
+          }
+        }
+      }
+      .team-info{
+        .image-info{
+          img{
+            width: 100%;
+          }
+        }
+        .info{
+          h4{
+            font-size: $textTeamInfo;
+          }
+          span{
+            font-size: $textSubTeamInfo;
+          }
+        }
+      }
+    }
+  }
+  .digits{
+    .container{
+      .row{
+        .col-4{
+         h1{
+          font-size: $textDigits;
+        }
+        p{
+          font-size: $textSubTeamInfo;
+          margin:0;
+        }
+      }
+    }
+  }
+
+}
+
+.footer{
+    h2{
+      font-size: $textPical;
+    }
+    p{
+      font-size: $textP;
+      margin:5px 0px;
+    }
+    .input-group{
+      width: 250px;
+      height: 30px;
+    }
+  }
+}
