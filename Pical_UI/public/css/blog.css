@@ -379,11 +379,17 @@ body {
     display: none; }
 
   .footer h2 {
-    font-size: 22px; }
+    font-size: 22px;
+    text-align: center; }
   .footer p {
     font-size: 12px;
-    margin: 5px 0px; }
+    margin: 0;
+    text-align: center; }
+  .footer .social-icon {
+    text-align: center; }
   .footer .input-group {
-    width: 200px; } }
+    width: 300px;
+    margin: 5px auto;
+    text-align: center; } }
 
 /*# sourceMappingURL=blog.css.map */

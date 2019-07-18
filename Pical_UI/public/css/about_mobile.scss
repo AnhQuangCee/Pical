@@ -1151,16 +1151,22 @@ and (orientation: landscape) {
 }
 
 .footer{
-    h2{
-      font-size: $textPical;
-    }
-    p{
-      font-size: $textP;
-      margin:5px 0px;
-    }
-    .input-group{
-      width: 250px;
-      height: 30px;
-    }
+  h2{
+    font-size: $textPical;
+    text-align: center;
   }
+  p{
+    font-size: $textP;
+    margin:0;
+    text-align: center;
+  }
+  .social-icon{
+    text-align: center;
+  }
+  .input-group{
+    width: 300px;
+    margin:5px auto;
+    text-align: center;
+  }
+}
 }

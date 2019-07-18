@@ -7,11 +7,12 @@ $backgroundDigits: #4E4E4E;
 //FONT FAMILY
 $textFont: 'Montserrat', sans-serif;
 // FONSIZE
-$textBlog: 25px;
-$textNews: 15px;
+$textContact: 25px;
+$textSubContact: 15px;
 $textTitle: 15px;
 $textPical: 22px;
 $textP: 12px;
+$textTopic: 14px;
 // HEIGHT - WIDTH
 
 /* ----------- iPhone 6 ----------- */
@@ -21,15 +22,7 @@ $textP: 12px;
 and (min-device-width: 375px) 
 and (max-device-width: 667px) 
 and (-webkit-min-device-pixel-ratio: 2) { 
-}
-
-/* Portrait */
-@media only screen
-and (min-device-width: 375px) 
-and (max-device-width: 667px) 
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: portrait) {
-body,html{
+  body,html{
     overflow-x: hidden;
   }
   .menu{
@@ -46,30 +39,29 @@ body,html{
       background-color: black;
     }
   }
-  .blog{
+  .contact{
     .container{
-      h2{
-        font-size: $textBlog; 
-      }
       .row{
-        h4{
-          font-size: $textNews;
+        h2{
+          font-size: $textContact;
         }
-      }
-      hr{
-        width: 100%;
-        border: 0.5px solid $borderColor;
-      }
-      .news{
-        .col-md-8{
-          p.titles{
-            font-size: $textTitle;
-          }
+        p{
+          font-size: $textSubContact!important;
         }
       }
     }
   }
-  .footer{
+  
+
+}
+
+/* Portrait */
+@media only screen
+and (min-device-width: 375px) 
+and (max-device-width: 667px) 
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) { 
+.footer{
     h2{
       font-size: $textPical;
       text-align: center;
@@ -88,6 +80,7 @@ body,html{
       text-align: center;
     }
   }
+
 }
 
 /* Landscape */
@@ -96,49 +89,6 @@ and (min-device-width: 375px)
 and (max-device-width: 667px) 
 and (-webkit-min-device-pixel-ratio: 2)
 and (orientation: landscape) { 
-  body,html{
-    overflow-x: hidden;
-  }
-  .menu{
-    height: 200px;
-    width: 100%;
-    .svg{
-      top: 0;
-      left: 0;
-      display: none;
-      visibility: hidden;
-      opacity: 0;
-    }
-    .container-fluid{
-      background-color: black;
-    }
-  }
-  .blog{
-    .container{
-      h2{
-        font-size: $textBlog; 
-      }
-      .row{
-        h4{
-          font-size: $textNews;
-        }
-      }
-      hr{
-        width: 100%;
-        border: 0.5px solid $borderColor;
-      }
-      .news{
-        .col-md-8{
-          p.titles{
-            font-size: $textTitle;
-          }
-        }
-      }
-      .hidden-smart {
-        display: none;
-      }
-    }
-  }
   .footer{
     h2{
       font-size: $textPical;
@@ -149,6 +99,7 @@ and (orientation: landscape) {
     }
     .input-group{
       width: 250px;
+      height: 30px;
     }
   }
 }
@@ -160,16 +111,7 @@ and (orientation: landscape) {
 and (min-device-width: 414px) 
 and (max-device-width: 736px) 
 and (-webkit-min-device-pixel-ratio: 3) { 
-
-}
-
-/* Portrait */
-@media only screen
-and (min-device-width: 414px) 
-and (max-device-width: 736px) 
-and (-webkit-min-device-pixel-ratio: 3)
-and (orientation: portrait) { 
-body,html{
+    body,html{
     overflow-x: hidden;
   }
   .menu{
@@ -186,30 +128,27 @@ body,html{
       background-color: black;
     }
   }
-  .blog{
+  .contact{
     .container{
-      h2{
-        font-size: $textBlog; 
-      }
       .row{
-        h4{
-          font-size: $textNews;
+        h2{
+          font-size: $textContact;
         }
-      }
-      hr{
-        width: 100%;
-        border: 0.5px solid $borderColor;
-      }
-      .news{
-        .col-md-8{
-          p.titles{
-            font-size: $textTitle;
-          }
+        p{
+          font-size: $textSubContact!important;
         }
       }
     }
   }
-  .footer{
+}
+
+/* Portrait */
+@media only screen
+and (min-device-width: 414px) 
+and (max-device-width: 736px) 
+and (-webkit-min-device-pixel-ratio: 3)
+and (orientation: portrait) { 
+ .footer{
     h2{
       font-size: $textPical;
       text-align: center;
@@ -236,49 +175,6 @@ and (min-device-width: 414px)
 and (max-device-width: 736px) 
 and (-webkit-min-device-pixel-ratio: 3)
 and (orientation: landscape) { 
-  body,html{
-    overflow-x: hidden;
-  }
-  .menu{
-    height: 200px;
-    width: 100%;
-    .svg{
-      top: 0;
-      left: 0;
-      display: none;
-      visibility: hidden;
-      opacity: 0;
-    }
-    .container-fluid{
-      background-color: black;
-    }
-  }
-  .blog{
-    .container{
-      h2{
-        font-size: $textBlog; 
-      }
-      .row{
-        h4{
-          font-size: $textNews;
-        }
-      }
-      hr{
-        width: 100%;
-        border: 0.5px solid $borderColor;
-      }
-      .news{
-        .col-md-8{
-          p.titles{
-            font-size: $textTitle;
-          }
-        }
-      }
-      .hidden-smart {
-        display: none;
-      }
-    }
-  }
   .footer{
     h2{
       font-size: $textPical;
@@ -300,7 +196,7 @@ and (orientation: landscape) {
 and (min-device-width: 320px) 
 and (max-device-width: 480px)
 and (-webkit-min-device-pixel-ratio: 2) {
-
+  
 }
 
 /* Portrait */
@@ -309,7 +205,25 @@ and (min-device-width: 320px)
 and (max-device-width: 480px)
 and (-webkit-min-device-pixel-ratio: 2)
 and (orientation: portrait) {
-  body,html{
+}
+
+/* Landscape */
+@media only screen
+and (min-device-width: 320px) 
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: landscape) {
+
+}
+
+/* ----------- iPhone 5 and 5S ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+and (min-device-width: 320px) 
+and (max-device-width: 568px)
+and (-webkit-min-device-pixel-ratio: 2) {
+      body,html{
     overflow-x: hidden;
   }
   .menu{
@@ -326,25 +240,14 @@ and (orientation: portrait) {
       background-color: black;
     }
   }
-  .blog{
+  .contact{
     .container{
-      h2{
-        font-size: $textBlog; 
-      }
       .row{
-        h4{
-          font-size: $textNews;
+        h2{
+          font-size: $textContact;
         }
-      }
-      hr{
-        width: 100%;
-        border: 0.5px solid $borderColor;
-      }
-      .news{
-        .col-md-8{
-          p.titles{
-            font-size: $textTitle;
-          }
+        p{
+          font-size: $textSubContact!important;
         }
       }
     }
@@ -370,13 +273,22 @@ and (orientation: portrait) {
   }
 }
 
+/* Portrait */
+@media only screen
+and (min-device-width: 320px) 
+and (max-device-width: 568px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+  
+}
+
 /* Landscape */
 @media only screen
 and (min-device-width: 320px) 
-and (max-device-width: 480px)
+and (max-device-width: 568px)
 and (-webkit-min-device-pixel-ratio: 2)
 and (orientation: landscape) {
-  body,html{
+      body,html{
     overflow-x: hidden;
   }
   .menu{
@@ -393,29 +305,15 @@ and (orientation: landscape) {
       background-color: black;
     }
   }
-  .blog{
+  .contact{
     .container{
-      h2{
-        font-size: $textBlog; 
-      }
       .row{
-        h4{
-          font-size: $textNews;
+        h2{
+          font-size: $textContact;
         }
-      }
-      hr{
-        width: 100%;
-        border: 0.5px solid $borderColor;
-      }
-      .news{
-        .col-md-8{
-          p.titles{
-            font-size: $textTitle;
-          }
+        p{
+          font-size: $textSubContact!important;
         }
-      }
-      .hidden-smart {
-        display: none;
       }
     }
   }
@@ -429,26 +327,18 @@ and (orientation: landscape) {
     }
     .input-group{
       width: 250px;
+      height: 30px;
     }
   }
 }
 
-/* ----------- iPhone 5 and 5S ----------- */
+/* ----------- iPhone X  ----------- */
 
 /* Portrait and Landscape */
 @media only screen
-and (min-device-width: 320px) 
-and (max-device-width: 568px)
+and (min-device-width: 731px) 
+and (max-device-width: 823px)
 and (-webkit-min-device-pixel-ratio: 2) {
-
-}
-
-/* Portrait */
-@media only screen
-and (min-device-width: 320px) 
-and (max-device-width: 568px)
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: portrait) {
   body,html{
     overflow-x: hidden;
   }
@@ -464,99 +354,6 @@ and (orientation: portrait) {
     }
     .container-fluid{
       background-color: black;
-    }
-  }
-  .blog{
-    .container{
-      h2{
-        font-size: $textBlog; 
-      }
-      .row{
-        h4{
-          font-size: $textNews;
-        }
-      }
-      hr{
-        width: 100%;
-        border: 0.5px solid $borderColor;
-      }
-      .news{
-        .col-md-8{
-          p.titles{
-            font-size: $textTitle;
-          }
-        }
-      }
-    }
-  }
-  .footer{
-    h2{
-      font-size: $textPical;
-      text-align: center;
-    }
-    p{
-      font-size: $textP;
-      margin:0;
-      text-align: center;
-    }
-    .social-icon{
-      text-align: center;
-    }
-    .input-group{
-      width: 300px;
-      margin:5px auto;
-      text-align: center;
-    }
-  }
-}
-
-/* Landscape */
-@media only screen
-and (min-device-width: 320px) 
-and (max-device-width: 568px)
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: landscape) {
-  body,html{
-    overflow-x: hidden;
-  }
-  .menu{
-    height: 200px;
-    width: 100%;
-    .svg{
-      top: 0;
-      left: 0;
-      display: none;
-      visibility: hidden;
-      opacity: 0;
-    }
-    .container-fluid{
-      background-color: black;
-    }
-  }
-  .blog{
-    .container{
-      h2{
-        font-size: $textBlog; 
-      }
-      .row{
-        h4{
-          font-size: $textNews;
-        }
-      }
-      hr{
-        width: 100%;
-        border: 0.5px solid $borderColor;
-      }
-      .news{
-        .col-md-8{
-          p.titles{
-            font-size: $textTitle;
-          }
-        }
-      }
-      .hidden-smart {
-        display: none;
-      }
     }
   }
   .footer{

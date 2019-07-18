@@ -10,7 +10,8 @@ body {
   background-repeat: repeat;
   overflow: hidden; }
   .menu .nav-color {
-    background-color: black; }
+    background-color: black;
+    transition: 0.4s; }
   .menu .container a {
     color: white; }
   .menu .container .nav-link {
@@ -133,8 +134,7 @@ body {
     max-width: 100%; } }
 /* ----------- iPhone 6 ----------- */
 /* Portrait and Landscape */
-/* Portrait */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
   body, html {
     overflow-x: hidden; }
 
@@ -153,7 +153,7 @@ body {
   .topic .container .row {
     position: relative; }
     .topic .container .row .col-12 {
-      padding: 0px 5px 10px 0px; }
+      padding: 0px 0px 10px 0px; }
       .topic .container .row .col-12 .image-block {
         position: absolute;
         top: -45px; }
@@ -191,7 +191,7 @@ body {
       .topic .container .row .col-12 .navbar-toggler {
         margin: auto;
         margin-right: 0px; }
-        .topic .container .row .col-12 .navbar-toggler .fa-bars {
+        .topic .container .row .col-12 .navbar-toggler .fas {
           color: black !important; }
         .topic .container .row .col-12 .navbar-toggler:hover {
           margin: auto;
@@ -199,6 +199,25 @@ body {
         .topic .container .row .col-12 .navbar-toggler:focus {
           margin: auto;
           margin-right: 0px; }
+      .topic .container .row .col-12 .navbar-default {
+        margin: 20px 0px 0px 0px; }
+      .topic .container .row .col-12 ul {
+        display: inline !important;
+        padding: 0px 10px;
+        float: left;
+        width: 100%; }
+        .topic .container .row .col-12 ul li.nav-item {
+          float: left;
+          display: inline !important; }
+          .topic .container .row .col-12 ul li.nav-item a.nav-link {
+            display: inline !important;
+            line-height: 30px;
+            padding: 0 !important;
+            border: none !important;
+            color: #868686; }
+            .topic .container .row .col-12 ul li.nav-item a.nav-link:hover {
+              border: none !important;
+              color: black; }
 
   .footer h2 {
     font-size: 22px;
@@ -213,9 +232,108 @@ body {
     width: 300px;
     margin: 5px auto;
     text-align: center; } }
+/* Portrait */
 /* Landscape */
 /* ----------- iPhone 6+ ----------- */
 /* Portrait and Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+  body, html {
+    overflow-x: hidden; }
+
+  .menu {
+    height: 200px;
+    width: 100%; }
+    .menu .svg {
+      top: 0;
+      left: 0;
+      display: none;
+      visibility: hidden;
+      opacity: 0; }
+    .menu .container-fluid {
+      background-color: black; }
+
+  .topic .container .row {
+    position: relative; }
+    .topic .container .row .col-12 {
+      padding: 0px 0px 10px 0px; }
+      .topic .container .row .col-12 .image-block {
+        position: absolute;
+        top: -45px; }
+        .topic .container .row .col-12 .image-block .circular--landscape {
+          display: inline-block;
+          position: relative;
+          height: 100px;
+          width: 100px;
+          overflow: hidden;
+          border-radius: 50%; }
+        .topic .container .row .col-12 .image-block .circular--landscape img {
+          width: auto;
+          height: 100%;
+          margin-left: -45px; }
+        .topic .container .row .col-12 .image-block .circular--portrait {
+          border: 5px solid white;
+          box-shadow: 0px 2px 6px #a9a9a9;
+          position: relative;
+          height: 100px;
+          width: 100px;
+          overflow: hidden;
+          border-radius: 50%; }
+        .topic .container .row .col-12 .image-block .circular--portrait img {
+          width: 100%;
+          height: auto; }
+        .topic .container .row .col-12 .image-block img {
+          height: 100px;
+          width: 100px; }
+      .topic .container .row .col-12 .name {
+        position: relative;
+        color: black;
+        font-size: 20px;
+        top: -45px;
+        left: 110px; }
+      .topic .container .row .col-12 .navbar-toggler {
+        margin: auto;
+        margin-right: 0px; }
+        .topic .container .row .col-12 .navbar-toggler .fas {
+          color: black !important; }
+        .topic .container .row .col-12 .navbar-toggler:hover {
+          margin: auto;
+          margin-right: 0px; }
+        .topic .container .row .col-12 .navbar-toggler:focus {
+          margin: auto;
+          margin-right: 0px; }
+      .topic .container .row .col-12 .navbar-default {
+        margin: 20px 0px 0px 0px; }
+      .topic .container .row .col-12 ul {
+        display: inline !important;
+        padding: 0px 10px;
+        float: left;
+        width: 100%; }
+        .topic .container .row .col-12 ul li.nav-item {
+          float: left;
+          display: inline !important; }
+          .topic .container .row .col-12 ul li.nav-item a.nav-link {
+            display: inline !important;
+            line-height: 30px;
+            padding: 0 !important;
+            border: none !important;
+            color: #868686; }
+            .topic .container .row .col-12 ul li.nav-item a.nav-link:hover {
+              border: none !important;
+              color: black; }
+
+  .footer h2 {
+    font-size: 22px;
+    text-align: center; }
+  .footer p {
+    font-size: 12px;
+    margin: 0;
+    text-align: center; }
+  .footer .social-icon {
+    text-align: center; }
+  .footer .input-group {
+    width: 300px;
+    margin: 5px auto;
+    text-align: center; } }
 /* Portrait */
 /* Landscape */
 /* ----------- iPhone 4 and 4S ----------- */
@@ -224,7 +342,208 @@ body {
 /* Landscape */
 /* ----------- iPhone 5 and 5S ----------- */
 /* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  body, html {
+    overflow-x: hidden; }
+
+  .menu {
+    height: 200px;
+    width: 100%; }
+    .menu .svg {
+      top: 0;
+      left: 0;
+      display: none;
+      visibility: hidden;
+      opacity: 0; }
+    .menu .container-fluid {
+      background-color: black; }
+
+  .topic .container .row {
+    position: relative; }
+    .topic .container .row .col-12 {
+      padding: 0px 0px 10px 0px; }
+      .topic .container .row .col-12 .image-block {
+        position: absolute;
+        top: -45px; }
+        .topic .container .row .col-12 .image-block .circular--landscape {
+          display: inline-block;
+          position: relative;
+          height: 100px;
+          width: 100px;
+          overflow: hidden;
+          border-radius: 50%; }
+        .topic .container .row .col-12 .image-block .circular--landscape img {
+          width: auto;
+          height: 100%;
+          margin-left: -45px; }
+        .topic .container .row .col-12 .image-block .circular--portrait {
+          border: 5px solid white;
+          box-shadow: 0px 2px 6px #a9a9a9;
+          position: relative;
+          height: 100px;
+          width: 100px;
+          overflow: hidden;
+          border-radius: 50%; }
+        .topic .container .row .col-12 .image-block .circular--portrait img {
+          width: 100%;
+          height: auto; }
+        .topic .container .row .col-12 .image-block img {
+          height: 100px;
+          width: 100px; }
+      .topic .container .row .col-12 .name {
+        position: relative;
+        color: black;
+        font-size: 20px;
+        top: -42px;
+        left: 110px;
+        font-size: 17px; }
+      .topic .container .row .col-12 .navbar-toggler {
+        margin: auto;
+        margin-right: 0px; }
+        .topic .container .row .col-12 .navbar-toggler .fas {
+          color: black !important; }
+        .topic .container .row .col-12 .navbar-toggler:hover {
+          margin: auto;
+          margin-right: 0px; }
+        .topic .container .row .col-12 .navbar-toggler:focus {
+          margin: auto;
+          margin-right: 0px; }
+      .topic .container .row .col-12 .navbar-default {
+        margin: 20px 0px 0px 0px; }
+      .topic .container .row .col-12 ul {
+        display: inline !important;
+        padding: 0px 10px;
+        float: left;
+        width: 100%; }
+        .topic .container .row .col-12 ul li.nav-item {
+          float: left;
+          margin-left: 28px !important;
+          display: inline !important; }
+          .topic .container .row .col-12 ul li.nav-item a.nav-link {
+            display: inline !important;
+            line-height: 30px;
+            padding: 0 !important;
+            border: none !important;
+            color: #868686;
+            font-size: 14px; }
+            .topic .container .row .col-12 ul li.nav-item a.nav-link:hover {
+              border: none !important;
+              color: black; }
+
+  .footer h2 {
+    font-size: 22px;
+    text-align: center; }
+  .footer p {
+    font-size: 12px;
+    margin: 0;
+    text-align: center; }
+  .footer .social-icon {
+    text-align: center; }
+  .footer .input-group {
+    width: 300px;
+    margin: 5px auto;
+    text-align: center; } }
 /* Portrait */
 /* Landscape */
+/* ----------- iPhone X  ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 731px) and (max-device-width: 823px) and (-webkit-min-device-pixel-ratio: 2) {
+  body, html {
+    overflow-x: hidden; }
+
+  .menu {
+    height: 200px;
+    width: 100%; }
+    .menu .svg {
+      top: 0;
+      left: 0;
+      display: none;
+      visibility: hidden;
+      opacity: 0; }
+    .menu .container-fluid {
+      background-color: black; }
+
+  .topic .container .row {
+    position: relative; }
+    .topic .container .row .col-12 {
+      padding: 0px 0px 10px 0px; }
+      .topic .container .row .col-12 .image-block {
+        position: absolute;
+        top: -42px; }
+        .topic .container .row .col-12 .image-block .circular--landscape {
+          display: inline-block;
+          position: relative;
+          height: 100px;
+          width: 100px;
+          overflow: hidden;
+          border-radius: 50%; }
+        .topic .container .row .col-12 .image-block .circular--landscape img {
+          width: auto;
+          height: 100%;
+          margin-left: -45px; }
+        .topic .container .row .col-12 .image-block .circular--portrait {
+          border: 5px solid white;
+          box-shadow: 0px 2px 6px #a9a9a9;
+          position: relative;
+          height: 100px;
+          width: 100px;
+          overflow: hidden;
+          border-radius: 50%; }
+        .topic .container .row .col-12 .image-block .circular--portrait img {
+          width: 100%;
+          height: auto; }
+        .topic .container .row .col-12 .image-block img {
+          height: 100px;
+          width: 100px; }
+      .topic .container .row .col-12 .name {
+        position: relative;
+        color: black;
+        font-size: 20px;
+        top: -45px;
+        left: 110px; }
+      .topic .container .row .col-12 .navbar-toggler {
+        margin: auto;
+        margin-right: 0px; }
+        .topic .container .row .col-12 .navbar-toggler .fas {
+          color: black !important; }
+        .topic .container .row .col-12 .navbar-toggler:hover {
+          margin: auto;
+          margin-right: 0px; }
+        .topic .container .row .col-12 .navbar-toggler:focus {
+          margin: auto;
+          margin-right: 0px; }
+      .topic .container .row .col-12 .navbar-default {
+        margin: 20px 0px 0px 0px; }
+      .topic .container .row .col-12 ul {
+        display: inline !important;
+        padding: 0px 10px;
+        float: left;
+        width: 100%; }
+        .topic .container .row .col-12 ul li.nav-item {
+          float: left;
+          display: inline !important; }
+          .topic .container .row .col-12 ul li.nav-item a.nav-link {
+            display: inline !important;
+            line-height: 30px;
+            padding: 0 !important;
+            border: none !important;
+            color: #868686; }
+            .topic .container .row .col-12 ul li.nav-item a.nav-link:hover {
+              border: none !important;
+              color: black; }
+
+  .footer h2 {
+    font-size: 22px;
+    text-align: center; }
+  .footer p {
+    font-size: 12px;
+    margin: 0;
+    text-align: center; }
+  .footer .social-icon {
+    text-align: center; }
+  .footer .input-group {
+    width: 300px;
+    margin: 5px auto;
+    text-align: center; } }
 
 /*# sourceMappingURL=albums.css.map */

@@ -16,8 +16,8 @@
 			<div class="container">
 			<nav class="navbar navbar-expand-lg navbar-inverse">
 				<a class="navbar-brand" href="#">Pical</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
+				<button style="color: white; border-color: white" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<i class="fas fa-bars"></i>
 				</button>
 
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -51,46 +51,49 @@
 	<div class="topic">
 		<div class="container">
 			<div class="row">
-				<div class="col-4 ">
+				<div class="col-md-4 col-12">
 					<div class="image-block">
 						<div class="circular--portrait ">
-							
-						<img src="images/trang6.jpg" alt="">
+							<img src="images/trang6.jpg" alt="">
 						</div>
-						<span>Cathy Kane</span>
+					<div class="name">Cathy Kane</div>
 					</div>
 				</div>
-				<div class="col-8">
-					<ul class="nav navbar-default justify-content-end">
-						<li class="nav-item">
-							<a class="nav-link active" href="#">Profile</a>
-						</li>
-						<li class="nav-item ml-5">
-							<a class="nav-link" href="#">Albums</a>
-						</li>
-						<li class="nav-item ml-5">
-							<a class="nav-link" href="#">Galleries</a>
-						</li>
-						<li class="nav-item ml-5">
-							<a class="nav-link" href="#">Blog</a>
-						</li>
-						<li class="nav-item ml-5">
-							<a class="nav-link" href="#">Log out</a>
-						</li>
-					</ul>
+				
+				<div class="col-md-8 col-12 navbar navbar-expand-lg">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarShow" aria-controls="navbarShow" aria-expanded="false" aria-label="Toggle navigation">
+						<i class="fas fa-caret-down"></i>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarShow">
+
+						<ul class="nav navbar-default justify-content-center">
+							<li class="nav-item">
+								<a class="nav-link active" href="#">Profile<span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item ml-5">
+								<a class="nav-link" href="#">Albums</a>
+							</li>
+							<li class="nav-item ml-5">
+								<a class="nav-link" href="#">Galleries</a>
+							</li>
+							<li class="nav-item ml-5">
+								<a class="nav-link" href="#">Blog</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<!-- end topic -->
+		<!-- end topic -->
 	<hr>
 	<div class="profile">
 		<div class="container">
 			<div class="row">
-				<div class="col-4">
+				<div class="col-md-4 col-12">
 					
 				</div>
-				<div class="col-8">
+				<div class="col-md-8 col-12">
 					<div class="row text-center">
 						<div class="col-12">
 							<p class="title">Profile</p>
@@ -98,7 +101,7 @@
 					</div>
 					<div class="row username">
 						
-						<div class="col-md-4">
+						<div class="col-md-4 hidden-smart">
 							<h5>Username</h5>
 						</div>
 						<div class="col-md-8">
@@ -108,7 +111,7 @@
 					<!-- end username input -->
 
 					<div class="row username">
-						<div class="col-md-4">
+						<div class="col-md-4 hidden-smart">
 							<h5>Email</h5>
 						</div>
 						<div class="col-md-8">
@@ -118,7 +121,7 @@
 					<!-- end email -->
 
 					<div class="row username">
-						<div class="col-md-4">
+						<div class="col-md-4 hidden-smart">
 							<h5>Password</h5>
 						</div>
 						<div class="col-md-8">
@@ -128,7 +131,7 @@
 					<!-- end password -->
 
 					<div class="row username">
-						<div class="col-md-4">
+						<div class="col-md-4 hidden-smart">
 							<h5>Gender</h5>
 						</div>
 						<div class="col-md-8">
@@ -141,7 +144,7 @@
 					<!-- end gender -->
 
 					<div class="row username">
-						<div class="col-md-4">
+						<div class="col-md-4 hidden-smart">
 							<h5>Date of birth</h5>
 						</div>
 						<div class="col-md-8">
@@ -151,7 +154,7 @@
 					<!-- end date of birth -->
 
 					<div class="row username">
-						<div class="col-md-4">
+						<div class="col-md-4 hidden-smart">
 							<h5>Title</h5>
 						</div>
 						<div class="col-md-8">
@@ -161,7 +164,7 @@
 					<!-- title -->
 					<div class="row button">
 						<div class="col-md-8"></div>
-						<div class="col-md-4">
+						<div class="col-md-4 button-mobile">
 							<div class="row"></div>
 							<a href="account.html" class="btn btn-info cancel">Cancel</a>
 							<a href="chatroom.html" class="btn btn-info ok">Ok</a>
@@ -173,31 +176,31 @@
 	</div>
 	
 	<div class="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-4 logo-info">
-					<h3>Pical</h3>
-					<p>@ 2019 All Rights Reserved.</p>
-					<div class="input-group mb-2">
-						<input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Give me feedback">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-5 logo-info">
+						<h2>Pical</h2>
+						<p>@ 2019 All Rights Reserved.</p>
+						<div class="input-group mb-2">
+							<input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Give me feedback">
+						</div>
 					</div>
-				</div>
-				<div class="col-4"></div>
-				<div class="col-4 contact-info text-right">
-					<p>Phone number: 037 562 4006</p>
-					<p>Email: pical@gmail.com</p>
-					<p>Address: 36 Best Lane, New York</p>
-					<div class="social-icon">
-						<span><i class="fab fa-facebook-f"></i></span>
-						<span><i class="fab fa-twitter"></i></span>
-						<span><i class="fab fa-flickr"></i></span>
-						<span><i class="fab fa-twitter"></i></span>
-						<span><i class="fab fa-flickr"></i></span>
+					<div class="col-md-4 col-sm-2"></div>
+					<div class="col-md-4 col-sm-5 contact-info text-right">
+						<p>Phone number: 037 562 4006</p>
+						<p>Email: pical@gmail.com</p>
+						<p>Address: 36 Best Lane, New York</p>
+						<div class="social-icon">
+							<span><i class="fab fa-facebook-f"></i></span>
+							<span><i class="fab fa-twitter"></i></span>
+							<span><i class="fab fa-flickr"></i></span>
+							<span><i class="fab fa-twitter"></i></span>
+							<span><i class="fab fa-flickr"></i></span>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="https://kit.fontawesome.com/77d5e8e104.js"></script>
