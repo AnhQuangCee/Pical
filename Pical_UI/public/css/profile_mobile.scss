@@ -42,6 +42,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
   .topic{
     .container{
       .row{
+        padding: 0px 4px;
         position: relative;
         .col-12{
           padding: 0px 0px 10px 0px;
@@ -86,8 +87,9 @@ and (-webkit-min-device-pixel-ratio: 2) {
             position: relative;
             color: black;
             font-size: $textName;
-            top: -45px;
+            top: -42px;
             left: 110px;
+            font-size: 17px;
           }
           .navbar-toggler{
             .fas{
@@ -108,19 +110,22 @@ and (-webkit-min-device-pixel-ratio: 2) {
             margin: 20px 0px 0px 0px;
           }
           ul{
-            display: inline!important;
             padding: 0px 10px;
             float: left;
             width: 100%;
             li.nav-item{
               float: left;
               display: inline!important;
+              .ml-5{
+                margin-left: auto;
+              }
               a.nav-link{
                 display: inline!important;
                 line-height: 30px;
                 padding: 0!important;
                 border:none!important;
                 color: $textColorGray;
+                font-size: $textTopic;
                 &:hover{
                   border:none!important;
                   color: black;
@@ -231,6 +236,7 @@ and (-webkit-min-device-pixel-ratio: 3) {
   .topic{
     .container{
       .row{
+        padding: 0px 4px;
         position: relative;
         .col-12{
           padding: 0px 0px 10px 0px;
@@ -275,8 +281,9 @@ and (-webkit-min-device-pixel-ratio: 3) {
             position: relative;
             color: black;
             font-size: $textName;
-            top: -45px;
+            top: -42px;
             left: 110px;
+            font-size: 17px;
           }
           .navbar-toggler{
             .fas{
@@ -297,19 +304,22 @@ and (-webkit-min-device-pixel-ratio: 3) {
             margin: 20px 0px 0px 0px;
           }
           ul{
-            display: inline!important;
             padding: 0px 10px;
             float: left;
             width: 100%;
             li.nav-item{
               float: left;
               display: inline!important;
+              .ml-5{
+                margin-left: auto;
+              }
               a.nav-link{
                 display: inline!important;
                 line-height: 30px;
                 padding: 0!important;
                 border:none!important;
                 color: $textColorGray;
+                font-size: $textTopic;
                 &:hover{
                   border:none!important;
                   color: black;
@@ -442,7 +452,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
       background-color: black;
     }
   }
-  .topic{
+.topic{
     .container{
       .row{
         position: relative;
@@ -489,8 +499,9 @@ and (-webkit-min-device-pixel-ratio: 2) {
             position: relative;
             color: black;
             font-size: $textName;
-            top: -45px;
+            top: -42px;
             left: 110px;
+            font-size: 17px;
           }
           .navbar-toggler{
             .fas{
@@ -511,19 +522,22 @@ and (-webkit-min-device-pixel-ratio: 2) {
             margin: 20px 0px 0px 0px;
           }
           ul{
-            display: inline!important;
             padding: 0px 10px;
             float: left;
             width: 100%;
             li.nav-item{
               float: left;
               display: inline!important;
+              .ml-5{
+                margin-left: auto!important;
+              }
               a.nav-link{
                 display: inline!important;
                 line-height: 30px;
                 padding: 0!important;
                 border:none!important;
                 color: $textColorGray;
+                font-size: $textTopic;
                 &:hover{
                   border:none!important;
                   color: black;
@@ -655,7 +669,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
             }
 
             position: absolute;
-            top: -42px;
+            top: -45px;
             img{
               height: 100px;
               width: 100px;
@@ -666,8 +680,9 @@ and (-webkit-min-device-pixel-ratio: 2) {
             position: relative;
             color: black;
             font-size: $textName;
-            top: -45px;
+            top: -42px;
             left: 110px;
+            font-size: 17px;
           }
           .navbar-toggler{
             .fas{
@@ -688,19 +703,22 @@ and (-webkit-min-device-pixel-ratio: 2) {
             margin: 20px 0px 0px 0px;
           }
           ul{
-            display: inline!important;
             padding: 0px 10px;
             float: left;
             width: 100%;
             li.nav-item{
               float: left;
               display: inline!important;
+              .ml-5{
+                margin-left: auto;
+              }
               a.nav-link{
                 display: inline!important;
                 line-height: 30px;
                 padding: 0!important;
                 border:none!important;
                 color: $textColorGray;
+                font-size: $textTopic;
                 &:hover{
                   border:none!important;
                   color: black;
