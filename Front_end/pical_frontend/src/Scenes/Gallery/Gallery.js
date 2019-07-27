@@ -4,7 +4,6 @@ import WOW from 'wowjs';
 import Footer from '../../Components/Footer';
 import MenuPAG from '../../Components/MenuPAG';
 import './css/gallery.scss';
-import './js/gallery';
 import ImageG from './ImageG';
 
 class Gallery extends Component {

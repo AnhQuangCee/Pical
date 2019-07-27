@@ -1,21 +1,14 @@
-// COLOR
 $textColorGray: #868686;
 $textColorGraySubTitle: #4E4E4E;
 $borderColor: #707070;
-$backgroundColor: #F6F6F6; 
-$backgroundDigits: #4E4E4E;
+$signupButton: #089F9F;
 //FONT FAMILY
 $textFont: 'Montserrat', sans-serif;
 // FONSIZE
-$textBlog: 25px;
-$textSuggested: 12px;
-$textTitle: 18px;
-$textPical: 22px;
-$textP: 12px;
+$textContent: 14px;
+$textTitle: 20px;
+$textHeader: 25px;
 // HEIGHT - WIDTH
-/* ----------- iPhone 4 and 4S ----------- */
-
-
 /* ----------- iPhone 6 ----------- */
 
 /* Portrait and Landscape */
@@ -23,66 +16,62 @@ $textP: 12px;
 and (min-device-width: 375px) 
 and (max-device-width: 667px) 
 and (-webkit-min-device-pixel-ratio: 2) { 
-	body,html{
-		overflow-x: hidden;
-	}
-	.menu{
-		height: 200px;
-		width: 100%;
-		.svg{
-			top: 0;
-			left: 0;
-			display: none;
-			visibility: hidden;
-			opacity: 0;
-		}
-		.container-fluid{
-			background-color: black;
-		}
-		.container{
-			.search-box{
-				.col-12{
-					h3{
-						font-size: $textTitle;
-						margin-top: 15px;
-					}
-					.row{
-						.col-12{
-							input{
-								height: 20px;
-							}
-							p{
-								font-size: $textSuggested;
-							}
-						}
-					}
-				}
-			}
-
-		}
-	}
-	.topic{
-		.container-fluid{
-			.row{
-				.col-12{
-					ul{
-						border:none!important;
-						
-						li{
-							margin:0;
-							a.nav-link{
-								display: inline!important;
-							}
-
-							&:hover{
-								border:none!important;
-							}
-						}
-					}
-				}
-			}
-		}
-	}
+  html,body{
+    font-family: $textFont;
+    height: 100%;
+    width: 100%;
+    background: none;
+    background-position: center center;
+    background-repeat: repeat;
+    overflow-y: hidden;
+  }
+  .signup{
+    height: 100%;
+    width: 100%;
+    border-radius: 0px;
+    .container-fluid{
+      .row{
+        .picture{
+          padding-top: 10%;
+          border-radius: 0px;
+          height: 150px;
+          h3{
+            font-size: $textTitle;
+          }
+          p{
+            font-size: $textContent;
+          }
+          .btn{
+            padding: 5px 10px;
+            font-size: $textContent;
+          }
+        }
+        .signupForm{
+          width: 100%;
+          text-align: center;
+          h1{
+            font-size: $textHeader;
+          }
+          .signupForm1{
+            width: 100%;
+            margin-left: 0%;
+            .iconbox{
+              padding: 0px 18%;
+              .icon1{
+              padding-left: 0px;
+            }
+            .icon2{
+              padding-left: 0px;
+            }
+            .icon3{
+              padding-left: 0px;
+            }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 /* Portrait */
@@ -130,6 +119,9 @@ and (-webkit-min-device-pixel-ratio: 3)
 and (orientation: landscape) { 
 
 }
+
+/* ----------- iPhone 4 and 4S ----------- */
+
 /* Portrait and Landscape */
 @media only screen
 and (min-device-width: 320px) 

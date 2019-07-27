@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './css/pical.scss';
-import './js/index'
 import Nav from '../../Components/Nav';
 
 class Pical extends Component {

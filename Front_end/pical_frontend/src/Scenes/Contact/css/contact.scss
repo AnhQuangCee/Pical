@@ -97,6 +97,12 @@ body{
 					&:hover{
 						border-bottom: 5px solid $borderColor;
 					}
+					&:focus{
+						border-bottom: 5px solid $borderColor;
+					}
+					&:active{
+						border-bottom: 5px solid $borderColor;
+					}
 				}
 			}
 		}

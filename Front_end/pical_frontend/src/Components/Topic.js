@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import '../About/css/about.scss';
+import '../Scenes/About/css/about.scss';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 class Topic extends Component {
     render() {
@@ -10,13 +11,13 @@ class Topic extends Component {
                         <div className="col-12">
                             <ul className="nav navbar-default justify-content-center">
                                 <li className="nav-item">
-                                    <a className="nav-link active" href="#">About</a>
+                                    <Link className="nav-link" to="/about">About</Link>
                                 </li>
                                 <li className="nav-item ml-5">
-                                    <a className="nav-link" href="#">Contact</a>
+                                    <Link className="nav-link" to="/contact">Contact</Link>
                                 </li>
                                 <li className="nav-item ml-5">
-                                    <a className="nav-link" href="#">Support</a>
+                                    <Link className="nav-link" to="/">Support</Link>
                                 </li>
                             </ul>
                         </div>

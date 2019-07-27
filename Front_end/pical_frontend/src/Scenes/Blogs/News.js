@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './css/blog.scss';
 
 class News extends Component {
     render() {

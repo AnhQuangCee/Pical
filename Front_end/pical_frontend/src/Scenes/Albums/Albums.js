@@ -4,7 +4,6 @@ import WOW from 'wowjs';
 import Footer from '../../Components/Footer';
 import MenuPAG from '../../Components/MenuPAG';
 import './css/albums.scss';
-import './js/albums';
 import ImageA from './ImageA';
 
 class Albums extends Component {

@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import Nav from '../../Components/Nav';
 import MenuAC from '../../Components/MenuAC';
-import WOW from 'wowjs';
-import Footer from '../../Components/Footer';
 import News from './News';
-import './css/blog.scss';
 import Trending from './Trending';
 import Tutorials from './Tutorials';
+import Footer from '../../Components/Footer';
+import './css/blog.scss';
+import WOW from 'wowjs';
 
 class Blogs extends Component {
     componentDidMount() {

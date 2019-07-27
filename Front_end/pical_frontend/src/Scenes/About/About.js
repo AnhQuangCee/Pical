@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Nav from '../../Components/Nav';
 import MenuAC from '../../Components/MenuAC';
 import WOW from 'wowjs';
-import Topic from './Topic';
+import Topic from '../../Components/Topic';
 import Founder from './Founder';
 import TeamDev from './TeamDev';
 import Digits from './Digits';
@@ -13,6 +13,7 @@ class About extends Component {
     componentDidMount() {
         new WOW.WOW().init();
     }
+
     render() {
         return (
             <div>

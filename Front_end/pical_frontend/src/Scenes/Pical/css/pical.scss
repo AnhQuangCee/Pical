@@ -30,9 +30,12 @@ body{
 			color: white;
 		}
 		.nav-link{
-			color: white;
+			color: wheat;
 			&:hover{
-				color: black;
+				color: white;
+			}
+			&:focus{
+				color: white;
 			}
 			font-size: $textHeader;
 		}

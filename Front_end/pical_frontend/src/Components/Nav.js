@@ -1,8 +1,30 @@
 import React, { Component } from 'react';
-import './index';
-import './pical.scss';
+import './css/nav.scss';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 class Nav extends Component {
+    componentDidMount() {
+        this.nav();
+    }
+    nav = () => {
+        var navColor = document.querySelector('.fixed-top');
+        var scrollStatus = 'down100';
+
+        window.addEventListener('scroll', function () {
+            if (window.pageYOffset > 100) {
+                if (scrollStatus == 'down100') {
+                    navColor.classList.add('nav-color');
+                    scrollStatus = 'up100';
+                }
+            }
+            else {
+                if (scrollStatus == 'up100') {
+                    navColor.classList.remove('nav-color');
+                    scrollStatus = 'down100';
+                }
+            }
+        })
+    }
     render() {
         return (
             <nav className="navbar navbar-expand-lg navbar-light">
@@ -13,19 +35,19 @@ class Nav extends Component {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav ml-auto">
                         <li className="nav-item active mr-5">
-                            <a className="nav-link" href="#">Explore <span className="sr-only">(current)</span></a>
+                            <Link className="nav-link" to="/">Home<span className="sr-only">(current)</span></Link>
                         </li>
                         <li className="nav-item mr-5">
-                            <a className="nav-link" href="#">License</a>
+                            <Link className="nav-link" to="/">License</Link>
                         </li>
                         <li className="nav-item mr-5">
-                            <a className="nav-link" href="#">About</a>
+                            <Link className="nav-link" to="/about">About</Link>
                         </li>
                         <li className="nav-item mr-5">
-                            <a className="nav-link" href="#">Upload</a>
+                            <Link className="nav-link" to="/">Upload</Link>
                         </li>
                         <li className="nav-item mr-5">
-                            <a className="nav-link" href="#">Sign up</a>
+                            <Link className="nav-link" to="/signup">Sign up</Link>
                         </li>
                     </ul>
                 </div>

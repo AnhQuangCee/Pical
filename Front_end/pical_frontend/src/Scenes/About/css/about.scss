@@ -31,7 +31,7 @@ $textDigitsH1: 50px;
 	}
 }
 body{
-	font-family: $textFont;
+	font-family: $textFont!important;
 }
 
 .menu{
@@ -81,6 +81,7 @@ body{
 	}
 }
 .topic{
+	font-family: $textFont;
 	.container-fluid{
 		.row{
 			.col-12{
@@ -94,6 +95,12 @@ body{
 					border-bottom: 5px solid white;
 					transition: 0.4s;
 					&:hover{
+						border-bottom: 5px solid $borderColor;
+					}
+					&:focus{
+						border-bottom: 5px solid $borderColor;
+					}
+					&:active{
 						border-bottom: 5px solid $borderColor;
 					}
 				}

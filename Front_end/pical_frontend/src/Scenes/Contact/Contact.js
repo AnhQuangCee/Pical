@@ -3,7 +3,7 @@ import WOW from 'wowjs';
 import Nav from '../../Components/Nav';
 import MenuAC from '../../Components/MenuAC';
 import Footer from '../../Components/Footer';
-import Topic from './Topic';
+import Topic from '../../Components/Topic';
 import Form from './Form';
 
 class Contact extends Component {

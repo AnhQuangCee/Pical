@@ -11,6 +11,7 @@ class TeamDev extends Component {
                             <p className="wow fadeIn" data-wow-duration="2s">Creative hub</p>
                             <h4 className="wow fadeInLeft">Team development</h4>
                             <hr />
+                            <br></br>
                         </div>
                         <div className="col-8">
                             <i>"We are a hard-working team that is fully focused on high-end

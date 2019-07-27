@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../Scenes/Profile/css/profile.scss';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 class MenuPAG extends Component {
     render() {
@@ -22,16 +23,16 @@ class MenuPAG extends Component {
                   <div className="collapse navbar-collapse" id="navbarShow">
                     <ul className="nav navbar-default justify-content-center">
                       <li className="nav-item">
-                        <a className="nav-link active" href="#">Profile<span className="sr-only">(current)</span></a>
+                        <Link className="nav-link" to="/profile">Profile<span className="sr-only">(current)</span></Link>
                       </li>
                       <li className="nav-item ml-5">
-                        <a className="nav-link" href="#">Albums</a>
+                        <Link className="nav-link" to="/albums">Albums</Link>
                       </li>
                       <li className="nav-item ml-5">
-                        <a className="nav-link" href="#">Galleries</a>
+                        <Link className="nav-link" to="/gallery">Gallery</Link>
                       </li>
                       <li className="nav-item ml-5">
-                        <a className="nav-link" href="#">Blog</a>
+                        <Link className="nav-link" to="/blogs">Blogs</Link>
                       </li>
                     </ul>
                   </div>

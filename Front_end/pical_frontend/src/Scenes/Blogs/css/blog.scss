@@ -1,5 +1,5 @@
 // PICTURE
-$backgroundIndex: '/images/background (17).png';
+$backgroundIndex: '/images/background (5).png';
 // COLOR
 $textColorGray: #868686;
 $textColorGraySubTitle: #4E4E4E;
@@ -43,19 +43,7 @@ body{
 	background-image: url($backgroundIndex);
 	height: 500px;
 
-	svg{
-		position: relative;
-		top: 90%;
-		left: 1%;
-	}
-	.svg path,line,rect,text,tspan{
-		stroke: white;
-		fill: none;
-	}
-	.svg .g3 path{
-		fill:white;
-		opacity: 0;
-	}
+	
 	.nav-color{
 		background-color:black;
 	}
@@ -122,7 +110,8 @@ body{
 		hr{
 			border: 2px solid $borderColor;
 			width: 92%;
-			margin-right: 0;
+			margin-left: 7%;
+			margin-top: 14px;
 		}
 		h4{
 			margin: 0;
@@ -146,4 +135,4 @@ body{
 }
 
 //Responsive
-@import "blog_mobile";
+@import "blog_mobile.scss";
