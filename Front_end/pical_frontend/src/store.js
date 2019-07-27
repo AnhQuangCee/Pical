@@ -10,8 +10,6 @@ const allReducer = (state = picalInitialState, action) => {
         case "ADD_DATA":
             console.log("Ke noi thanh cong!");
             return state
-        case ACTION_TYPE_2:
-            return state
         default:
             return state
     }

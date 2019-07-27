@@ -1,18 +1,12 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import './css/pical.scss';
-import Nav from '../../Components/Nav';
-import TrendingPical from './TrendingPical';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Nav from '../../Components/Nav';
 
-class Pical extends Component {
-    test = () => {
-        this.props.testData();
-    }
+class Popular extends Component {
     render() {
         return (
             <div>
-                <div className="menu">
+            <div className="menu">
                     <div className="container-fluid fixed-top">
                         <div className="container">
                             <Nav></Nav>
@@ -65,8 +59,8 @@ class Pical extends Component {
                         </div>
                     </div>
                 </div>
-                {/* end topic */}
-                <div className="container-fluid">
+            <div className="picture-group">
+            <div className="container-fluid">
                 <div className="row">
                     <div className="column">
                         <img src="images/background (2).png" style={{ width: '100%' }} alt="" />
@@ -100,21 +94,10 @@ class Pical extends Component {
                     </div>
                 </div>
             </div>
-            </div>
+        </div>
+        </div>
         );
     }
 }
 
-const mapStateToProps = (state, ownProps) => {
-    return {
-        test: state.testConnect
-    }
-}
-const mapDispatchToProps = (dispatch, ownProps) => {
-    return {
-        testData: () => {
-            dispatch({ type: "ADD_DATA" })
-        }
-    }
-}
-export default connect(mapStateToProps, mapDispatchToProps)(Pical);
+export default Popular;

@@ -8,6 +8,11 @@ import Albums from './Albums/Albums';
 import Gallery from './Gallery/Gallery';
 import Blogs from './Blogs/Blogs';
 import Signup from './Signup/Signup';
+import TrendingPical from './Pical/TrendingPical';
+import Popular from './Pical/Popular';
+import Creative from './Pical/Creative';
+import Service from './Pical/Service';
+import Editorial from './Pical/Editorial';
 
 class Root extends Component {
     render() {
@@ -21,6 +26,11 @@ class Root extends Component {
                 <Route path='/gallery' exact component={Gallery}></Route>
                 <Route path='/blogs' exact component={Blogs}></Route>
                 <Route path='/signup' exact component={Signup}></Route>
+                <Route path='/trending' exact component={TrendingPical}></Route>
+                <Route path='/popular' exact component={Popular}></Route>
+                <Route path='/creative' exact component={Creative}></Route>
+                <Route path='/editorial' exact component={Editorial}></Route>
+                <Route path='/service' exact component={Service}></Route>
             </div>
         );
     }
