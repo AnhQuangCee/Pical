@@ -3,6 +3,9 @@ import './css/pical.scss';
 import Nav from '../../Components/Nav';
 
 class Pical extends Component {
+    test = () => {
+        this.props.testData();
+    }
     render() {
         return (
             <div>
@@ -39,7 +42,7 @@ class Pical extends Component {
                         <div className="row">
                             <div className="col-12">
                                 <ul className="nav navbar-default justify-content-center">
-                                    <li className="nav-item">
+                                    <li className="nav-item" onClick = {() => this.test()}>
                                         <a className="nav-link active" href="#">Trending</a>
                                     </li>
                                     <li className="nav-item ml-5">
@@ -101,4 +104,16 @@ class Pical extends Component {
     }
 }
 
+const mapStateToProps = (state, ownProps) => {
+    return {
+        test: state.testConnect
+    }
+}
+const mapDispatchToProps = (dispatch, ownProps) => {
+    return {
+        testData: () => {
+            dispatch({type:"ADD_DATA"})
+        }
+    }
+}
 export default Pical;
