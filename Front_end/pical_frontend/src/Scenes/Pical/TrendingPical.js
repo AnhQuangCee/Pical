@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Nav from '../../Components/Nav';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Topic from '../../Components/Topic';
+import TopicPical from './TopicPical';
 
 class TrendingPical extends Component {
     render() {
@@ -34,31 +36,7 @@ class TrendingPical extends Component {
                     </div>
                 </div>
                 {/* end menu */}
-                <div className="topic">
-                    <div className="container-fluid">
-                        <div className="row">
-                            <div className="col-12">
-                                <ul className="nav navbar-default justify-content-center">
-                                    <li className="nav-item">
-                                        <Link className="nav-link active" to="/trending">Trending</Link>
-                                    </li>
-                                    <li className="nav-item ml-5">
-                                        <Link className="nav-link" to="/popular">Popular</Link>
-                                    </li>
-                                    <li className="nav-item ml-5">
-                                        <Link className="nav-link" to="/creative">Creative</Link>
-                                    </li>
-                                    <li className="nav-item ml-5">
-                                        <Link className="nav-link" to="/editorial">Editorial</Link>
-                                    </li>
-                                    <li className="nav-item ml-5">
-                                        <Link className="nav-link" to="/service">Service</Link>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <TopicPical></TopicPical>
             <div className="picture-group">
             <div className="container-fluid">
                 <div className="row">

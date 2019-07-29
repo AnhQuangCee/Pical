@@ -13,7 +13,7 @@ class Founder extends Component {
                             <h4 className="wow fadeInLeft">Founder</h4>
                             <hr />
                             <br></br>
-                            <img src="images/trang6.jpg" style={{ width: '100%' }} />
+                            <img src="images/trang6.jpg" style={{ width: '100%' }} alt=""/>
                         </div>
                         <div className="col-8">
                             <h4>Pical is fully focused on high-end
