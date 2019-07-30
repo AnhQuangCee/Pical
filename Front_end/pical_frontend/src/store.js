@@ -1,28 +1,21 @@
+import {requestPosts} from './actions/index';
+import allReducer from './reducers/picalReducers';
+
 var redux = require('redux');
 const axios = require('axios');
 
-const getProductData = () => {
-    return(
-    axios.get('http://localhost:4000/getData')
-      .then((res) => console.log(res.data)
-    )
-)}
+//get data from Database
+// const getProductData = () => {
+//     return(
+//     axios.get('http://localhost:4000/getData')
+//       .then((res) => console.log(res.data)
+//     )
+// )}
+
 //Create store
-const picalInitialState = {
-    testConnect: 'test',
-    data: null
-}
-
-const allReducer = (state = picalInitialState, action) => {
-    switch (action.type) {
-        case "ADD_DATA":
-            JSON.stringify(getProductData());
-            return state
-        default:
-            return state
-    }
-}
-
 var store = redux.createStore(allReducer);
-
+store.dispatch(requestPosts());
+store.subscribe(function(){
+    console.log(JSON.stringify(store.getState()));
+})
 export default store;
