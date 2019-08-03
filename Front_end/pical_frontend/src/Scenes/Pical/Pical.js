@@ -6,12 +6,68 @@ import TrendingPical from './TrendingPical';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Topic from '../../Components/Topic';
 import TopicPical from './TopicPical';
+import callAPI from './../../Service/apiCaller';
+import ImagesCol1 from './ImagesCol1';
+import ImagesCol2 from './ImagesCol2';
+import ImagesCol3 from './ImagesCol3';
 
 class Pical extends Component {
-    test = () => {
-        this.props.testData();
+    constructor(props) {
+        super(props);
+        this.state = {
+            getData: []
+        }
+    }
+
+    componentDidMount() {
+        callAPI('getData', 'GET', null).then(res => {
+            this.setState({
+                getData: res.data
+            })
+        });
+    }
+
+    printImageDataCol1 = () => {
+        if (this.state.getData !== null) {
+            return this.state.getData.map((value, key) => {
+                return (
+                    <ImagesCol1
+                        key = {key}
+                        link = {value.link}
+                    />
+                )
+            })
+        }
+    }
+
+    printImageDataCol2 = () => {
+        if (this.state.getData !== null) {
+            return this.state.getData.map((value, key) => {
+                return (
+                    <ImagesCol2
+                        key = {key}
+                        link = {value.link}
+                    />
+                )
+            })
+        }
+    }
+
+    printImageDataCol3 = () => {
+        if (this.state.getData !== null) {
+            return this.state.getData.map((value, key) => {
+                return (
+                    <ImagesCol3
+                        key = {key}
+                        link = {value.link}
+                    />
+                )
+            })
+        }
     }
     render() {
+        var { getData } = this.state;
+        console.log(getData);
         return (
             <div>
                 <div className="menu">
@@ -45,39 +101,18 @@ class Pical extends Component {
                 <TopicPical></TopicPical>
                 {/* end topic */}
                 <div className="container-fluid">
-                <div className="row">
-                    <div className="column">
-                        <img src="images/background (2).png" style={{ width: '100%' }} alt="" />
-                        <img src="images/background (4).png" style={{ width: '100%' }} alt="" />
-                        <img src="images/background (3).png" style={{ width: '100%' }} alt="" />
-                        <img src="images/girl1.jpg" style={{ width: '100%' }} alt="" />
-                        <img src="images/trang1.png" style={{ width: '100%' }} />
-                        <img src="images/background (4).png" style={{ width: '100%' }} alt="" />
-                        <img src="images/trang6.jpg" style={{ width: '100%' }} />
-                        <img src="images/background (5).png" style={{ width: '100%' }} alt="" />
-                    </div>
-                    <div className="column">
-                        <img src="images/background (3).png" style={{ width: '100%' }} alt="" />
-                        <img src="images/trang1.png" style={{ width: '100%' }} />
-                        <img src="images/background (6).png" style={{ width: '100%' }} alt="" />
-                        <img src="images/background (4).png" style={{ width: '100%' }} alt="" />
-                        <img src="images/girl1.jpg" style={{ width: '100%' }} />
-                        <img src="images/trang6.jpg" style={{ width: '100%' }} />
-                        <img src="images/background (7).png" style={{ width: '100%' }} alt="" />
-                        <img src="images/background (8).png" style={{ width: '100%' }} alt="" />
-                    </div>
-                    <div className="column">
-                        <img src="images/background (7).png" style={{ width: '100%' }} alt="" />
-                        <img src="images/background (9).png" style={{ width: '100%' }} alt="" />
-                        <img src="images/background (4).png" style={{ width: '100%' }} alt="" />
-                        <img src="images/girl1.jpg" style={{ width: '100%' }} />
-                        <img src="images/trang1.png" style={{ width: '100%' }} />
-                        <img src="images/background (8).png" style={{ width: '100%' }} alt="" />
-                        <img src="images/background (5).png" style={{ width: '100%' }} alt="" />
-                        <img src="images/trang6.jpg" style={{ width: '100%' }} alt="" />
+                    <div className="row">
+                        <div className="column">
+                            {this.printImageDataCol1()}
+                        </div>
+                        <div className="column">
+                            {this.printImageDataCol2()}
+                        </div>
+                        <div className="column">
+                            {this.printImageDataCol3()}
+                        </div>
                     </div>
                 </div>
-            </div>
             </div>
         );
     }

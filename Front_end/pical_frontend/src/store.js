@@ -1,5 +1,5 @@
-import {requestPosts} from './actions/index';
-import allReducer from './reducers/picalReducers';
+import {requestPosts} from './actions';
+import allReducer from './reducers/rootReducers';
 
 var redux = require('redux');
 const axios = require('axios');
@@ -15,7 +15,7 @@ const axios = require('axios');
 //Create store
 var store = redux.createStore(allReducer);
 store.dispatch(requestPosts());
-store.subscribe(function(){
-    console.log(JSON.stringify(store.getState()));
-})
+// console.log(store.dispatch(requestPosts()));
+console.log(store.getState());
+
 export default store;

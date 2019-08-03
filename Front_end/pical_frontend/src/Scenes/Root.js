@@ -18,7 +18,7 @@ class Root extends Component {
     render() {
         return (
             <div>
-                <Route path='/' exact component={TrendingPical}></Route>
+                <Route path='/' exact component={Pical}></Route>
                 <Route path='/contact' exact component={Contact}></Route>
                 <Route path='/about' exact component={About}></Route>
                 <Route path='/profile' exact component={Profile}></Route>

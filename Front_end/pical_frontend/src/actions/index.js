@@ -1,5 +1,5 @@
-import * as ActionsTypes from '../constants/index';
+import * as ActionsTypes from '../constants/actionsTypes';
 
 export const requestPosts = () => ({
-    type: ActionsTypes.REQUEST_POSTS
+    type: ActionsTypes.PICAL_IMAGES
 })

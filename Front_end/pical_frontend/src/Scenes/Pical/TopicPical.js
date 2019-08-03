@@ -3,9 +3,9 @@ import { connect } from 'react-redux';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 class TopicPical extends Component {
-    test = () => {
-        this.props.testData();
-    }
+    // test = () => {
+    //     this.props.testData();
+    // }
     render() {
         return (
             <div className="topic">
@@ -14,7 +14,7 @@ class TopicPical extends Component {
                             <div className="col-12">
                                 <ul className="nav navbar-default justify-content-center">
                                     <li className="nav-item">
-                                        <Link className="nav-link active" to="/trending" onClick={()=>this.test()}>Trending</Link>
+                                        <Link className="nav-link active" to="/trending" >Trending</Link>
                                     </li>
                                     <li className="nav-item ml-5">
                                         <Link className="nav-link" to="/popular">Popular</Link>
@@ -41,11 +41,11 @@ const mapStateToProps = (state, ownProps) => {
         test: state.testConnect
     }
 }
-const mapDispatchToProps = (dispatch, ownProps) => {
-    return {
-        testData: () => {
-            dispatch({ type: "ADD_DATA" })
-        }
-    }
-}
-export default connect(mapStateToProps, mapDispatchToProps)(TopicPical);
+// const mapDispatchToProps = (dispatch, ownProps) => {
+//     return {
+//         testData: () => {
+//             dispatch({ type: "ADD_DATA" })
+//         }
+//     }
+// }
+export default connect(mapStateToProps)(TopicPical);
