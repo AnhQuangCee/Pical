@@ -1,0 +1,24 @@
+{
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "extends": [
+        "react-app",
+        "plugin:react/recommended",
+        "eslint-config-airbnb",
+        "prettier"
+    ],
+    "rules":{
+        "semi": 1,
+        "react/prop-types": 1,
+        "react/jsx-max-props-per-line": "warning",
+        "linebreak-style":"off",
+        "prettier/prettier":["error"]
+    },
+    "plugins": ["prettier"]
+}
