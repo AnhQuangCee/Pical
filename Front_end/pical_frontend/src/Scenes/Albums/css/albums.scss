@@ -1,13 +1,13 @@
 // PICTURE
-$backgroundIndex: '/images/background (4).png';
+$backgroundIndex: "/images/background (4).png";
 // COLOR
-$textColorGray: #4E4E4E;
-$textColorGraySubTitle: #4E4E4E;
+$textColorGray: #4e4e4e;
+$textColorGraySubTitle: #4e4e4e;
 $borderColor: #707070;
-$backgroundColor: #F6F6F6; 
-$backgroundDigits: #4E4E4E;
+$backgroundColor: #f6f6f6;
+$backgroundDigits: #4e4e4e;
 //FONT FAMILY
-$textFont: 'Montserrat', sans-serif;
+$textFont: "Montserrat", sans-serif;
 // FONSIZE
 $textHeader: 15px;
 $textName: 20px;
@@ -18,197 +18,197 @@ $texSubContact: 20px;
 // HEIGHT - WIDTH
 
 @mixin subTitle() {
-	.col-4{
-		p{
-			margin: 0px;
-			color: $textColorGraySubTitle;
-			font-weight: 700;
-			border-left: 4px solid $textColorGraySubTitle;
-			padding-left: 1%;
-			font-size: $textSubTitle;
-		}
-		hr{
-			border: 3px solid $textColorGraySubTitle;
-		}
-	}
+  .col-4 {
+    p {
+      margin: 0px;
+      color: $textColorGraySubTitle;
+      font-weight: 700;
+      border-left: 4px solid $textColorGraySubTitle;
+      padding-left: 1%;
+      font-size: $textSubTitle;
+    }
+    hr {
+      border: 3px solid $textColorGraySubTitle;
+    }
+  }
 }
-body{
-	font-family: $textFont;
-}
-
-.menu{
-	font-family: $textFont;
-	background-image: url($backgroundIndex);
-	height: 500px;
-	width: 100%;
-	background-position: center center;
-	background-repeat: repeat;
-	overflow: hidden;
-	.nav-color{
-		background-color:black;
-		transition: 0.4s;
-	}
-	.container{
-		a{
-			color: white;
-		}
-		.nav-link{
-			color: white;
-			&:hover{
-				color: black;
-			}
-			font-size: $textHeader;
-		}
-		.search-box{
-			color: white;
-			h3{
-				font-weight: 500;
-				padding: 15% 0% 2% 0%;
-				font-size: $textTitle;
-			}
-			input[type="text"]{
-				padding: 15px;
-			}
-		}
-	}
-}
-hr{
-	margin: 0;
-}
-.topic{
-	font-family: $textFont;
-	.container{
-		.row{
-			position: relative;
-			.image-block{
-				.circular--landscape {
-					display: inline-block;
-					position: relative;
-					height: 140px;
-					width: 140px;
-					overflow: hidden;
-					border-radius: 50%;
-				}
-
-				.circular--landscape img {
-					width: auto;
-					height: 100%;
-					margin-left: -40px;
-				}
-				.circular--portrait {
-					border: 5px solid white;
-					box-shadow: 0px 2px 6px #a9a9a9;
-					position: relative;
-					height: 140px;
-					width: 140px;
-					overflow: hidden;
-					border-radius: 50%;
-				}
-				.circular--portrait img {
-					width: 100%;
-					height: auto;
-				}
-				
-				position: absolute;
-				top: -90px;
-				img{
-					height: 140px;
-					width: 140px;
-				}
-				.name{
-					position: relative;
-					color: black;
-					font-size: $textName;
-					top: -35px;
-					left: 150px;
-				}
-			}
-			.col-md-8{
-				padding:0;
-				.navbar-default{
-					// border-bottom: 1px solid $borderColor;
-					margin: 10px 0px 0px 0px;
-				}
-				.nav-link{
-					color: $textColorGray;
-					border-bottom: 5px solid white;
-					transition: 0.4s;
-					&:hover{
-						border-bottom: 5px solid $borderColor;
-					}
-				}
-			}
-		}
-	}
+body {
+  font-family: $textFont;
 }
 
-.albums{
-	padding: 5% 0%;
+.menu {
+  font-family: $textFont;
+  background-image: url($backgroundIndex);
+  height: 500px;
+  width: 100%;
+  background-position: center center;
+  background-repeat: repeat;
+  overflow: hidden;
+  .nav-color {
+    background-color: black;
+    transition: 0.4s;
+  }
+  .container {
+    a {
+      color: white;
+    }
+    .nav-link {
+      color: white;
+      &:hover {
+        color: black;
+      }
+      font-size: $textHeader;
+    }
+    .search-box {
+      color: white;
+      h3 {
+        font-weight: 500;
+        padding: 15% 0% 2% 0%;
+        font-size: $textTitle;
+      }
+      input[type="text"] {
+        padding: 15px;
+      }
+    }
+  }
 }
-.footer{
-	padding: 4% 0% 2% 0%;
-	background-color: $backgroundColor;
-	.container{
-		.row{
-			h3{
-				font-weight: 800;
-			}
-		}
-	}
+hr {
+  margin: 0;
+}
+.topic {
+  font-family: $textFont;
+  .container {
+    .row {
+      position: relative;
+      .image-block {
+        .circular--landscape {
+          display: inline-block;
+          position: relative;
+          height: 140px;
+          width: 140px;
+          overflow: hidden;
+          border-radius: 50%;
+        }
+
+        .circular--landscape img {
+          width: auto;
+          height: 100%;
+          margin-left: -40px;
+        }
+        .circular--portrait {
+          border: 5px solid white;
+          box-shadow: 0px 2px 6px #a9a9a9;
+          position: relative;
+          height: 140px;
+          width: 140px;
+          overflow: hidden;
+          border-radius: 50%;
+        }
+        .circular--portrait img {
+          width: 100%;
+          height: auto;
+        }
+
+        position: absolute;
+        top: -90px;
+        img {
+          height: 140px;
+          width: 140px;
+        }
+        .name {
+          position: relative;
+          color: black;
+          font-size: $textName;
+          top: -35px;
+          left: 150px;
+        }
+      }
+      .col-md-8 {
+        padding: 0;
+        .navbar-default {
+          // border-bottom: 1px solid $borderColor;
+          margin: 10px 0px 0px 0px;
+        }
+        .nav-link {
+          color: $textColorGray;
+          border-bottom: 5px solid white;
+          transition: 0.4s;
+          &:hover {
+            border-bottom: 5px solid $borderColor;
+          }
+        }
+      }
+    }
+  }
+}
+
+.albums {
+  padding: 5% 0%;
+}
+.footer {
+  padding: 4% 0% 2% 0%;
+  background-color: $backgroundColor;
+  .container {
+    .row {
+      h3 {
+        font-weight: 800;
+      }
+    }
+  }
 }
 
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-	margin: 0;
-	font-family: Arial;
+  margin: 0;
+  font-family: Arial;
 }
 
 .header {
-	text-align: center;
-	padding: 32px;
+  text-align: center;
+  padding: 32px;
 }
 
 .row {
-	display: -ms-flexbox; /* IE10 */
-	display: flex;
-	-ms-flex-wrap: wrap; /* IE10 */
-	flex-wrap: wrap;
-	padding: 0 4px;
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
 }
 
 /* Create four equal columns that sits next to each other */
 .column {
-	-ms-flex: 33%; /* IE10 */
-	flex: 33%;
-	max-width: 33%;
-	padding: 0 4px;
+  -ms-flex: 33%; /* IE10 */
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 4px;
 }
 
 .column img {
-	margin-top: 8px;
-	vertical-align: middle;
-	width: 100%;
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
-	.column {
-		-ms-flex: 50%;
-		flex: 50%;
-		max-width: 50%;
-	}
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-	.column {
-		-ms-flex: 100%;
-		flex: 100%;
-		max-width: 100%;
-	}
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
 }
 
 @import "albums_mobile.scss";

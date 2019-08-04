@@ -1,11 +1,11 @@
 // COLOR
 $textColorGray: #868686;
-$textColorGraySubTitle: #4E4E4E;
+$textColorGraySubTitle: #4e4e4e;
 $borderColor: #707070;
-$backgroundColor: #F6F6F6; 
-$backgroundDigits: #4E4E4E;
+$backgroundColor: #f6f6f6;
+$backgroundDigits: #4e4e4e;
 //FONT FAMILY
-$textFont: 'Montserrat', sans-serif;
+$textFont: "Montserrat", sans-serif;
 // FONSIZE
 $textContact: 25px;
 $textSubContact: 15px;
@@ -18,86 +18,73 @@ $textTopic: 14px;
 /* ----------- iPhone 6 ----------- */
 
 /* Portrait and Landscape */
-@media only screen
-and (min-device-width: 375px) 
-and (max-device-width: 667px) 
-and (-webkit-min-device-pixel-ratio: 2) { 
-  body,html{
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  body,
+  html {
     overflow-x: hidden;
   }
-  .menu{
+  .menu {
     height: 200px;
     width: 100%;
-    .svg{
+    .svg {
       top: 0;
       left: 0;
       display: none;
       visibility: hidden;
       opacity: 0;
     }
-    .container-fluid{
+    .container-fluid {
       background-color: black;
     }
   }
-  .contact{
-    .container{
-      .row{
-        h2{
+  .contact {
+    .container {
+      .row {
+        h2 {
           font-size: $textContact;
         }
-        p{
-          font-size: $textSubContact!important;
+        p {
+          font-size: $textSubContact !important;
         }
       }
     }
   }
-  
-
 }
 
 /* Portrait */
-@media only screen
-and (min-device-width: 375px) 
-and (max-device-width: 667px) 
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: portrait) { 
-.footer{
-    h2{
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .footer {
+    h2 {
       font-size: $textPical;
       text-align: center;
     }
-    p{
+    p {
       font-size: $textP;
-      margin:0;
+      margin: 0;
       text-align: center;
     }
-    .social-icon{
+    .social-icon {
       text-align: center;
     }
-    .input-group{
+    .input-group {
       width: 300px;
-      margin:5px auto;
+      margin: 5px auto;
       text-align: center;
     }
   }
-
 }
 
 /* Landscape */
-@media only screen
-and (min-device-width: 375px) 
-and (max-device-width: 667px) 
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: landscape) { 
-  .footer{
-    h2{
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .footer {
+    h2 {
       font-size: $textPical;
     }
-    p{
+    p {
       font-size: $textP;
-      margin:5px 0px;
+      margin: 5px 0px;
     }
-    .input-group{
+    .input-group {
       width: 250px;
       height: 30px;
     }
@@ -107,35 +94,33 @@ and (orientation: landscape) {
 /* ----------- iPhone 6+ ----------- */
 
 /* Portrait and Landscape */
-@media only screen
-and (min-device-width: 414px) 
-and (max-device-width: 736px) 
-and (-webkit-min-device-pixel-ratio: 3) { 
-    body,html{
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+  body,
+  html {
     overflow-x: hidden;
   }
-  .menu{
+  .menu {
     height: 200px;
     width: 100%;
-    .svg{
+    .svg {
       top: 0;
       left: 0;
       display: none;
       visibility: hidden;
       opacity: 0;
     }
-    .container-fluid{
+    .container-fluid {
       background-color: black;
     }
   }
-  .contact{
-    .container{
-      .row{
-        h2{
+  .contact {
+    .container {
+      .row {
+        h2 {
           font-size: $textContact;
         }
-        p{
-          font-size: $textSubContact!important;
+        p {
+          font-size: $textSubContact !important;
         }
       }
     }
@@ -143,47 +128,39 @@ and (-webkit-min-device-pixel-ratio: 3) {
 }
 
 /* Portrait */
-@media only screen
-and (min-device-width: 414px) 
-and (max-device-width: 736px) 
-and (-webkit-min-device-pixel-ratio: 3)
-and (orientation: portrait) { 
- .footer{
-    h2{
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  .footer {
+    h2 {
       font-size: $textPical;
       text-align: center;
     }
-    p{
+    p {
       font-size: $textP;
-      margin:0;
+      margin: 0;
       text-align: center;
     }
-    .social-icon{
+    .social-icon {
       text-align: center;
     }
-    .input-group{
+    .input-group {
       width: 300px;
-      margin:5px auto;
+      margin: 5px auto;
       text-align: center;
     }
   }
 }
 
 /* Landscape */
-@media only screen
-and (min-device-width: 414px) 
-and (max-device-width: 736px) 
-and (-webkit-min-device-pixel-ratio: 3)
-and (orientation: landscape) { 
-  .footer{
-    h2{
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .footer {
+    h2 {
       font-size: $textPical;
     }
-    p{
+    p {
       font-size: $textP;
-      margin:5px 0px;
+      margin: 5px 0px;
     }
-    .input-group{
+    .input-group {
       width: 250px;
       height: 30px;
     }
@@ -192,140 +169,117 @@ and (orientation: landscape) {
 /* ----------- iPhone 4 and 4S ----------- */
 
 /* Portrait and Landscape */
-@media only screen
-and (min-device-width: 320px) 
-and (max-device-width: 480px)
-and (-webkit-min-device-pixel-ratio: 2) {
-  
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
 }
 
 /* Portrait */
-@media only screen
-and (min-device-width: 320px) 
-and (max-device-width: 480px)
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: portrait) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
 }
 
 /* Landscape */
-@media only screen
-and (min-device-width: 320px) 
-and (max-device-width: 480px)
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: landscape) {
-
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
 }
 
 /* ----------- iPhone 5 and 5S ----------- */
 
 /* Portrait and Landscape */
-@media only screen
-and (min-device-width: 320px) 
-and (max-device-width: 568px)
-and (-webkit-min-device-pixel-ratio: 2) {
-      body,html{
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  body,
+  html {
     overflow-x: hidden;
   }
-  .menu{
+  .menu {
     height: 200px;
     width: 100%;
-    .svg{
+    .svg {
       top: 0;
       left: 0;
       display: none;
       visibility: hidden;
       opacity: 0;
     }
-    .container-fluid{
+    .container-fluid {
       background-color: black;
     }
   }
-  .contact{
-    .container{
-      .row{
-        h2{
+  .contact {
+    .container {
+      .row {
+        h2 {
           font-size: $textContact;
         }
-        p{
-          font-size: $textSubContact!important;
+        p {
+          font-size: $textSubContact !important;
         }
       }
     }
   }
-  .footer{
-    h2{
+  .footer {
+    h2 {
       font-size: $textPical;
       text-align: center;
     }
-    p{
+    p {
       font-size: $textP;
-      margin:0;
+      margin: 0;
       text-align: center;
     }
-    .social-icon{
+    .social-icon {
       text-align: center;
     }
-    .input-group{
+    .input-group {
       width: 300px;
-      margin:5px auto;
+      margin: 5px auto;
       text-align: center;
     }
   }
 }
 
 /* Portrait */
-@media only screen
-and (min-device-width: 320px) 
-and (max-device-width: 568px)
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: portrait) {
-  
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
 }
 
 /* Landscape */
-@media only screen
-and (min-device-width: 320px) 
-and (max-device-width: 568px)
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: landscape) {
-      body,html{
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  body,
+  html {
     overflow-x: hidden;
   }
-  .menu{
+  .menu {
     height: 200px;
     width: 100%;
-    .svg{
+    .svg {
       top: 0;
       left: 0;
       display: none;
       visibility: hidden;
       opacity: 0;
     }
-    .container-fluid{
+    .container-fluid {
       background-color: black;
     }
   }
-  .contact{
-    .container{
-      .row{
-        h2{
+  .contact {
+    .container {
+      .row {
+        h2 {
           font-size: $textContact;
         }
-        p{
-          font-size: $textSubContact!important;
+        p {
+          font-size: $textSubContact !important;
         }
       }
     }
   }
-  .footer{
-    h2{
+  .footer {
+    h2 {
       font-size: $textPical;
     }
-    p{
+    p {
       font-size: $textP;
-      margin:5px 0px;
+      margin: 5px 0px;
     }
-    .input-group{
+    .input-group {
       width: 250px;
       height: 30px;
     }
@@ -335,43 +289,41 @@ and (orientation: landscape) {
 /* ----------- iPhone X  ----------- */
 
 /* Portrait and Landscape */
-@media only screen
-and (min-device-width: 731px) 
-and (max-device-width: 823px)
-and (-webkit-min-device-pixel-ratio: 2) {
-  body,html{
+@media only screen and (min-device-width: 731px) and (max-device-width: 823px) and (-webkit-min-device-pixel-ratio: 2) {
+  body,
+  html {
     overflow-x: hidden;
   }
-  .menu{
+  .menu {
     height: 200px;
     width: 100%;
-    .svg{
+    .svg {
       top: 0;
       left: 0;
       display: none;
       visibility: hidden;
       opacity: 0;
     }
-    .container-fluid{
+    .container-fluid {
       background-color: black;
     }
   }
-  .footer{
-    h2{
+  .footer {
+    h2 {
       font-size: $textPical;
       text-align: center;
     }
-    p{
+    p {
       font-size: $textP;
-      margin:0;
+      margin: 0;
       text-align: center;
     }
-    .social-icon{
+    .social-icon {
       text-align: center;
     }
-    .input-group{
+    .input-group {
       width: 300px;
-      margin:5px auto;
+      margin: 5px auto;
       text-align: center;
     }
   }

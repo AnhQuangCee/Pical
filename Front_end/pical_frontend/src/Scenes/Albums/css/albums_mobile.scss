@@ -1,11 +1,11 @@
 // COLOR
 $textColorGray: #868686;
-$textColorGraySubTitle: #4E4E4E;
+$textColorGraySubTitle: #4e4e4e;
 $borderColor: #707070;
-$backgroundColor: #F6F6F6; 
-$backgroundDigits: #4E4E4E;
+$backgroundColor: #f6f6f6;
+$backgroundDigits: #4e4e4e;
 //FONT FAMILY
-$textFont: 'Montserrat', sans-serif;
+$textFont: "Montserrat", sans-serif;
 // FONSIZE
 $textBlog: 25px;
 $textNews: 15px;
@@ -18,34 +18,32 @@ $textTopic: 14px;
 /* ----------- iPhone 6 ----------- */
 
 /* Portrait and Landscape */
-@media only screen
-and (min-device-width: 375px) 
-and (max-device-width: 667px) 
-and (-webkit-min-device-pixel-ratio: 2) { 
-  body,html{
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  body,
+  html {
     overflow-x: hidden;
   }
-  .menu{
+  .menu {
     height: 200px;
     width: 100%;
-    .svg{
+    .svg {
       top: 0;
       left: 0;
       display: none;
       visibility: hidden;
       opacity: 0;
     }
-    .container-fluid{
+    .container-fluid {
       background-color: black;
     }
   }
-  .topic{
-    .container{
-      .row{
+  .topic {
+    .container {
+      .row {
         position: relative;
-        .col-12{
+        .col-12 {
           padding: 0px 0px 10px 0px;
-          .image-block{
+          .image-block {
             .circular--landscape {
               display: inline-block;
               position: relative;
@@ -76,52 +74,51 @@ and (-webkit-min-device-pixel-ratio: 2) {
 
             position: absolute;
             top: -45px;
-            img{
+            img {
               height: 100px;
               width: 100px;
             }
-
           }
-          .name{
+          .name {
             position: relative;
             color: black;
             font-size: $textName;
             top: -45px;
             left: 110px;
           }
-          .navbar-toggler{
-            .fas{
-              color: black!important;
+          .navbar-toggler {
+            .fas {
+              color: black !important;
             }
-            margin:auto;
+            margin: auto;
             margin-right: 0px;
-            &:hover{
-              margin:auto;
+            &:hover {
+              margin: auto;
               margin-right: 0px;
             }
-            &:focus{
-              margin:auto;
+            &:focus {
+              margin: auto;
               margin-right: 0px;
             }
           }
-          .navbar-default{
+          .navbar-default {
             margin: 20px 0px 0px 0px;
           }
-          ul{
+          ul {
             padding: 0px 10px;
             float: left;
             width: 100%;
-            li.nav-item{
+            li.nav-item {
               float: left;
-              display: inline!important;
-              a.nav-link{
-                display: inline!important;
+              display: inline !important;
+              a.nav-link {
+                display: inline !important;
                 line-height: 30px;
-                padding: 0!important;
-                border:none!important;
+                padding: 0 !important;
+                border: none !important;
                 color: $textColorGray;
-                &:hover{
-                  border:none!important;
+                &:hover {
+                  border: none !important;
                   color: black;
                 }
               }
@@ -131,78 +128,64 @@ and (-webkit-min-device-pixel-ratio: 2) {
       }
     }
   }
-  .footer{
-    h2{
+  .footer {
+    h2 {
       font-size: $textPical;
       text-align: center;
     }
-    p{
+    p {
       font-size: $textP;
-      margin:0;
+      margin: 0;
       text-align: center;
     }
-    .social-icon{
+    .social-icon {
       text-align: center;
     }
-    .input-group{
+    .input-group {
       width: 300px;
-      margin:5px auto;
+      margin: 5px auto;
       text-align: center;
     }
   }
-
 }
 
 /* Portrait */
-@media only screen
-and (min-device-width: 375px) 
-and (max-device-width: 667px) 
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: portrait) { 
-
-
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
 }
 
 /* Landscape */
-@media only screen
-and (min-device-width: 375px) 
-and (max-device-width: 667px) 
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: landscape) { 
-
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
 }
 
 /* ----------- iPhone 6+ ----------- */
 
 /* Portrait and Landscape */
-@media only screen
-and (min-device-width: 414px) 
-and (max-device-width: 736px) 
-and (-webkit-min-device-pixel-ratio: 3) { 
-    body,html{
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+  body,
+  html {
     overflow-x: hidden;
   }
-  .menu{
+  .menu {
     height: 200px;
     width: 100%;
-    .svg{
+    .svg {
       top: 0;
       left: 0;
       display: none;
       visibility: hidden;
       opacity: 0;
     }
-    .container-fluid{
+    .container-fluid {
       background-color: black;
     }
   }
-  .topic{
-    .container{
-      .row{
+  .topic {
+    .container {
+      .row {
         position: relative;
-        .col-12{
+        .col-12 {
           padding: 0px 0px 10px 0px;
-          .image-block{
+          .image-block {
             .circular--landscape {
               display: inline-block;
               position: relative;
@@ -233,52 +216,51 @@ and (-webkit-min-device-pixel-ratio: 3) {
 
             position: absolute;
             top: -45px;
-            img{
+            img {
               height: 100px;
               width: 100px;
             }
-
           }
-          .name{
+          .name {
             position: relative;
             color: black;
             font-size: $textName;
             top: -45px;
             left: 110px;
           }
-          .navbar-toggler{
-            .fas{
-              color: black!important;
+          .navbar-toggler {
+            .fas {
+              color: black !important;
             }
-            margin:auto;
+            margin: auto;
             margin-right: 0px;
-            &:hover{
-              margin:auto;
+            &:hover {
+              margin: auto;
               margin-right: 0px;
             }
-            &:focus{
-              margin:auto;
+            &:focus {
+              margin: auto;
               margin-right: 0px;
             }
           }
-          .navbar-default{
+          .navbar-default {
             margin: 20px 0px 0px 0px;
           }
-          ul{
+          ul {
             padding: 0px 10px;
             float: left;
             width: 100%;
-            li.nav-item{
+            li.nav-item {
               float: left;
-              display: inline!important;
-              a.nav-link{
-                display: inline!important;
+              display: inline !important;
+              a.nav-link {
+                display: inline !important;
                 line-height: 30px;
-                padding: 0!important;
-                border:none!important;
+                padding: 0 !important;
+                border: none !important;
                 color: $textColorGray;
-                &:hover{
-                  border:none!important;
+                &:hover {
+                  border: none !important;
                   color: black;
                 }
               }
@@ -288,103 +270,77 @@ and (-webkit-min-device-pixel-ratio: 3) {
       }
     }
   }
-  .footer{
-    h2{
+  .footer {
+    h2 {
       font-size: $textPical;
       text-align: center;
     }
-    p{
+    p {
       font-size: $textP;
-      margin:0;
+      margin: 0;
       text-align: center;
     }
-    .social-icon{
+    .social-icon {
       text-align: center;
     }
-    .input-group{
+    .input-group {
       width: 300px;
-      margin:5px auto;
+      margin: 5px auto;
       text-align: center;
     }
   }
-  
 }
 
 /* Portrait */
-@media only screen
-and (min-device-width: 414px) 
-and (max-device-width: 736px) 
-and (-webkit-min-device-pixel-ratio: 3)
-and (orientation: portrait) { 
-
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
 }
 
 /* Landscape */
-@media only screen
-and (min-device-width: 414px) 
-and (max-device-width: 736px) 
-and (-webkit-min-device-pixel-ratio: 3)
-and (orientation: landscape) { 
-
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
 }
 /* ----------- iPhone 4 and 4S ----------- */
 
 /* Portrait and Landscape */
-@media only screen
-and (min-device-width: 320px) 
-and (max-device-width: 480px)
-and (-webkit-min-device-pixel-ratio: 2) {
-  
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
 }
 
 /* Portrait */
-@media only screen
-and (min-device-width: 320px) 
-and (max-device-width: 480px)
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: portrait) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
 }
 
 /* Landscape */
-@media only screen
-and (min-device-width: 320px) 
-and (max-device-width: 480px)
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: landscape) {
-
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
 }
 
 /* ----------- iPhone 5 and 5S ----------- */
 
 /* Portrait and Landscape */
-@media only screen
-and (min-device-width: 320px) 
-and (max-device-width: 568px)
-and (-webkit-min-device-pixel-ratio: 2) {
-    body,html{
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  body,
+  html {
     overflow-x: hidden;
   }
-  .menu{
+  .menu {
     height: 200px;
     width: 100%;
-    .svg{
+    .svg {
       top: 0;
       left: 0;
       display: none;
       visibility: hidden;
       opacity: 0;
     }
-    .container-fluid{
+    .container-fluid {
       background-color: black;
     }
   }
-  .topic{
-    .container{
-      .row{
+  .topic {
+    .container {
+      .row {
         position: relative;
-        .col-12{
+        .col-12 {
           padding: 0px 0px 10px 0px;
-          .image-block{
+          .image-block {
             .circular--landscape {
               display: inline-block;
               position: relative;
@@ -415,13 +371,12 @@ and (-webkit-min-device-pixel-ratio: 2) {
 
             position: absolute;
             top: -45px;
-            img{
+            img {
               height: 100px;
               width: 100px;
             }
-
           }
-          .name{
+          .name {
             position: relative;
             color: black;
             font-size: $textName;
@@ -429,43 +384,43 @@ and (-webkit-min-device-pixel-ratio: 2) {
             left: 110px;
             font-size: 17px;
           }
-          .navbar-toggler{
-            .fas{
-              color: black!important;
+          .navbar-toggler {
+            .fas {
+              color: black !important;
             }
-            margin:auto;
+            margin: auto;
             margin-right: 0px;
-            &:hover{
-              margin:auto;
+            &:hover {
+              margin: auto;
               margin-right: 0px;
             }
-            &:focus{
-              margin:auto;
+            &:focus {
+              margin: auto;
               margin-right: 0px;
             }
           }
-          .navbar-default{
+          .navbar-default {
             margin: 20px 0px 0px 0px;
           }
-          ul{
+          ul {
             padding: 0px 10px;
             float: left;
             width: 100%;
-            li.nav-item{
+            li.nav-item {
               float: left;
-              display: inline!important;
-              .ml-5{
+              display: inline !important;
+              .ml-5 {
                 margin-left: auto;
               }
-              a.nav-link{
-                display: inline!important;
+              a.nav-link {
+                display: inline !important;
                 line-height: 30px;
-                padding: 0!important;
-                border:none!important;
+                padding: 0 !important;
+                border: none !important;
                 color: $textColorGray;
                 font-size: $textTopic;
-                &:hover{
-                  border:none!important;
+                &:hover {
+                  border: none !important;
                   color: black;
                 }
               }
@@ -475,75 +430,64 @@ and (-webkit-min-device-pixel-ratio: 2) {
       }
     }
   }
-  .footer{
-    h2{
+  .footer {
+    h2 {
       font-size: $textPical;
       text-align: center;
     }
-    p{
+    p {
       font-size: $textP;
-      margin:0;
+      margin: 0;
       text-align: center;
     }
-    .social-icon{
+    .social-icon {
       text-align: center;
     }
-    .input-group{
+    .input-group {
       width: 300px;
-      margin:5px auto;
+      margin: 5px auto;
       text-align: center;
     }
   }
 }
 
 /* Portrait */
-@media only screen
-and (min-device-width: 320px) 
-and (max-device-width: 568px)
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: portrait) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
 }
 
 /* Landscape */
-@media only screen
-and (min-device-width: 320px) 
-and (max-device-width: 568px)
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: landscape) {
-
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
 }
 
 /* ----------- iPhone X  ----------- */
 
 /* Portrait and Landscape */
-@media only screen
-and (min-device-width: 731px) 
-and (max-device-width: 823px)
-and (-webkit-min-device-pixel-ratio: 2) {
-  body,html{
+@media only screen and (min-device-width: 731px) and (max-device-width: 823px) and (-webkit-min-device-pixel-ratio: 2) {
+  body,
+  html {
     overflow-x: hidden;
   }
-  .menu{
+  .menu {
     height: 200px;
     width: 100%;
-    .svg{
+    .svg {
       top: 0;
       left: 0;
       display: none;
       visibility: hidden;
       opacity: 0;
     }
-    .container-fluid{
+    .container-fluid {
       background-color: black;
     }
   }
-  .topic{
-    .container{
-      .row{
+  .topic {
+    .container {
+      .row {
         position: relative;
-        .col-12{
+        .col-12 {
           padding: 0px 0px 10px 0px;
-          .image-block{
+          .image-block {
             .circular--landscape {
               display: inline-block;
               position: relative;
@@ -574,53 +518,52 @@ and (-webkit-min-device-pixel-ratio: 2) {
 
             position: absolute;
             top: -42px;
-            img{
+            img {
               height: 100px;
               width: 100px;
             }
-
           }
-          .name{
+          .name {
             position: relative;
             color: black;
             font-size: $textName;
             top: -45px;
             left: 110px;
           }
-          .navbar-toggler{
-            .fas{
-              color: black!important;
+          .navbar-toggler {
+            .fas {
+              color: black !important;
             }
-            margin:auto;
+            margin: auto;
             margin-right: 0px;
-            &:hover{
-              margin:auto;
+            &:hover {
+              margin: auto;
               margin-right: 0px;
             }
-            &:focus{
-              margin:auto;
+            &:focus {
+              margin: auto;
               margin-right: 0px;
             }
           }
-          .navbar-default{
+          .navbar-default {
             margin: 20px 0px 0px 0px;
           }
-          ul{
-            display: inline!important;
+          ul {
+            display: inline !important;
             padding: 0px 10px;
             float: left;
             width: 100%;
-            li.nav-item{
+            li.nav-item {
               float: left;
-              display: inline!important;
-              a.nav-link{
-                display: inline!important;
+              display: inline !important;
+              a.nav-link {
+                display: inline !important;
                 line-height: 30px;
-                padding: 0!important;
-                border:none!important;
+                padding: 0 !important;
+                border: none !important;
                 color: $textColorGray;
-                &:hover{
-                  border:none!important;
+                &:hover {
+                  border: none !important;
                   color: black;
                 }
               }
@@ -630,22 +573,22 @@ and (-webkit-min-device-pixel-ratio: 2) {
       }
     }
   }
-  .footer{
-    h2{
+  .footer {
+    h2 {
       font-size: $textPical;
       text-align: center;
     }
-    p{
+    p {
       font-size: $textP;
-      margin:0;
+      margin: 0;
       text-align: center;
     }
-    .social-icon{
+    .social-icon {
       text-align: center;
     }
-    .input-group{
+    .input-group {
       width: 300px;
-      margin:5px auto;
+      margin: 5px auto;
       text-align: center;
     }
   }

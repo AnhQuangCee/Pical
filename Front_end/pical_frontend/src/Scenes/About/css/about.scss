@@ -1,13 +1,13 @@
 // PICTURE
-$backgroundIndex: '/images/background (4).png';
+$backgroundIndex: "/images/background (4).png";
 // COLOR
 $textColorGray: #868686;
-$textColorGraySubTitle: #4E4E4E;
+$textColorGraySubTitle: #4e4e4e;
 $borderColor: #707070;
-$backgroundColor: #F6F6F6; 
-$backgroundDigits: #4E4E4E;
+$backgroundColor: #f6f6f6;
+$backgroundDigits: #4e4e4e;
 //FONT FAMILY
-$textFont: 'Montserrat', sans-serif;
+$textFont: "Montserrat", sans-serif;
 // FONSIZE
 $textHeader: 15px;
 $textSubTitle: 18px;
@@ -16,169 +16,173 @@ $textDigitsH1: 50px;
 // HEIGHT - WIDTH
 
 @mixin subTitle() {
-	.col-4{
-		p{
-			margin: 0px;
-			color: $textColorGraySubTitle;
-			font-weight: 700;
-			border-left: 4px solid $textColorGraySubTitle;
-			padding-left: 1%;
-			font-size: $textSubTitle;
-		}
-		hr{
-			border: 3px solid $textColorGraySubTitle;
-		}
-	}
+  .col-4 {
+    p {
+      margin: 0px;
+      color: $textColorGraySubTitle;
+      font-weight: 700;
+      border-left: 4px solid $textColorGraySubTitle;
+      padding-left: 1%;
+      font-size: $textSubTitle;
+    }
+    hr {
+      border: 3px solid $textColorGraySubTitle;
+    }
+  }
 }
-body{
-	font-family: $textFont!important;
+body {
+  font-family: $textFont !important;
 }
 
-.menu{
-	background-position: center center;
-	background-repeat: repeat;
-	overflow: hidden;
-	width: 100%;
-	font-family: $textFont;
-	background-image: url($backgroundIndex);
-	height: 500px;
-	.svg{
-		width: 100%;
-	}
-	.svg path,line,rect,text,tspan{
-		stroke: white;
-		fill: none;
-	}
-	.svg .g3 path{
-		fill:white;
-		opacity: 0;
-	}
-	.nav-color{
-		background-color:black;
-	}
-	.container{
-		a{
-			color: white;
-		}
-		.nav-link{
-			color: white;
-			&:hover{
-				color: black;
-			}
-			font-size: $textHeader;
-		}
-		.search-box{
-			color: white;
-			h3{
-				font-weight: 500;
-				padding: 15% 0% 2% 0%;
-				font-size: $textTitle;
-			}
-			input[type="text"]{
-				padding: 15px;
-			}
-		}
-	}
+.menu {
+  background-position: center center;
+  background-repeat: repeat;
+  overflow: hidden;
+  width: 100%;
+  font-family: $textFont;
+  background-image: url($backgroundIndex);
+  height: 500px;
+  .svg {
+    width: 100%;
+  }
+  .svg path,
+  line,
+  rect,
+  text,
+  tspan {
+    stroke: white;
+    fill: none;
+  }
+  .svg .g3 path {
+    fill: white;
+    opacity: 0;
+  }
+  .nav-color {
+    background-color: black;
+  }
+  .container {
+    a {
+      color: white;
+    }
+    .nav-link {
+      color: white;
+      &:hover {
+        color: black;
+      }
+      font-size: $textHeader;
+    }
+    .search-box {
+      color: white;
+      h3 {
+        font-weight: 500;
+        padding: 15% 0% 2% 0%;
+        font-size: $textTitle;
+      }
+      input[type="text"] {
+        padding: 15px;
+      }
+    }
+  }
 }
-.topic{
-	font-family: $textFont;
-	.container-fluid{
-		.row{
-			.col-12{
-				padding:0;
-				.navbar-default{
-					border-bottom: 1px solid $borderColor;
-					margin: 10px 0px;
-				}
-				.nav-link{
-					color: $textColorGray;
-					border-bottom: 5px solid white;
-					transition: 0.4s;
-					&:hover{
-						border-bottom: 5px solid $borderColor;
-					}
-					&:focus{
-						border-bottom: 5px solid $borderColor;
-					}
-					&:active{
-						border-bottom: 5px solid $borderColor;
-					}
-				}
-			}
-		}
-	}
+.topic {
+  font-family: $textFont;
+  .container-fluid {
+    .row {
+      .col-12 {
+        padding: 0;
+        .navbar-default {
+          border-bottom: 1px solid $borderColor;
+          margin: 10px 0px;
+        }
+        .nav-link {
+          color: $textColorGray;
+          border-bottom: 5px solid white;
+          transition: 0.4s;
+          &:hover {
+            border-bottom: 5px solid $borderColor;
+          }
+          &:focus {
+            border-bottom: 5px solid $borderColor;
+          }
+          &:active {
+            border-bottom: 5px solid $borderColor;
+          }
+        }
+      }
+    }
+  }
 }
-.founder{
-	padding:0% 0% 5% 0%;
-	.container{
-		h2{
-			text-transform: uppercase;
-			text-align: center;
-			margin: 5% 0%;
-		}
-		.row{
-			@include subTitle();
-			.col-8{
-				h4{
-					margin: 8% 0% 5% 0%;
-				}
-				hr{
-					width: 60%;
-					border: 3px solid $textColorGraySubTitle;
-					margin-right: 0;
-					margin-top: 1%;
-				}
-				.btn{
-					padding: 10px 20px;
-					cursor: pointer;
-					margin-top: 9%;
-				}
-			}
-		}
-	}
+.founder {
+  padding: 0% 0% 5% 0%;
+  .container {
+    h2 {
+      text-transform: uppercase;
+      text-align: center;
+      margin: 5% 0%;
+    }
+    .row {
+      @include subTitle();
+      .col-8 {
+        h4 {
+          margin: 8% 0% 5% 0%;
+        }
+        hr {
+          width: 60%;
+          border: 3px solid $textColorGraySubTitle;
+          margin-right: 0;
+          margin-top: 1%;
+        }
+        .btn {
+          padding: 10px 20px;
+          cursor: pointer;
+          margin-top: 9%;
+        }
+      }
+    }
+  }
 }
-.team-development{
-	padding: 5% 0%;
-	background-color: $backgroundColor;
-	.container{
-		.row{
-			@include subTitle();
-		}
-		.team-info{
-			h4{
-				padding: 25px 0px 5px 0px;
-				margin: 0px;
-			}
-			.info{
-				.social-icon{
-					font-size: 20px;
-					cursor: pointer;
-				}
-			}
-		}
-	}
+.team-development {
+  padding: 5% 0%;
+  background-color: $backgroundColor;
+  .container {
+    .row {
+      @include subTitle();
+    }
+    .team-info {
+      h4 {
+        padding: 25px 0px 5px 0px;
+        margin: 0px;
+      }
+      .info {
+        .social-icon {
+          font-size: 20px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
 }
-.digits{
-	padding: 4% 0%;
-	background-color: $backgroundDigits;
-	.container{
-		.row{
-			color: white;
-			h1{
-				font-size: $textDigitsH1;
-			}
-		}
-	}
+.digits {
+  padding: 4% 0%;
+  background-color: $backgroundDigits;
+  .container {
+    .row {
+      color: white;
+      h1 {
+        font-size: $textDigitsH1;
+      }
+    }
+  }
 }
-.footer{
-	padding: 4% 0% 2% 0%;
-	.container{
-		.row{
-			h3{
-				font-weight: 800;
-			}
-		}
-	}
+.footer {
+  padding: 4% 0% 2% 0%;
+  .container {
+    .row {
+      h3 {
+        font-weight: 800;
+      }
+    }
+  }
 }
 
 @import "about_mobile";

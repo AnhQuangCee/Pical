@@ -1,8 +1,8 @@
-import {requestPosts} from './actions';
-import allReducer from './reducers/rootReducers';
+import { requestPosts } from "./actions";
+import allReducer from "./reducers/rootReducers";
 
-var redux = require('redux');
-const axios = require('axios');
+var redux = require("redux");
+const axios = require("axios");
 
 //get data from Database
 // const getProductData = () => {

@@ -1,13 +1,13 @@
 // PICTURE
-$backgroundIndex: '/images/background (5).png';
+$backgroundIndex: "/images/background (5).png";
 // COLOR
 $textColorGray: #868686;
-$textColorGraySubTitle: #4E4E4E;
+$textColorGraySubTitle: #4e4e4e;
 $borderColor: #707070;
-$backgroundColor: #F6F6F6; 
-$backgroundDigits: #4E4E4E;
+$backgroundColor: #f6f6f6;
+$backgroundDigits: #4e4e4e;
 //FONT FAMILY
-$textFont: 'Montserrat', sans-serif;
+$textFont: "Montserrat", sans-serif;
 // FONSIZE
 $textHeader: 15px;
 $textTime: 13px;
@@ -16,122 +16,121 @@ $textDigitsH1: 50px;
 // HEIGHT - WIDTH
 
 @mixin subTitle() {
-	.col-4{
-		p{
-			margin: 0px;
-			color: $textColorGraySubTitle;
-			font-weight: 700;
-			border-left: 4px solid $textColorGraySubTitle;
-			padding-left: 1%;
-			font-size: $textSubTitle;
-		}
-		hr{
-			border: 3px solid $textColorGraySubTitle;
-		}
-	}
+  .col-4 {
+    p {
+      margin: 0px;
+      color: $textColorGraySubTitle;
+      font-weight: 700;
+      border-left: 4px solid $textColorGraySubTitle;
+      padding-left: 1%;
+      font-size: $textSubTitle;
+    }
+    hr {
+      border: 3px solid $textColorGraySubTitle;
+    }
+  }
 }
-body{
-	font-family: $textFont;
-}
-
-.menu{
-	background-position: center center;
-	background-repeat: repeat;
-	overflow: hidden;
-	width: 100%;
-	font-family: $textFont;
-	background-image: url($backgroundIndex);
-	height: 500px;
-
-	
-	.nav-color{
-		background-color:black;
-	}
-	.container{
-		a{
-			color: white;
-		}
-		.nav-link{
-			color: white;
-			&:hover{
-				color: black;
-			}
-			font-size: $textHeader;
-		}
-		.search-box{
-			color: white;
-			h3{
-				font-weight: 500;
-				padding: 15% 0% 2% 0%;
-				font-size: $textTitle;
-			}
-			input[type="text"]{
-				padding: 15px;
-			}
-		}
-	}
+body {
+  font-family: $textFont;
 }
 
-.blog{
-	padding: 4% 0% 7% 0%;
-	.container{
-		.news{
-			.card-body{
-				p.titles{
-					font-size: 22px;
-					padding-top: 3.5%;
-				}
-			}
-		}
-		.card{
-			margin-top: 30px;
-		}
-		.card-body{
-			padding: 0;
-			p{
-				margin:0;
-			}
-			p.title{
-				font-size: $textHeader;
-				padding: 15px 0px 5px 0px;
-			}
-			p.time{
-				font-size: $textTime;
-			}
-			.row{
-				img{
-					margin: 20px;
-				}
-			}
-		}
-		.trending-title{
-			margin-top: 5%;
-		}
-		hr{
-			border: 2px solid $borderColor;
-			width: 92%;
-			margin-left: 7%;
-			margin-top: 14px;
-		}
-		h4{
-			margin: 0;
-		}
-		.col-md-7{
-			padding: 0px 15px;
-		}
-	}
+.menu {
+  background-position: center center;
+  background-repeat: repeat;
+  overflow: hidden;
+  width: 100%;
+  font-family: $textFont;
+  background-image: url($backgroundIndex);
+  height: 500px;
+
+  .nav-color {
+    background-color: black;
+  }
+  .container {
+    a {
+      color: white;
+    }
+    .nav-link {
+      color: white;
+      &:hover {
+        color: black;
+      }
+      font-size: $textHeader;
+    }
+    .search-box {
+      color: white;
+      h3 {
+        font-weight: 500;
+        padding: 15% 0% 2% 0%;
+        font-size: $textTitle;
+      }
+      input[type="text"] {
+        padding: 15px;
+      }
+    }
+  }
 }
 
-.footer{
-	padding: 4% 0% 2% 0%;
-	background-color: $backgroundColor;
-	.container{
-		.row{
-			h3{
-				font-weight: 800;
-			}
-		}
-	}
+.blog {
+  padding: 4% 0% 7% 0%;
+  .container {
+    .news {
+      .card-body {
+        p.titles {
+          font-size: 22px;
+          padding-top: 3.5%;
+        }
+      }
+    }
+    .card {
+      margin-top: 30px;
+    }
+    .card-body {
+      padding: 0;
+      p {
+        margin: 0;
+      }
+      p.title {
+        font-size: $textHeader;
+        padding: 15px 0px 5px 0px;
+      }
+      p.time {
+        font-size: $textTime;
+      }
+      .row {
+        img {
+          margin: 20px;
+        }
+      }
+    }
+    .trending-title {
+      margin-top: 5%;
+    }
+    hr {
+      border: 2px solid $borderColor;
+      width: 92%;
+      margin-left: 7%;
+      margin-top: 14px;
+    }
+    h4 {
+      margin: 0;
+    }
+    .col-md-7 {
+      padding: 0px 15px;
+    }
+  }
+}
+
+.footer {
+  padding: 4% 0% 2% 0%;
+  background-color: $backgroundColor;
+  .container {
+    .row {
+      h3 {
+        font-weight: 800;
+      }
+    }
+  }
 }
 
 //Responsive

@@ -1,8 +1,8 @@
-import picalReducers from './picalReducers';
-import {combineReducers} from 'redux';
+import picalReducers from "./picalReducers";
+import { combineReducers } from "redux";
 
 const allReducer = combineReducers({
-    picalReducers
+  picalReducers
 });
 
 export default allReducer;

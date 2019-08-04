@@ -1,1 +1,1 @@
-export const PICAL_IMAGES = 'PICAL_IMAGES'
+export const PICAL_IMAGES = "PICAL_IMAGES";

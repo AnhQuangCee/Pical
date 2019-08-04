@@ -1,1 +1,1 @@
-export const REQUEST_POSTS = 'REQUEST_POSTS'
+export const REQUEST_POSTS = "REQUEST_POSTS";

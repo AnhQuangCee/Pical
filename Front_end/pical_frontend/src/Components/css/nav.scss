@@ -50,13 +50,13 @@ body {
       transition: 0.4s;
       &:hover {
         color: bisque !important;
-	  }
-	  &:focus{
-		color: bisque !important;
-	  }
-	  &:active{
-		color: bisque !important;
-	  }
+      }
+      &:focus {
+        color: bisque !important;
+      }
+      &:active {
+        color: bisque !important;
+      }
     }
     .search-box {
       color: white;
