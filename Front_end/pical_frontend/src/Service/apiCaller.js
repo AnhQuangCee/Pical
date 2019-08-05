@@ -1,12 +1,23 @@
 import axios from "axios";
-import * as Config from ".././constants/Config";
 
-export default function allAPI(endpoint, method = "GET", body) {
-  return axios({
-    method: method,
-    url: `${Config.API_URL}/${endpoint}`,
-    data: body
-  }).catch(err => {
-    console.log(err);
-  });
+class AxiosService {
+  constructor() {
+    const instance = axios.create();
+    instance.interceptors.request.use(this.handleSuccess, this.handleError);
+    this.instance = instance;
+  }
+
+  handleSuccess(response) {
+    return response;
+  }
+
+  handleError(error) {
+    return Promise.reject(error);
+  }
+
+  get(url) {
+    return this.instance.get(url);
+  }
 }
+
+export default new AxiosService();

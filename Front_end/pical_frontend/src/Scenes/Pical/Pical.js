@@ -1,12 +1,11 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
+import PropTypes from "prop-types";
 import "./css/pical.scss";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import * as picalActions from "../../actions/pical";
 import Nav from "../../Components/Nav";
-import TrendingPical from "./TrendingPical";
-import Topic from "../../Components/Topic";
 import TopicPical from "./TopicPical";
-import callAPI from "../../Service/apiCaller";
 import ImagesCol1 from "./ImagesCol1";
 import ImagesCol2 from "./ImagesCol2";
 import ImagesCol3 from "./ImagesCol3";
@@ -14,45 +13,46 @@ import ImagesCol3 from "./ImagesCol3";
 class Pical extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      getData: []
-    };
+    this.state = {};
   }
 
   componentDidMount() {
-    callAPI("getData", "GET", null).then(res => {
-      this.setState({
-        getData: res.data
-      });
-    });
+    // callAPI("getData", "GET", null).then(res => {
+    //   this.setState({
+    //     getData: res.data
+    //   });
+    // });
+    const { picalActionCreators } = this.props;
+    const { fetchPicalRequest } = picalActionCreators;
+    fetchPicalRequest();
   }
 
   printImageDataCol1 = () => {
-    if (this.state.getData !== null) {
-      return this.state.getData.map((value, key) => {
+    if (this.props.getData !== null) {
+      return this.props.getData.map((value, key) => {
         return <ImagesCol1 key={key} link={value.link} />;
       });
     }
   };
 
   printImageDataCol2 = () => {
-    if (this.state.getData !== null) {
-      return this.state.getData.map((value, key) => {
+    if (this.props.getData !== null) {
+      return this.props.getData.map((value, key) => {
         return <ImagesCol2 key={key} link={value.link} />;
       });
     }
   };
 
   printImageDataCol3 = () => {
-    if (this.state.getData !== null) {
-      return this.state.getData.map((value, key) => {
+    if (this.props.getData !== null) {
+      return this.props.getData.map((value, key) => {
         return <ImagesCol3 key={key} link={value.link} />;
       });
     }
   };
 
   render() {
-    const { getData } = this.state;
+    const { getData } = this.props;
     console.log(getData);
     return (
       <div>
@@ -108,4 +108,24 @@ class Pical extends Component {
   }
 }
 
-export default Pical;
+Pical.propTypes = {
+  picalActionCreators: PropTypes.shape({
+    fetchPicalRequest: PropTypes.func
+  }),
+  getData: PropTypes.array
+};
+const mapStateToProps = (state, ownProps) => {
+  return {
+    getData: state.picalReducers.pical
+  };
+};
+
+const mapDispatchToProps = (dispatch, ownProps) => {
+  return {
+    picalActionCreators: bindActionCreators(picalActions, dispatch)
+  };
+};
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Pical);
