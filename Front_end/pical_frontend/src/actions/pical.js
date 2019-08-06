@@ -1,4 +1,4 @@
-import * as picalApis from "../apis/pical";
+// import * as picalApis from "../apis/pical";
 import * as picalConstants from "../constants/actionsTypes";
 // export const requestPosts = () => ({
 //   type: ActionsTypes.PICAL_IMAGES
@@ -27,17 +27,17 @@ export const fetchPicalFail = error => {
   };
 };
 
-export const fetchPicalRequest = () => {
-  return dispatch => {
-    dispatch(fetchPical());
-    picalApis
-      .getPical()
-      .then(reps => {
-        const { data } = reps;
-        dispatch(fetchPicalSuccess(data));
-      })
-      .catch(error => {
-        dispatch(fetchPicalFail(error));
-      });
-  };
-};
+// export const fetchPicalRequest = () => {
+//   return dispatch => {
+//     dispatch(fetchPical());
+//     picalApis
+//       .getPical()
+//       .then(reps => {
+//         const { data } = reps;
+//         dispatch(fetchPicalSuccess(data));
+//       })
+//       .catch(error => {
+//         dispatch(fetchPicalFail(error));
+//       });
+//   };
+// };
