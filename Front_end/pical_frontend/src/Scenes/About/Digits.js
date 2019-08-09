@@ -4,7 +4,7 @@ import "../About/css/about.scss";
 class Digits extends Component {
   render() {
     return (
-      <div className="digits text-center" id="digits">
+      <div className="digits text-center particles-js" id="digits">
         <div className="container">
           <div className="row infoDigits">
             <div className="col-4">

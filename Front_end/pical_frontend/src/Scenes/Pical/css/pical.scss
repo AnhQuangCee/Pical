@@ -56,7 +56,9 @@ body {
   font-family: $textFont;
   .container-fluid {
     .row {
+      background: white!important;
       .col-12 {
+        background: white;
         padding: 0;
         .navbar-default {
           border-bottom: 1px solid $borderColor;
@@ -71,6 +73,13 @@ body {
           }
         }
       }
+    }
+  }
+}
+.images{
+  .container{
+    .row{
+      background: white!important;
     }
   }
 }

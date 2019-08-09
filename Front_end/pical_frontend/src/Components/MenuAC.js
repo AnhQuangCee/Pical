@@ -64,8 +64,8 @@ class MenuAC extends Component {
       duration: 3000,
       delay: function(el, i) {
         return i * 250;
-      }
-      // opacity: 1
+      },
+      opacity: 1
       // direction:'alternate',
     });
   };

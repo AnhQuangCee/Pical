@@ -1,0 +1,156 @@
+html, body {
+  font-family: "Montserrat", sans-serif;
+  height: 100%;
+  width: 100%;
+  background: url("../.././images/background (4).png");
+  background-position: center center;
+  background-repeat: repeat; }
+
+.signup {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 440px;
+  width: 750px;
+  background-color: white;
+  border-radius: 10px; }
+  .signup .container-fluid .row .picture {
+    padding-top: 20%;
+    padding-left: 4%;
+    height: 440px;
+    width: 300px;
+    border-radius: 10px 0px 0px 10px;
+    background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+    float: left;
+    z-index: 2; }
+    .signup .container-fluid .row .picture h3 {
+      color: white; }
+    .signup .container-fluid .row .picture p {
+      color: white; }
+    .signup .container-fluid .row .picture .btn {
+      background-color: white;
+      color: #2cb5e8;
+      cursor: pointer;
+      border: none;
+      padding: 8px 30px; }
+  .signup .container-fluid .row .signupForm {
+    height: 440px;
+    width: 470px;
+    border-radius: 0px 10px 10px 0px;
+    margin-top: 8%;
+    z-index: 1; }
+    .signup .container-fluid .row .signupForm h1 {
+      color: #089999;
+      font-family: "Montserrat", sans-serif;
+      font-size: 30px; }
+    .signup .container-fluid .row .signupForm .signupForm1 {
+      width: 380px;
+      margin-left: 7%;
+      margin-top: 30px;
+      color: white; }
+      .signup .container-fluid .row .signupForm .signupForm1 .form-group .fa-envelope {
+        font-size: 18px; }
+      .signup .container-fluid .row .signupForm .signupForm1 .form-group .fa-unlock-alt {
+        font-size: 22px; }
+      .signup .container-fluid .row .signupForm .signupForm1 .btn-primary {
+        background-color: #089F9F;
+        border: none;
+        padding: 10px 0px; }
+      .signup .container-fluid .row .signupForm .signupForm1 .iconbox {
+        padding: 0px 20%;
+        height: 50px; }
+        .signup .container-fluid .row .signupForm .signupForm1 .iconbox .icon1 {
+          height: 35px;
+          width: 35px;
+          line-height: 35px;
+          border-radius: 50%;
+          background-color: #5B79B7;
+          border-radius: 50%;
+          float: left;
+          cursor: pointer;
+          padding-left: 11px;
+          color: white; }
+        .signup .container-fluid .row .signupForm .signupForm1 .iconbox .icon2 {
+          height: 35px;
+          width: 35px;
+          line-height: 35px;
+          border-radius: 50%;
+          background-color: #5DA9DD;
+          border-radius: 50%;
+          float: left;
+          margin-left: 20px;
+          cursor: pointer;
+          padding-left: 9px; }
+        .signup .container-fluid .row .signupForm .signupForm1 .iconbox .icon3 {
+          height: 35px;
+          line-height: 35px;
+          width: 35px;
+          border-radius: 50%;
+          background-color: #DC473A;
+          border-radius: 50%;
+          float: left;
+          margin-left: 20px;
+          cursor: pointer;
+          padding-left: 10px;
+          margin-bottom: 30px; }
+
+/* ----------- iPhone 6 ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  html, body {
+    font-family: "Montserrat", sans-serif;
+    height: 100%;
+    width: 100%;
+    background: none;
+    background-position: center center;
+    background-repeat: repeat;
+    overflow-y: hidden; }
+
+  .signup {
+    height: 100%;
+    width: 100%;
+    border-radius: 0px; }
+    .signup .container-fluid .row .picture {
+      padding-top: 10%;
+      border-radius: 0px;
+      height: 150px; }
+      .signup .container-fluid .row .picture h3 {
+        font-size: 20px; }
+      .signup .container-fluid .row .picture p {
+        font-size: 14px; }
+      .signup .container-fluid .row .picture .btn {
+        padding: 5px 10px;
+        font-size: 14px; }
+    .signup .container-fluid .row .signupForm {
+      width: 100%;
+      text-align: center; }
+      .signup .container-fluid .row .signupForm h1 {
+        font-size: 25px; }
+      .signup .container-fluid .row .signupForm .signupForm1 {
+        width: 100%;
+        margin-left: 0%; }
+        .signup .container-fluid .row .signupForm .signupForm1 .iconbox {
+          padding: 0px 18%; }
+          .signup .container-fluid .row .signupForm .signupForm1 .iconbox .icon1 {
+            padding-left: 0px; }
+          .signup .container-fluid .row .signupForm .signupForm1 .iconbox .icon2 {
+            padding-left: 0px; }
+          .signup .container-fluid .row .signupForm .signupForm1 .iconbox .icon3 {
+            padding-left: 0px; } }
+/* Portrait */
+/* Landscape */
+/* ----------- iPhone 6+ ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- iPhone 4 and 4S ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- iPhone 5 and 5S ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+
+/*# sourceMappingURL=signup.css.map */

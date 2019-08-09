@@ -13,18 +13,18 @@ import ImagesCol3 from "./ImagesCol3";
 class Pical extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      // getData: []
+    };
   }
 
   componentDidMount() {
-    // callAPI("getData", "GET", null).then(res => {
-    //   this.setState({
-    //     getData: res.data
-    //   });
+    // this.setState({
+    //   getData: this.props
     // });
     const { picalActionCreators } = this.props;
-    const { fetchPicalRequest } = picalActionCreators;
-    fetchPicalRequest();
+    const { fetchPical } = picalActionCreators;
+    fetchPical();
   }
 
   printImageDataCol1 = () => {
@@ -53,7 +53,7 @@ class Pical extends Component {
 
   render() {
     const { getData } = this.props;
-    console.log(getData);
+    // console.log(getData);
     return (
       <div>
         <div className="menu">
@@ -96,7 +96,7 @@ class Pical extends Component {
         {/* end menu */}
         <TopicPical />
         {/* end topic */}
-        <div className="container-fluid">
+        <div className="container-fluid images">
           <div className="row">
             <div className="column">{this.printImageDataCol1()}</div>
             <div className="column">{this.printImageDataCol2()}</div>
@@ -110,7 +110,7 @@ class Pical extends Component {
 
 Pical.propTypes = {
   picalActionCreators: PropTypes.shape({
-    fetchPicalRequest: PropTypes.func
+    fetchPical: PropTypes.func
   }),
   getData: PropTypes.array
 };

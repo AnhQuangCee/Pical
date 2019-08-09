@@ -21,6 +21,7 @@ class Tutorials extends Component {
                   <img
                     src="images/background (2).png"
                     style={{ width: "100%" }}
+                    alt="true"
                   />
                   <div className="row">
                     <div className="col-3 text-center">

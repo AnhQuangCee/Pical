@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import anime from "animejs";
 import "./css/signup.scss";
+import GlobalLoading from "../Loading/GlobalLoading";
 
 class Signup extends Component {
   componentDidMount() {
@@ -83,78 +84,81 @@ class Signup extends Component {
   };
   render() {
     return (
-      <div className="signup">
-        <div className="container-fluid">
-          <div className="row">
-            <div className="col-md-4 col-12 picture">
-              <h3 className="hello">Welcome Back!</h3>
-              <p>Corem ipsum dolor sit amet, consectetur adipisic</p>
-              <div className="btn btn-info sign-in">Sign in</div>
-            </div>
-            <div className="col-md-8 col-12 signupForm">
-              <h1 className="text-center login-title">Create Account</h1>
-              <form className="signupForm1">
-                <div className="form-group">
-                  <div className="input-group input-group-lg">
-                    <span className="input-group-addon">
-                      <i className="fas fa-user" />
-                    </span>
-                    <input
-                      type="text"
-                      className="form-control"
-                      id="recipient-name"
-                      placeholder="Username"
-                    />
+      <div>
+        <GlobalLoading></GlobalLoading>
+        <div className="signup">
+          <div className="container-fluid">
+            <div className="row">
+              <div className="col-md-4 col-12 picture">
+                <h3 className="hello">Welcome Back!</h3>
+                <p>Corem ipsum dolor sit amet, consectetur adipisic</p>
+                <div className="btn btn-info sign-in">Sign in</div>
+              </div>
+              <div className="col-md-8 col-12 signupForm">
+                <h1 className="text-center login-title">Create Account</h1>
+                <form className="signupForm1">
+                  <div className="form-group">
+                    <div className="input-group input-group-lg">
+                      <span className="input-group-addon">
+                        <i className="fas fa-user" />
+                      </span>
+                      <input
+                        type="text"
+                        className="form-control"
+                        id="recipient-name"
+                        placeholder="Username"
+                      />
+                    </div>
                   </div>
-                </div>
-                <div className="form-group email">
-                  <div className="input-group input-group-lg">
-                    <span className="input-group-addon">
-                      <i className="fas fa-envelope" />
-                    </span>
-                    <input
-                      type="email"
-                      className="form-control"
-                      id="message-text"
-                      placeholder="Email"
-                    />
+                  <div className="form-group email">
+                    <div className="input-group input-group-lg">
+                      <span className="input-group-addon">
+                        <i className="fas fa-envelope" />
+                      </span>
+                      <input
+                        type="email"
+                        className="form-control"
+                        id="message-text"
+                        placeholder="Email"
+                      />
+                    </div>
                   </div>
-                </div>
-                <div className="form-group">
-                  <div className="input-group input-group-lg">
-                    <span className="input-group-addon">
-                      <i className="fas fa-unlock-alt" />
-                    </span>
-                    <input
-                      type="password"
-                      className="form-control"
-                      id="message-text"
-                      placeholder="Password"
-                    />
+                  <div className="form-group">
+                    <div className="input-group input-group-lg">
+                      <span className="input-group-addon">
+                        <i className="fas fa-unlock-alt" />
+                      </span>
+                      <input
+                        type="password"
+                        className="form-control"
+                        id="message-text"
+                        placeholder="Password"
+                      />
+                    </div>
                   </div>
-                </div>
-                <div className="row">
-                  <div className="col-md-12 iconbox">
-                    <div className="iconbox">
-                      <div className="icon1">
-                        <b className="fab fa-facebook-f" />
-                      </div>
-                      <div className="icon2">
-                        <b className="fab fa-twitter" />
-                      </div>
-                      <div className="icon3">
-                        <b className="fas fa-envelope" />
+                  <div className="row">
+                    <div className="col-md-12 iconbox">
+                      <div className="iconbox">
+                        <div className="icon1">
+                          <b className="fab fa-facebook-f" />
+                        </div>
+                        <div className="icon2">
+                          <b className="fab fa-twitter" />
+                        </div>
+                        <div className="icon3">
+                          <b className="fas fa-envelope" />
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <Link
-                  className="submit btn btn-primary btn-block text-center"
-                  to="/profile"
-                >
-                  Sign up
-                </Link>
-              </form>
+                  <Link
+                    className="submit btn btn-primary btn-block text-center"
+                    to="/profile"
+                  >
+                    Sign up
+                  </Link>
+                </form>
+              </div>
             </div>
           </div>
         </div>

@@ -16,6 +16,7 @@ class ImageA extends Component {
                   <img
                     src="images/background (2).png"
                     style={{ width: "100%" }}
+                    alt="true"
                   />
                 </a>
                 <a
@@ -26,6 +27,7 @@ class ImageA extends Component {
                   <img
                     src="images/background (2).png"
                     style={{ width: "100%" }}
+                    alt="true"
                   />
                 </a>
                 <a

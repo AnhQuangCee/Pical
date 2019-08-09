@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Nav from "../../Components/Nav";
 import WOW from "wowjs";
+import Nav from "../../Components/Nav";
 import Footer from "../../Components/Footer";
 import MenuPAG from "../../Components/MenuPAG";
 import "./css/albums.scss";

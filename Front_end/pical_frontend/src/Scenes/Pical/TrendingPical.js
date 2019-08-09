@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Nav from "../../Components/Nav";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+// import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Topic from "../../Components/Topic";
 import TopicPical from "./TopicPical";
 

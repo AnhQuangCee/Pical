@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Link } from "react-router-dom";
 import Nav from "../../Components/Nav";
+import TopicPical from "./TopicPical";
 
 class Creative extends Component {
   render() {
@@ -44,41 +45,7 @@ class Creative extends Component {
           </div>
         </div>
         {/* end menu */}
-        <div className="topic">
-          <div className="container-fluid">
-            <div className="row">
-              <div className="col-12">
-                <ul className="nav navbar-default justify-content-center">
-                  <li className="nav-item">
-                    <Link className="nav-link active" to="/trending">
-                      Trending
-                    </Link>
-                  </li>
-                  <li className="nav-item ml-5">
-                    <Link className="nav-link" to="/popular">
-                      Popular
-                    </Link>
-                  </li>
-                  <li className="nav-item ml-5">
-                    <Link className="nav-link" to="/creative">
-                      Creative
-                    </Link>
-                  </li>
-                  <li className="nav-item ml-5">
-                    <Link className="nav-link" to="/editorial">
-                      Editorial
-                    </Link>
-                  </li>
-                  <li className="nav-item ml-5">
-                    <Link className="nav-link" to="/service">
-                      Service
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+        <TopicPical></TopicPical>
         <div className="picture-group">
           <div className="container-fluid">
             <div className="row">
@@ -98,14 +65,26 @@ class Creative extends Component {
                   style={{ width: "100%" }}
                   alt=""
                 />
-                <img src="images/girl1.jpg" style={{ width: "100%" }} alt="" />
-                <img src="images/trang1.png" style={{ width: "100%" }} />
+                <img
+                  src="images/girl1.jpg"
+                  style={{ width: "100%" }}
+                  alt="true"
+                />
+                <img
+                  src="images/trang1.png"
+                  style={{ width: "100%" }}
+                  alt="true"
+                />
                 <img
                   src="images/background (4).png"
                   style={{ width: "100%" }}
                   alt=""
                 />
-                <img src="images/trang6.jpg" style={{ width: "100%" }} />
+                <img
+                  src="images/trang6.jpg"
+                  style={{ width: "100%" }}
+                  alt="true"
+                />
                 <img
                   src="images/background (5).png"
                   style={{ width: "100%" }}
@@ -118,7 +97,11 @@ class Creative extends Component {
                   style={{ width: "100%" }}
                   alt=""
                 />
-                <img src="images/trang1.png" style={{ width: "100%" }} />
+                <img
+                  src="images/trang1.png"
+                  style={{ width: "100%" }}
+                  alt="true"
+                />
                 <img
                   src="images/background (6).png"
                   style={{ width: "100%" }}
@@ -129,8 +112,16 @@ class Creative extends Component {
                   style={{ width: "100%" }}
                   alt=""
                 />
-                <img src="images/girl1.jpg" style={{ width: "100%" }} />
-                <img src="images/trang6.jpg" style={{ width: "100%" }} />
+                <img
+                  src="images/girl1.jpg"
+                  style={{ width: "100%" }}
+                  alt="true"
+                />
+                <img
+                  src="images/trang6.jpg"
+                  style={{ width: "100%" }}
+                  alt="true"
+                />
                 <img
                   src="images/background (7).png"
                   style={{ width: "100%" }}
@@ -158,8 +149,16 @@ class Creative extends Component {
                   style={{ width: "100%" }}
                   alt=""
                 />
-                <img src="images/girl1.jpg" style={{ width: "100%" }} />
-                <img src="images/trang1.png" style={{ width: "100%" }} />
+                <img
+                  src="images/girl1.jpg"
+                  style={{ width: "100%" }}
+                  alt="true"
+                />
+                <img
+                  src="images/trang1.png"
+                  style={{ width: "100%" }}
+                  alt="true"
+                />
                 <img
                   src="images/background (8).png"
                   style={{ width: "100%" }}
@@ -170,7 +169,11 @@ class Creative extends Component {
                   style={{ width: "100%" }}
                   alt=""
                 />
-                <img src="images/trang6.jpg" style={{ width: "100%" }} alt="" />
+                <img
+                  src="images/trang6.jpg"
+                  style={{ width: "100%" }}
+                  alt="true"
+                />
               </div>
             </div>
           </div>

@@ -1,0 +1,16 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(90.6deg, #1a6d55 -0.1%, #31e37d 105.9%); }
+
+.global-loading {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0; }
+  .global-loading svg, .global-loading path, .global-loading text, .global-loading tspan, .global-loading circle, .global-loading polygon {
+    stroke: white;
+    fill: none; }
+
+/*# sourceMappingURL=globalLoading.css.map */

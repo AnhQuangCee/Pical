@@ -22,6 +22,7 @@ class News extends Component {
                 <img
                   src="images/background (5).png"
                   style={{ width: "100%" }}
+                  alt="true"
                 />
                 <div className="row">
                   <div className="col-md-2 col-3 text-center">

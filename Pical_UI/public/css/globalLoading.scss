@@ -1,0 +1,16 @@
+html, body{
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient( 90.6deg,  rgba(26,109,85,1) -0.1%, rgba(49,227,125,1) 105.9% );
+}
+.global-loading {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	right: 0;
+	svg, path, text, tspan, circle, polygon{
+		stroke: white;
+		fill: none;
+	}
+}
