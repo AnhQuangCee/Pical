@@ -1,21 +1,27 @@
-html, body{
+html,
+body {
   position: relative;
-	height: 100%;
-	width: 100%;
+  height: 100%;
+  width: 100%;
   // background-image: linear-gradient( 90.6deg,  rgba(26,109,85,1) -0.1%, rgba(49,227,125,1) 105.9% );
 }
 .global-loading {
   height: 100%;
-	width: 100%;
-	position: absolute;
+  width: 100%;
+  position: absolute;
   z-index: 99;
-  background: rgba(0,0,0,0.4);
-  .logo-svg{
+  background: rgba(0, 0, 0, 0.4);
+  .logo-svg {
     height: 10%;
     width: 10%;
     margin: 25% auto;
-    svg, path, text, tspan, circle, polygon{
-      stroke: rgba(0,0,0,0);
+    svg,
+    path,
+    text,
+    tspan,
+    circle,
+    polygon {
+      stroke: rgba(0, 0, 0, 0);
       fill: none;
     }
   }

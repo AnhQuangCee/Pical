@@ -53,7 +53,7 @@ class Pical extends Component {
 
   render() {
     const { getData } = this.props;
-    // console.log(getData);
+    console.log(getData);
     return (
       <div>
         <div className="menu">
@@ -114,13 +114,13 @@ Pical.propTypes = {
   }),
   getData: PropTypes.array
 };
-const mapStateToProps = (state, ownProps) => {
+const mapStateToProps = state => {
   return {
     getData: state.picalReducers.pical
   };
 };
 
-const mapDispatchToProps = (dispatch, ownProps) => {
+const mapDispatchToProps = dispatch => {
   return {
     picalActionCreators: bindActionCreators(picalActions, dispatch)
   };

@@ -19,31 +19,28 @@ class GlobalLoading extends Component {
     const svgCircle = document.querySelectorAll(
       ".global-loading polygon, circle, .path"
     );
-    const svgPath = document.querySelectorAll(
-      ".global-loading .logo-title path"
-    );
 
-    const svgLogoAnimate = anime({
+    anime({
       targets: svgLogo,
       loop: true,
       strokeDashoffset: [anime.setDashoffset, 0],
       easing: "easeInOutSine",
-      duration: 700,
+      duration: 300,
       delay: (el, i) => {
-        return i * 500;
+        return i * 300;
       },
       fill: ["rgba(0,0,0,0)", "#ffffff"]
     });
 
-    const svgCircleAnimate = anime({
+    anime({
       targets: svgCircle,
       loop: true,
       direction: "alternate",
       strokeDashoffset: [anime.setDashoffset, 0],
       easing: "easeInOutSine",
-      duration: 700,
+      duration: 300,
       delay: (el, i) => {
-        return i * 500;
+        return i * 300;
       },
       fill: ["rgba(0,0,0,0)", "#ffffff"]
     });
@@ -51,7 +48,7 @@ class GlobalLoading extends Component {
   render() {
     const { showLoading } = this.props;
     let xhtml = null;
-    if (!showLoading) {
+    if (showLoading) {
       xhtml = (
         <div>
           <div className="global-loading">

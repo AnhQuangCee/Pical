@@ -2,9 +2,19 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import anime from "animejs";
 import "./css/signup.scss";
+import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
+import PropTypes from "prop-types";
+import * as accountActions from "../../actions/account";
 import GlobalLoading from "../Loading/GlobalLoading";
 
 class Signup extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      // getData: []
+    };
+  }
   componentDidMount() {
     this.anime();
   }
@@ -20,8 +30,8 @@ class Signup extends Component {
     var status = "signIn";
 
     signIn.addEventListener("click", function() {
-      if (status == "signIn") {
-        var x = anime({
+      if (status === "signIn") {
+        anime({
           targets: ".picture",
           translateX: "200%",
           borderTopLeftRadius: 0,
@@ -36,7 +46,7 @@ class Signup extends Component {
             submit.innerHTML = "Sign in";
           }
         });
-        var y = anime({
+        anime({
           targets: ".signupForm",
           translateX: "-48%",
           easing: "easeOutQuad",
@@ -46,14 +56,14 @@ class Signup extends Component {
             return i * 500;
           }
         });
-        var emailHidden = anime({
+        anime({
           begin: function() {
-            document.querySelector(".email").style.display = "none";
+            email.style.display = "none";
           }
         });
         status = "signUp";
       } else if (status == "signUp") {
-        var x = anime({
+        anime({
           targets: ".picture",
           translateX: "0%",
           borderTopLeftRadius: 10,
@@ -68,21 +78,29 @@ class Signup extends Component {
             submit.innerHTML = "Sign up";
           }
         });
-        var y = anime({
+        anime({
           targets: ".signupForm",
           translateX: "0%",
           easing: "easeOutQuad"
         });
-        var emailHidden = anime({
+        anime({
           begin: function() {
-            document.querySelector(".email").style.display = "block";
+            email.style.display = "block";
           }
         });
         status = "signIn";
       }
     });
   };
+
+  accountClick = () => {
+    const { accountActionCreatos } = this.props;
+    const { fetchAccount } = accountActionCreatos;
+    fetchAccount();
+  };
   render() {
+    const { getAccount } = this.props;
+    // console.log(getAccount);
     return (
       <div>
         <GlobalLoading></GlobalLoading>
@@ -154,6 +172,7 @@ class Signup extends Component {
                   <Link
                     className="submit btn btn-primary btn-block text-center"
                     to="/profile"
+                    onClick={() => this.accountClick()}
                   >
                     Sign up
                   </Link>
@@ -167,4 +186,26 @@ class Signup extends Component {
   }
 }
 
-export default Signup;
+Signup.propTypes = {
+  accountActionCreatos: PropTypes.shape({
+    fetchAccount: PropTypes.func
+  }),
+  getAccount: PropTypes.array
+};
+
+const mapStateToProps = (state, ownProps) => {
+  return {
+    getAccount: state.accountReducers.account
+  };
+};
+
+const mapDispatchToProps = (dispatch, ownProps) => {
+  return {
+    accountActionCreatos: bindActionCreators(accountActions, dispatch)
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Signup);
