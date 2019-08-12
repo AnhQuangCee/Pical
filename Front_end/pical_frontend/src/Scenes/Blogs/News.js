@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./css/blog.scss";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 class News extends Component {
   render() {
@@ -45,7 +46,7 @@ class News extends Component {
           <div className="col-md-4 col-sm-12 text-inline wow fadeInRight">
             <div className="row">
               <div className="col-md-12 col-sm-6 ">
-                <div className="card">
+                <Link className="card" to="/blogs/blogPost">
                   <div className="card-body">
                     <img
                       src="images/background (2).png"
@@ -67,7 +68,7 @@ class News extends Component {
                       </div>
                     </div>
                   </div>
-                </div>
+                </Link>
               </div>
               <div className="col-md-12 col-sm-6 ">
                 <div className="card">

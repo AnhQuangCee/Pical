@@ -59,7 +59,7 @@ class Nav extends Component {
               </Link>
             </li>
             <li className="nav-item mr-5">
-              <Link className="nav-link" to="/">
+              <Link className="nav-link" to="/upload">
                 Upload
               </Link>
             </li>

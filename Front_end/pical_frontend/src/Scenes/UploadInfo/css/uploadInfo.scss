@@ -1,0 +1,59 @@
+// PICTURE
+// $backgroundIndex: '../.././images/background (4).png';
+// COLOR
+$textColorGray: #868686;
+$textColorGraySubTitle: #4E4E4E;
+$borderColor: #707070;
+$signupButton: #089F9F;
+//FONT FAMILY
+$textFont: 'Montserrat', sans-serif;
+// FONSIZE
+$textIcon: 30px;
+$textHeader: 25px;
+$textTitle: 30px;
+$textDigitsH1: 50px;
+
+.upload{
+	font-family: $textFont;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	height: 440px;
+	width: 750px;
+	.container{
+		.card-header{
+			background: #DC5959;
+			font-size: $textIcon;
+			color: white;
+		}
+		.card-body{
+			padding: 4% 10% 4% 10%;
+			h5{
+				font-size: $textHeader;
+				padding: 0% 4% 4% 4%;
+			}
+			img{
+				border-radius: 10px;
+			}
+			.btn{
+			color: white;
+				background: #DC5959;
+			}
+			.dropzone{
+				padding: 5% 10%;
+				border: 1px dashed gray;
+				margin: 4% 10%;
+			}
+			.upload-form{
+				.input-group-addon{
+					background: none;
+				}
+				.input-group .form-control{
+					padding-left: 0px;
+					border-left: none;
+				}
+			}
+		}
+	}
+}

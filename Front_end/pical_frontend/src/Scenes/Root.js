@@ -13,6 +13,9 @@ import Popular from "./Pical/Popular";
 import Creative from "./Pical/Creative";
 import Service from "./Pical/Service";
 import Editorial from "./Pical/Editorial";
+import BlogPost from "./BlogPost/BlogPost";
+import Upload from "./Upload/Upload";
+import UploadInfo from "./UploadInfo/UploadInfo";
 
 class Root extends Component {
   render() {
@@ -31,6 +34,9 @@ class Root extends Component {
         <Route path="/creative" exact component={Creative}></Route>
         <Route path="/editorial" exact component={Editorial}></Route>
         <Route path="/service" exact component={Service}></Route>
+        <Route path="/blogs/blogPost" exact component={BlogPost}></Route>
+        <Route path="/upload" exact component={Upload}></Route>
+        <Route path="/upload/uploadInfo" exact component={UploadInfo}></Route>
       </div>
     );
   }
