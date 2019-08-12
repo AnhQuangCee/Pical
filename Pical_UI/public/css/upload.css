@@ -1,0 +1,21 @@
+.upload {
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 440px;
+  width: 750px; }
+  .upload .container .card-header {
+    background: #DC5959;
+    font-size: 30px;
+    color: white; }
+  .upload .container .card-body .btn {
+    color: white;
+    background: #DC5959; }
+  .upload .container .card-body .dropzone {
+    padding: 5% 10%;
+    border: 1px dashed gray;
+    margin: 4% 10%; }
+
+/*# sourceMappingURL=upload.css.map */
