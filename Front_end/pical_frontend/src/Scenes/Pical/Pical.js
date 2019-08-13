@@ -53,7 +53,7 @@ class Pical extends Component {
 
   render() {
     const { getData } = this.props;
-    console.log(getData);
+    // console.log(getData);
     return (
       <div>
         <div className="menu">

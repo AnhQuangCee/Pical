@@ -1,11 +1,16 @@
-import { fork, take, call, put, delay } from "redux-saga/effects";
+import { fork, take, call, put, delay, takeEvery } from "redux-saga/effects";
 import * as picalTypes from "../constants/actionsTypes";
-import { getPical, getAccount } from "../apis/pical";
+import { getPical, getAccount, addUser } from "../apis/pical";
 import { STATUS_CODE } from "../constants/Config";
 import { fetchPicalFail, fetchPicalSuccess } from "../actions/pical";
 import { showLoading, hideLoading } from "../actions/ui";
 import * as accountTypes from "../constants/account";
-import { fetchAccountSucess, fetchAccountFail } from "../actions/account";
+import {
+  fetchAccountSucess,
+  fetchAccountFail,
+  addUserSucess,
+  addUserFail
+} from "../actions/account";
 
 function* watchFetchPicalActions() {
   while (true) {
@@ -43,7 +48,29 @@ function* watchFetchAccount() {
   }
 }
 
+// ADD_USER
+function* addUserAccount({ payload }) {
+  yield put(showLoading());
+  const { username, email, password } = payload;
+  // console.log(payload);
+
+  const resp = yield call(addUser, {
+    username,
+    email,
+    password
+  });
+  const { status, data } = resp;
+
+  if (status === STATUS_CODE.CREATED) {
+    yield put(addUserSucess(data));
+    yield put(hideLoading());
+  } else {
+    yield put(addUserFail(data));
+    yield put(hideLoading());
+  }
+}
 function* rootSaga() {
+  yield takeEvery(accountTypes.ADD_USER, addUserAccount);
   yield fork(watchFetchPicalActions);
   yield fork(watchCreatePicalActions);
   yield fork(watchFetchAccount);

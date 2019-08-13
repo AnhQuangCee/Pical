@@ -23,3 +23,33 @@ export const fetchAccountFail = error => {
     }
   };
 };
+
+// ADD USER
+export const addUser = (username, email, password) => {
+  return {
+    type: accountConstants.ADD_USER,
+    payload: {
+      username,
+      email,
+      password
+    }
+  };
+};
+
+export const addUserSucess = data => {
+  return {
+    type: accountConstants.ADD_USER_SUCCESS,
+    payload: {
+      data
+    }
+  };
+};
+
+export const addUserFail = error => {
+  return {
+    type: accountConstants.ADD_USER_FAIL,
+    payload: {
+      error
+    }
+  };
+};

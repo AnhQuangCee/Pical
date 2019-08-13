@@ -79,7 +79,7 @@ body {
         p.titles {
           font-size: 22px;
           padding-top: 3.5%;
-          color: black!important;
+          color: black !important;
         }
       }
     }
@@ -94,14 +94,14 @@ body {
       p.title {
         font-size: $textHeader;
         padding: 15px 0px 5px 0px;
-        color: black!important;
+        color: black !important;
       }
       p.time {
         font-size: $textTime;
-        color: black!important;
-        &:hover{
+        color: black !important;
+        &:hover {
           color: black;
-          text-decoration: none!important;
+          text-decoration: none !important;
         }
       }
       .row {

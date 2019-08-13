@@ -3,8 +3,9 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import anime from "animejs";
 import "./css/signup.scss";
 import { connect } from "react-redux";
-import { bindActionCreators } from "redux";
+import { compose, bindActionCreators } from "redux";
 import PropTypes from "prop-types";
+import { Field, reduxForm } from "redux-form";
 import * as accountActions from "../../actions/account";
 import GlobalLoading from "../Loading/GlobalLoading";
 
@@ -98,8 +99,18 @@ class Signup extends Component {
     const { fetchAccount } = accountActionCreatos;
     fetchAccount();
   };
+
+  handleSubmitForm = data => {
+    // console.log(data);
+    const { addUserActionCreator } = this.props;
+    const { addUser } = addUserActionCreator;
+    const { username, email, password } = data;
+    addUser(username, email, password);
+  };
   render() {
-    const { getAccount } = this.props;
+    const { getAccount, handleSubmit } = this.props;
+    // console.log(this.props);
+
     // console.log(getAccount);
     return (
       <div>
@@ -114,14 +125,19 @@ class Signup extends Component {
               </div>
               <div className="col-md-8 col-12 signupForm">
                 <h1 className="text-center login-title">Create Account</h1>
-                <form className="signupForm1">
+                <form
+                  className="signupForm1"
+                  onSubmit={handleSubmit(this.handleSubmitForm)}
+                >
                   <div className="form-group">
                     <div className="input-group input-group-lg">
                       <span className="input-group-addon">
                         <i className="fas fa-user" />
                       </span>
-                      <input
+                      <Field
                         type="text"
+                        name="username"
+                        component="input"
                         className="form-control"
                         id="recipient-name"
                         placeholder="Username"
@@ -133,10 +149,11 @@ class Signup extends Component {
                       <span className="input-group-addon">
                         <i className="fas fa-envelope" />
                       </span>
-                      <input
+                      <Field
                         type="email"
+                        name="email"
+                        component="input"
                         className="form-control"
-                        id="message-text"
                         placeholder="Email"
                       />
                     </div>
@@ -146,8 +163,10 @@ class Signup extends Component {
                       <span className="input-group-addon">
                         <i className="fas fa-unlock-alt" />
                       </span>
-                      <input
+                      <Field
                         type="password"
+                        name="password"
+                        component="input"
                         className="form-control"
                         id="message-text"
                         placeholder="Password"
@@ -169,13 +188,19 @@ class Signup extends Component {
                       </div>
                     </div>
                   </div>
-                  <Link
+                  {/* <Link
                     className="submit btn btn-primary btn-block text-center"
                     to="/profile"
                     onClick={() => this.accountClick()}
                   >
                     Sign up
-                  </Link>
+                  </Link> */}
+                  <button
+                    className="submit btn btn-primary btn-block text-center"
+                    type="submit"
+                  >
+                    Sign up
+                  </button>
                 </form>
               </div>
             </div>
@@ -190,7 +215,11 @@ Signup.propTypes = {
   accountActionCreatos: PropTypes.shape({
     fetchAccount: PropTypes.func
   }),
-  getAccount: PropTypes.array
+  addUserActionCreator: PropTypes.shape({
+    addUser: PropTypes.func
+  }),
+  getAccount: PropTypes.array,
+  handleSubmit: PropTypes.func
 };
 
 const mapStateToProps = (state, ownProps) => {
@@ -201,11 +230,19 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
-    accountActionCreatos: bindActionCreators(accountActions, dispatch)
+    accountActionCreatos: bindActionCreators(accountActions, dispatch),
+    addUserActionCreator: bindActionCreators(accountActions, dispatch)
   };
 };
-
-export default connect(
+const withConnect = connect(
   mapStateToProps,
   mapDispatchToProps
+);
+const FORM_NAME = "SIGN_IN";
+const withReduxForm = reduxForm({
+  form: FORM_NAME
+});
+export default compose(
+  withConnect,
+  withReduxForm
 )(Signup);

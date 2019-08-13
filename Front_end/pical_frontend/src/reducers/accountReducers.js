@@ -22,6 +22,23 @@ const reducer = (state = accountInitialState, action) => {
         ...state,
         account: []
       };
+
+    // ADD USER
+    case accountConstants.ADD_USER:
+      return {
+        ...state
+      };
+    case accountConstants.ADD_USER_SUCCESS:
+      // const { data } = action.payload;
+      return {
+        ...state
+        // account: data
+      };
+    case accountConstants.ADD_USER_FAIL:
+      return {
+        ...state
+        // account: []
+      };
     default:
       return state;
   }

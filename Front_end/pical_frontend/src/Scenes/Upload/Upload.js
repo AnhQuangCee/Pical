@@ -15,7 +15,7 @@ class Upload extends Component {
           <div className="card">
             <i className="card-header text-right fas fa-times" />
             <div className="card-body text-center">
-              <h5 className="card-title">Upload your images</h5>
+              <h5 className="card-title">Upload your imagens</h5>
               <form action="/file-upload" className="dropzone">
                 <div className="fallback">
                   <input name="file" type="file" multiple />
