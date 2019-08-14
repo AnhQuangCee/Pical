@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./css/contact.scss";
+
 class Form extends Component {
   render() {
     return (
@@ -37,7 +38,6 @@ class Form extends Component {
                     id="exampleFormControlTextarea1"
                     placeholder="Messege"
                     rows={10}
-                    defaultValue={""}
                   />
                 </div>
                 <div className="btn btn-secondary btn-block">Send</div>

@@ -17,6 +17,6 @@ export const getAccount = () => {
 export const addUser = data => {
   // console.log(data);
   return axiosService
-    .post(`${Config.API_URL}/${urlAddUser}`, { data })
+    .post(`${Config.API_URL}/${urlAddUser}`, data)
     .then(resp => resp.data);
 };

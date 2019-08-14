@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import WOW from "wowjs";
 import Nav from "../../Components/Nav";
 import MenuAC from "../../Components/MenuAC";
 import News from "./News";
@@ -6,7 +7,6 @@ import Trending from "./Trending";
 import Tutorials from "./Tutorials";
 import Footer from "../../Components/Footer";
 import "./css/blog.scss";
-import WOW from "wowjs";
 
 class Blogs extends Component {
   componentDidMount() {

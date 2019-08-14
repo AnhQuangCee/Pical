@@ -121,13 +121,13 @@ GlobalLoading.protoTypes = {
     showLoading: PropTypes.func
   })
 };
-const mapStateToProps = (state, ownProps) => {
+const mapStateToProps = state => {
   return {
     showLoading: state.ui.showLoading
   };
 };
 
-const mapDispatchToProps = (dispatch, ownProps) => {
+const mapDispatchToProps = dispatch => {
   return {
     uiActionCreators: bindActionCreators(uiAction, dispatch)
   };

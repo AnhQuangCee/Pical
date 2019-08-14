@@ -8,22 +8,22 @@ class TOC extends Component {
           <h6>TABLE OF CONTENTS</h6>
           <ul className="sticky-top">
             <li className="nav-item">
-              <a className="nav-link active" href="#">
+              <a className="nav-link active" href="/">
                 Active
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="/">
                 Link
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="/">
                 Link
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link disabled" href="#">
+              <a className="nav-link disabled" href="/">
                 Disabled
               </a>
             </li>

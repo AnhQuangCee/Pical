@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+// import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import anime from "animejs";
 import "./css/signup.scss";
 import { connect } from "react-redux";
@@ -30,7 +30,7 @@ class Signup extends Component {
     var submit = document.querySelector(".submit");
     var status = "signIn";
 
-    signIn.addEventListener("click", function() {
+    signIn.addEventListener("click", function animation() {
       if (status === "signIn") {
         anime({
           targets: ".picture",
@@ -40,7 +40,7 @@ class Signup extends Component {
           borderBottomRightRadius: 10,
           borderBottomLeftRadius: 0,
           easing: "easeOutQuad",
-          update: function() {
+          update: function update() {
             hello.innerHTML = "Hello, Friend";
             signIn.innerHTML = "Sign up";
             loginTitle.innerHTML = "Login";
@@ -51,19 +51,18 @@ class Signup extends Component {
           targets: ".signupForm",
           translateX: "-48%",
           easing: "easeOutQuad",
-          delay: 500,
           duration: 1000,
-          delay: function(el, i) {
+          delay: function delay(el, i) {
             return i * 500;
           }
         });
         anime({
-          begin: function() {
+          begin: function begin() {
             email.style.display = "none";
           }
         });
         status = "signUp";
-      } else if (status == "signUp") {
+      } else if (status === "signUp") {
         anime({
           targets: ".picture",
           translateX: "0%",
@@ -72,7 +71,7 @@ class Signup extends Component {
           borderBottomRightRadius: 0,
           borderBottomLeftRadius: 10,
           easing: "easeOutQuad",
-          update: function() {
+          update: function update() {
             hello.innerHTML = "Welcome Back!";
             signIn.innerHTML = "Sign in";
             loginTitle.innerHTML = "Create Account";
@@ -85,7 +84,7 @@ class Signup extends Component {
           easing: "easeOutQuad"
         });
         anime({
-          begin: function() {
+          begin: function begin() {
             email.style.display = "block";
           }
         });
@@ -222,13 +221,13 @@ Signup.propTypes = {
   handleSubmit: PropTypes.func
 };
 
-const mapStateToProps = (state, ownProps) => {
+const mapStateToProps = state => {
   return {
     getAccount: state.accountReducers.account
   };
 };
 
-const mapDispatchToProps = (dispatch, ownProps) => {
+const mapDispatchToProps = dispatch => {
   return {
     accountActionCreatos: bindActionCreators(accountActions, dispatch),
     addUserActionCreator: bindActionCreators(accountActions, dispatch)

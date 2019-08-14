@@ -19,7 +19,7 @@ class Tutorials extends Component {
               <div className="card">
                 <div className="card-body">
                   <img
-                    src="images/background (2).png"
+                    src="images/background(5).png"
                     style={{ width: "100%" }}
                     alt="true"
                   />
@@ -45,7 +45,7 @@ class Tutorials extends Component {
               <div className="card">
                 <div className="card-body">
                   <img
-                    src="images/background (2).png"
+                    src="images/background(5).png"
                     style={{ width: "100%" }}
                   />
                   <div className="row">
@@ -70,7 +70,7 @@ class Tutorials extends Component {
               <div className="card">
                 <div className="card-body">
                   <img
-                    src="images/background (2).png"
+                    src="images/background(5).png"
                     style={{ width: "100%" }}
                   />
                   <div className="row">

@@ -32,7 +32,8 @@ class MenuPAG extends Component {
                 <ul className="nav navbar-default justify-content-center">
                   <li className="nav-item">
                     <Link className="nav-link" to="/profile">
-                      Profile<span className="sr-only">(current)</span>
+                      Profile
+                      <span className="sr-only">(current)</span>
                     </Link>
                   </li>
                   <li className="nav-item ml-5">

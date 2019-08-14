@@ -22,7 +22,8 @@ class Upload extends Component {
                 </div>
               </form>
               <Link className="btn" to="/upload/uploadInfo">
-                Next <i className="fas fa-chevron-right" />
+                Next
+                <i className="fas fa-chevron-right" />
               </Link>
             </div>
           </div>

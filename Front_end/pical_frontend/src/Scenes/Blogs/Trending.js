@@ -18,7 +18,7 @@ class Trending extends Component {
             <div className="card">
               <div className="card-body">
                 <img
-                  src="images/background (2).png"
+                  src="images/background(5).png"
                   style={{ width: "100%" }}
                   alt="true"
                 />
@@ -43,10 +43,7 @@ class Trending extends Component {
           <div className="col-md-4 col-sm-6 wow fadeInUp">
             <div className="card">
               <div className="card-body">
-                <img
-                  src="images/background (2).png"
-                  style={{ width: "100%" }}
-                />
+                <img src="images/background(5).png" style={{ width: "100%" }} />
                 <div className="row">
                   <div className="col-3 text-center">
                     <img
@@ -68,10 +65,7 @@ class Trending extends Component {
           <div className="col-md-4 col-sm-6 wow fadeInUp">
             <div className="card">
               <div className="card-body">
-                <img
-                  src="images/background (2).png"
-                  style={{ width: "100%" }}
-                />
+                <img src="images/background(5).png" style={{ width: "100%" }} />
                 <div className="row">
                   <div className="col-3 text-center">
                     <img
@@ -93,10 +87,7 @@ class Trending extends Component {
           <div className="col-md-4 col-sm-6 wow fadeInUp">
             <div className="card">
               <div className="card-body">
-                <img
-                  src="images/background (2).png"
-                  style={{ width: "100%" }}
-                />
+                <img src="images/background(5).png" style={{ width: "100%" }} />
                 <div className="row">
                   <div className="col-3 text-center">
                     <img
@@ -118,10 +109,7 @@ class Trending extends Component {
           <div className="col-md-4 col-sm-6 wow fadeInUp">
             <div className="card">
               <div className="card-body">
-                <img
-                  src="images/background (2).png"
-                  style={{ width: "100%" }}
-                />
+                <img src="images/background(5).png" style={{ width: "100%" }} />
                 <div className="row">
                   <div className="col-3 text-center">
                     <img
@@ -143,10 +131,7 @@ class Trending extends Component {
           <div className="col-md-4 col-sm-6 wow fadeInUp">
             <div className="card">
               <div className="card-body">
-                <img
-                  src="images/background (2).png"
-                  style={{ width: "100%" }}
-                />
+                <img src="images/background(5).png" style={{ width: "100%" }} />
                 <div className="row">
                   <div className="col-3 text-center">
                     <img

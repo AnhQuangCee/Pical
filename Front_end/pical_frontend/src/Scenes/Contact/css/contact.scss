@@ -1,5 +1,5 @@
 // PICTURE
-$backgroundIndex: "/images/background (4).png";
+$backgroundIndex: "/images/background(5).png";
 // COLOR
 $textColorGray: #868686;
 $textColorGraySubTitle: #4e4e4e;
@@ -41,7 +41,7 @@ body {
   overflow: hidden;
   width: 100%;
   font-family: $textFont;
-  background-image: url($backgroundIndex);
+  // background-image: url($backgroundIndex);
   height: 500px;
   .svg {
     width: 100%;

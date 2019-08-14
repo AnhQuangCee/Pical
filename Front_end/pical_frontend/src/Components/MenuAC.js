@@ -23,7 +23,7 @@ class MenuAC extends Component {
       strokeDashoffset: [anime.setDashoffset, 0],
       easing: "easeInOutSine",
       duration: 1500,
-      delay: function(el, i) {
+      delay: function delay(el, i) {
         return i * 250;
       }
       // direction: 'alternate',
@@ -32,7 +32,7 @@ class MenuAC extends Component {
       targets: art1,
       strokeDashoffset: [anime.setDashoffset, 0],
       duration: 3000,
-      delay: function(el, i) {
+      delay: function delay(el, i) {
         return i * 250;
       },
       easing: "easeOutSine"
@@ -42,7 +42,7 @@ class MenuAC extends Component {
       targets: art2,
       strokeDashoffset: [anime.setDashoffset, 0],
       duration: 3000,
-      delay: function(el, i) {
+      delay: function delay(el, i) {
         return i * 250;
       },
       easing: "easeOutSine"
@@ -52,7 +52,7 @@ class MenuAC extends Component {
       targets: art3,
       strokeDashoffset: [anime.setDashoffset, 0],
       duration: 3000,
-      delay: function(el, i) {
+      delay: function delay(el, i) {
         return i * 250;
       },
       easing: "easeOutSine"
@@ -62,7 +62,7 @@ class MenuAC extends Component {
       targets: text2,
       opacity: 0,
       duration: 3000,
-      delay: function(el, i) {
+      delay: function delay(el, i) {
         return i * 250;
       },
       opacity: 1

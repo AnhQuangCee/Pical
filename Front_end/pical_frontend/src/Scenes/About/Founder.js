@@ -37,7 +37,7 @@ class Founder extends Component {
                 tempor eiusmod tempor incididunts uet labore moslet dolore magna
                 aliqua uat enim ad minim veniam quis nostrud exercitation
                 ullamco laboris tem nisil dolorut aliquip ex ea commodo
-                consequat.{" "}
+                consequat.
               </p>
               <div className="btn btn-outline-info">Read more</div>
             </div>

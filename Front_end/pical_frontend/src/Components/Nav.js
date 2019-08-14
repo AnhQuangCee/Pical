@@ -10,24 +10,22 @@ class Nav extends Component {
     var navColor = document.querySelector(".fixed-top");
     var scrollStatus = "down100";
 
-    window.addEventListener("scroll", function() {
+    window.addEventListener("scroll", function scroll() {
       if (window.pageYOffset > 100) {
-        if (scrollStatus == "down100") {
+        if (scrollStatus === "down100") {
           navColor.classList.add("nav-color");
           scrollStatus = "up100";
         }
-      } else {
-        if (scrollStatus == "up100") {
-          navColor.classList.remove("nav-color");
-          scrollStatus = "down100";
-        }
+      } else if (scrollStatus === "up100") {
+        navColor.classList.remove("nav-color");
+        scrollStatus = "down100";
       }
     });
   };
   render() {
     return (
       <nav className="navbar navbar-expand-lg navbar-light">
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" href="">
           Pical
         </a>
         <button
@@ -45,7 +43,8 @@ class Nav extends Component {
           <ul className="navbar-nav ml-auto">
             <li className="nav-item active mr-5">
               <Link className="nav-link" to="/">
-                Home<span className="sr-only">(current)</span>
+                Home
+                <span className="sr-only">(current)</span>
               </Link>
             </li>
             <li className="nav-item mr-5">

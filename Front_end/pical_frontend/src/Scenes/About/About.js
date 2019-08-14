@@ -1,7 +1,7 @@
 import React, { Component } from "react";
+import WOW from "wowjs";
 import Nav from "../../Components/Nav";
 import MenuAC from "../../Components/MenuAC";
-import WOW from "wowjs";
 import Topic from "../../Components/Topic";
 import Founder from "./Founder";
 import TeamDev from "./TeamDev";

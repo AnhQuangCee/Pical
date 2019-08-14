@@ -21,7 +21,7 @@ class News extends Component {
             <div className="card">
               <div className="card-body">
                 <img
-                  src="images/background (5).png"
+                  src="images/background(5).png"
                   style={{ width: "100%" }}
                   alt="true"
                 />
@@ -49,7 +49,7 @@ class News extends Component {
                 <Link className="card" to="/blogs/blogPost">
                   <div className="card-body">
                     <img
-                      src="images/background (2).png"
+                      src="images/background(5).png"
                       style={{ width: "100%" }}
                     />
                     <div className="row">
@@ -74,7 +74,7 @@ class News extends Component {
                 <div className="card">
                   <div className="card-body">
                     <img
-                      src="images/background (2).png"
+                      src="images/background(5).png"
                       style={{ width: "100%" }}
                     />
                     <div className="row">

@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import WOW from "wowjs";
 import Nav from "../../Components/Nav";
 import Footer from "../../Components/Footer";
 import MenuPAG from "../../Components/MenuPAG";

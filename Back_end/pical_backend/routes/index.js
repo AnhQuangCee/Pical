@@ -66,4 +66,27 @@ router.get('/getDataLogin', function(req, res, next) {
   })
 });
 
+
+// ADD_USER
+router.get('/addUser', function(req, res, next) { 
+  res.send('hello');
+});
+
+router.post('/addUser', function(req, res, next) { 
+
+  var username = req.body.username;
+  var email = req.body.email;
+  var password = req.body.password; 
+  // console.log(req.body);
+
+  pool.query("INSERT INTO pical_account (username,email,password) values ($1,$2,$3)",[username,email,password],(err,response)=>{
+    if(err) {
+      res.send(err);
+      res.send(0);
+    }
+    else {
+      res.sendStatus(200)
+    }
+  })
+});
 module.exports = router;
