@@ -44,6 +44,8 @@ html, body {
       color: #089999;
       font-family: "Montserrat", sans-serif;
       font-size: 30px; }
+    .signup .container-fluid .row .signupForm .form-signup {
+      display: none; }
     .signup .container-fluid .row .signupForm .signupForm1 {
       width: 380px;
       margin-left: 7%;
@@ -53,6 +55,8 @@ html, body {
         font-size: 18px; }
       .signup .container-fluid .row .signupForm .signupForm1 .form-group .fa-unlock-alt {
         font-size: 22px; }
+      .signup .container-fluid .row .signupForm .signupForm1 .btn-block + .btn-block {
+        margin-top: 0rem; }
       .signup .container-fluid .row .signupForm .signupForm1 .btn-primary {
         background-color: #089F9F;
         border: none;

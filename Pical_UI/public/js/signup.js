@@ -8,6 +8,16 @@ var status = "signIn";
 
 signIn.addEventListener('click', function(){
 	if(status == "signIn"){
+		var usernameHideSignin = anime({
+			begin: function() {
+				document.querySelector(".form-signin").style.display = "none";
+			}
+		});
+		var usernameHideSignup = anime({
+			begin: function() {
+				document.querySelector(".form-signup").style.display = "block";
+			}
+		});
 		var x = anime({
 			targets: '.picture',
 			translateX: '200%',
@@ -20,7 +30,6 @@ signIn.addEventListener('click', function(){
 				hello.innerHTML = "Hello, Friend";
 				signIn.innerHTML = "Sign up";
 				loginTitle.innerHTML = "Login";
-				submit.innerHTML = "Sign in";
 			}
 		});
 		var y = anime({
@@ -31,14 +40,19 @@ signIn.addEventListener('click', function(){
 			duration: 1000,
 			delay: function(el, i) { return i * 500; }
 		});
-		var emailHidden =  anime({
-			begin: function() {
-				document.querySelector(".email").style.display = "none";
-			}
-		});
 		status = "signUp";
 	}
 	else if(status == "signUp"){
+		var usernameHideSignin = anime({
+			begin: function() {
+				document.querySelector(".form-signin").style.display = "block";
+			}
+		});
+		var usernameHideSignup = anime({
+			begin: function() {
+				document.querySelector(".form-signup").style.display = "none";
+			}
+		});
 		var x = anime({
 			targets: '.picture',
 			translateX: '0%',
@@ -51,18 +65,12 @@ signIn.addEventListener('click', function(){
 				hello.innerHTML = "Welcome Back!";
 				signIn.innerHTML = "Sign in";
 				loginTitle.innerHTML = "Create Account";
-				submit.innerHTML = "Sign up";
 			}
 		});
 		var y = anime({
 			targets: '.signupForm',
 			translateX: '0%',
 			easing: 'easeOutQuad'
-		});
-		var emailHidden =  anime({
-			begin: function() {
-				document.querySelector(".email").style.display = "block";
-			}
 		});
 		status = "signIn";
 	}

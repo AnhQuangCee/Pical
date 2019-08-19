@@ -56,7 +56,9 @@
         "class-methods-use-this": 0,
         "react/require-default-props": 0,
         "react/forbid-prop-types": 0,
-        "no-case-declarations": 1
+        "no-case-declarations": 1,
+        "jsx-a11y/click-events-have-key-events": 0,
+        "jsx-a11y/no-static-element-interactions": 0,
     },
     "plugins": [
         "prettier"

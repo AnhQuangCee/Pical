@@ -1,7 +1,27 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
+import { compose, bindActionCreators } from "redux";
+import PropTypes from "prop-types";
+import * as accountActions from "../../actions/account";
 
 class Info extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+  componentWillMount() {
+    const { accountActionCreatos } = this.props;
+    const { fetchAccount } = accountActionCreatos;
+    fetchAccount();
+  }
+
+  // getAccountInfo = () => {
+
+  // };
   render() {
+    const { getAccount } = this.props;
+    // console.log(getAccount);
+
     return (
       <div className="profile">
         <div className="container">
@@ -122,4 +142,28 @@ class Info extends Component {
   }
 }
 
-export default Info;
+Info.protoTypes = {
+  accountActionCreatos: PropTypes.shape({
+    fetchAccount: PropTypes.func
+  }),
+  getAccount: PropTypes.array
+};
+
+const mapStateToProps = state => {
+  return {
+    getAccount: state.accountReducers.account
+  };
+};
+
+const mapDispatchToProps = dispatch => {
+  return {
+    accountActionCreatos: bindActionCreators(accountActions, dispatch)
+  };
+};
+
+const withConnect = connect(
+  mapStateToProps,
+  mapDispatchToProps
+);
+
+export default compose(withConnect)(Info);

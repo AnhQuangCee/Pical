@@ -66,6 +66,9 @@ html,body{
 					font-family: $textFont;
 					font-size: $textTitle;
 				}
+				.form-signup{
+					display: none;
+				}
 				.signupForm1{
 					width: 380px;
 					margin-left: 7%;
@@ -78,6 +81,9 @@ html,body{
 						.fa-unlock-alt{
 							font-size: 22px;
 						}
+					}
+					.btn-block+.btn-block {
+						margin-top: 0rem;
 					}
 					.btn-primary{
 						background-color: $signupButton;
