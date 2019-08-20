@@ -5,9 +5,24 @@ import MenuPAG from "../../Components/MenuPAG";
 import "./css/profile.scss";
 import Info from "./Info";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { connect } from "react-redux";
 
 class Profile extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
+  addData = () => {
+    var InformationAccount = {};
+    InformationAccount.username = this.props.location.state.referrer.username;
+    InformationAccount.password = this.props.location.state.referrer.password;
+    // console.log(a);
+    this.props.profileInfo(InformationAccount);
+  };
   render() {
+    // console.log(this.props.location.state.referrer);
+
     return (
       <div>
         <div className="menu">
@@ -17,60 +32,9 @@ class Profile extends Component {
             </div>
           </div>
         </div>
-        <div className="topic">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-4 col-12">
-                <div className="image-block">
-                  <div className="circular--portrait ">
-                    <img src="images/trang6.jpg" alt="true" />
-                  </div>
-                  <div className="name">
-                    {this.props.location.state.referrer}
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-8 col-12 navbar navbar-expand-lg">
-                <button
-                  className="navbar-toggler"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#navbarShow"
-                  aria-controls="navbarShow"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <i className="fas fa-caret-down" />
-                </button>
-                <div className="collapse navbar-collapse" id="navbarShow">
-                  <ul className="nav navbar-default justify-content-center">
-                    <li className="nav-item">
-                      <Link className="nav-link" to="/profile">
-                        Profile
-                        <span className="sr-only">(current)</span>
-                      </Link>
-                    </li>
-                    <li className="nav-item ml-5">
-                      <Link className="nav-link" to="/albums">
-                        Albums
-                      </Link>
-                    </li>
-                    <li className="nav-item ml-5">
-                      <Link className="nav-link" to="/gallery">
-                        Gallery
-                      </Link>
-                    </li>
-                    <li className="nav-item ml-5">
-                      <Link className="nav-link" to="/blogs">
-                        Blogs
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr />
+        <MenuPAG></MenuPAG>
+        <div className="btn btn-info" onClick={() => this.addData()}>
+          Ok
         </div>
         <Info></Info>
         <Footer></Footer>
@@ -85,9 +49,13 @@ const mapStateToProps = (state, ownProps) => {
 };
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
-    profileInfo: username => {
-      dispatch({ type: "PROFILE_INFO" }, username);
+    profileInfo: username1 => {
+      dispatch({ type: "PROFILE_INFO", username1 });
     }
   };
 };
-export default Profile;
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Profile);
+// export default Profile;

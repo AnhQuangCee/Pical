@@ -16,6 +16,7 @@ class Signup extends Component {
     super(props);
     this.state = {
       username: "",
+      email: "",
       password: "",
       status: false
     };
@@ -158,7 +159,13 @@ class Signup extends Component {
         <Redirect
           to={{
             pathname: "/profile",
-            state: { referrer: this.state.username }
+            state: {
+              referrer: {
+                username: this.state.username,
+                email: this.state.email,
+                password: this.state.password
+              }
+            }
           }}
         />
       );

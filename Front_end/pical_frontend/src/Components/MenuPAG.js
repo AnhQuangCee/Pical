@@ -1,9 +1,22 @@
 import React, { Component } from "react";
 import "../Scenes/Profile/css/profile.scss";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { connect } from "react-redux";
 
 class MenuPAG extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      // username: ""
+    };
+  }
+
+  getUsername = () => {
+    console.log(this.props.username);
+  };
+
   render() {
+    console.log(this.props.username);
     return (
       <div className="topic">
         <div className="container">
@@ -13,7 +26,7 @@ class MenuPAG extends Component {
                 <div className="circular--portrait ">
                   <img src="images/trang6.jpg" alt="true" />
                 </div>
-                <div className="name">Cathy Kane</div>
+                <div className="name"></div>
               </div>
             </div>
             <div className="col-md-8 col-12 navbar navbar-expand-lg">
@@ -30,6 +43,12 @@ class MenuPAG extends Component {
               </button>
               <div className="collapse navbar-collapse" id="navbarShow">
                 <ul className="nav navbar-default justify-content-center">
+                  <div
+                    className="btn btn-danger"
+                    onClick={() => this.getUsername()}
+                  >
+                    OKKK
+                  </div>
                   <li className="nav-item">
                     <Link className="nav-link" to="/profile">
                       Profile
@@ -61,5 +80,20 @@ class MenuPAG extends Component {
     );
   }
 }
-
-export default MenuPAG;
+const mapStateToProps = (state, ownProps) => {
+  return {
+    username: state.testThoi
+  };
+};
+// const mapDispatchToProps = (dispatch, ownProps) => {
+//   return {
+//     getUsername: getUser => {
+//       dispatch({ type: "PROFILE_MENUPAG", getUser });
+//     }
+//   };
+// };
+export default connect(
+  mapStateToProps,
+  null
+)(MenuPAG);
+// export default MenuPAG;
