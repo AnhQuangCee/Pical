@@ -13,16 +13,16 @@ class Profile extends Component {
     this.state = {};
   }
 
-  addData = () => {
+  componentWillMount() {
     var InformationAccount = {};
     InformationAccount.username = this.props.location.state.referrer.username;
     InformationAccount.password = this.props.location.state.referrer.password;
     // console.log(a);
     this.props.profileInfo(InformationAccount);
-  };
+  }
+
   render() {
     // console.log(this.props.location.state.referrer);
-
     return (
       <div>
         <div className="menu">
@@ -33,9 +33,6 @@ class Profile extends Component {
           </div>
         </div>
         <MenuPAG></MenuPAG>
-        <div className="btn btn-info" onClick={() => this.addData()}>
-          Ok
-        </div>
         <Info></Info>
         <Footer></Footer>
       </div>
@@ -44,7 +41,7 @@ class Profile extends Component {
 }
 const mapStateToProps = (state, ownProps) => {
   return {
-    username: state.username
+    testThoi: state.testThoi
   };
 };
 const mapDispatchToProps = (dispatch, ownProps) => {

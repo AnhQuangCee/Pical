@@ -7,12 +7,21 @@ import * as accountActions from "../../actions/account";
 class Info extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      username: "",
+      password: ""
+    };
   }
   componentWillMount() {
     const { accountActionCreatos } = this.props;
     const { fetchAccount } = accountActionCreatos;
     fetchAccount();
+    const { username } = this.props.infomationAccount;
+    const { password } = this.props.infomationAccount;
+    this.setState({
+      username: username,
+      password: password
+    });
   }
 
   // getAccountInfo = () => {
@@ -21,7 +30,11 @@ class Info extends Component {
   render() {
     const { getAccount } = this.props;
     // console.log(getAccount);
-
+    getAccount.forEach(item => {
+      if (item.username === this.state.username) {
+        console.log(item.email);
+      }
+    });
     return (
       <div className="profile">
         <div className="container">
@@ -44,6 +57,7 @@ class Info extends Component {
                     placeholder="Username"
                     aria-label="Recipient's username"
                     aria-describedby="basic-addon2"
+                    value={this.state.username}
                   />
                 </div>
               </div>
@@ -74,6 +88,7 @@ class Info extends Component {
                     placeholder="Password"
                     aria-label="Recipient's username"
                     aria-describedby="basic-addon2"
+                    value={this.state.password}
                   />
                 </div>
               </div>
@@ -151,7 +166,8 @@ Info.protoTypes = {
 
 const mapStateToProps = state => {
   return {
-    getAccount: state.accountReducers.account
+    getAccount: state.accountReducers.account,
+    infomationAccount: state.InformationAccountReducer.infomationAccount
   };
 };
 

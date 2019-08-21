@@ -9,7 +9,6 @@ import PropTypes from "prop-types";
 import { Field, reduxForm } from "redux-form";
 import * as accountActions from "../../actions/account";
 import GlobalLoading from "../Loading/GlobalLoading";
-import Profile from "../Profile/Profile";
 
 class Signup extends Component {
   constructor(props) {
@@ -30,19 +29,19 @@ class Signup extends Component {
     var loginTitle = document.querySelector(".login-title");
     var status = "signIn";
 
-    signIn.addEventListener("click", function() {
+    signIn.addEventListener("click", function animate() {
       if (status === "signIn") {
-        var usernameHideSignin = anime({
-          begin: function() {
+        anime({
+          begin: function begin() {
             document.querySelector(".form-signin").style.display = "none";
           }
         });
-        var usernameHideSignup = anime({
-          begin: function() {
+        anime({
+          begin: function begin() {
             document.querySelector(".form-signup").style.display = "block";
           }
         });
-        var x = anime({
+        anime({
           targets: ".picture",
           translateX: "200%",
           borderTopLeftRadius: 0,
@@ -50,35 +49,34 @@ class Signup extends Component {
           borderBottomRightRadius: 10,
           borderBottomLeftRadius: 0,
           easing: "easeOutQuad",
-          update: function() {
+          update: function update() {
             hello.innerHTML = "Hello, Friend";
             signIn.innerHTML = "Sign up";
             loginTitle.innerHTML = "Login";
           }
         });
-        var y = anime({
+        anime({
           targets: ".signupForm",
           translateX: "-48%",
           easing: "easeOutQuad",
-          delay: 500,
           duration: 1000,
-          delay: function(el, i) {
+          delay: function delay(el, i) {
             return i * 500;
           }
         });
         status = "signUp";
-      } else if (status == "signUp") {
-        var usernameHideSignin = anime({
-          begin: function() {
+      } else if (status === "signUp") {
+        anime({
+          begin: function begin() {
             document.querySelector(".form-signin").style.display = "block";
           }
         });
-        var usernameHideSignup = anime({
-          begin: function() {
+        anime({
+          begin: function begin() {
             document.querySelector(".form-signup").style.display = "none";
           }
         });
-        var x = anime({
+        anime({
           targets: ".picture",
           translateX: "0%",
           borderTopLeftRadius: 10,
@@ -86,13 +84,13 @@ class Signup extends Component {
           borderBottomRightRadius: 0,
           borderBottomLeftRadius: 10,
           easing: "easeOutQuad",
-          update: function() {
+          update: function update() {
             hello.innerHTML = "Welcome Back!";
             signIn.innerHTML = "Sign in";
             loginTitle.innerHTML = "Create Account";
           }
         });
-        var y = anime({
+        anime({
           targets: ".signupForm",
           translateX: "0%",
           easing: "easeOutQuad"

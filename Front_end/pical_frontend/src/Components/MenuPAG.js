@@ -7,16 +7,23 @@ class MenuPAG extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      // username: ""
+      username: ""
     };
   }
+  componentWillMount() {
+    console.log(this.props.infomationAccount);
+    const { username } = this.props.infomationAccount;
+    this.setState({
+      username: username
+    });
+  }
 
-  getUsername = () => {
-    console.log(this.props.username);
-  };
+  // getUsername = () => {
+  //     this.props.getUsername();
+
+  // };
 
   render() {
-    console.log(this.props.username);
     return (
       <div className="topic">
         <div className="container">
@@ -26,7 +33,7 @@ class MenuPAG extends Component {
                 <div className="circular--portrait ">
                   <img src="images/trang6.jpg" alt="true" />
                 </div>
-                <div className="name"></div>
+                <div className="name">{this.state.username}</div>
               </div>
             </div>
             <div className="col-md-8 col-12 navbar navbar-expand-lg">
@@ -43,12 +50,6 @@ class MenuPAG extends Component {
               </button>
               <div className="collapse navbar-collapse" id="navbarShow">
                 <ul className="nav navbar-default justify-content-center">
-                  <div
-                    className="btn btn-danger"
-                    onClick={() => this.getUsername()}
-                  >
-                    OKKK
-                  </div>
                   <li className="nav-item">
                     <Link className="nav-link" to="/profile">
                       Profile
@@ -81,19 +82,20 @@ class MenuPAG extends Component {
   }
 }
 const mapStateToProps = (state, ownProps) => {
+  // console.log(state);
   return {
-    username: state.testThoi
+    infomationAccount: state.InformationAccountReducer.infomationAccount
   };
 };
-// const mapDispatchToProps = (dispatch, ownProps) => {
-//   return {
-//     getUsername: getUser => {
-//       dispatch({ type: "PROFILE_MENUPAG", getUser });
-//     }
-//   };
-// };
+const mapDispatchToProps = (dispatch, ownProps) => {
+  return {
+    getUsername: getUser => {
+      dispatch({ type: "PROFILE_MENUPAG", getUser });
+    }
+  };
+};
 export default connect(
   mapStateToProps,
-  null
+  mapDispatchToProps
 )(MenuPAG);
 // export default MenuPAG;
